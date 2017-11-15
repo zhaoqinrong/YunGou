@@ -239,7 +239,7 @@
                 </div>
                 <div class="modal-footer">
                     <button class="btn" data-dismiss="modal" aria-hidden="true">Cancel</button>
-                    <button class="btn btn-danger" data-dismiss="modal" id="sure">Delete</button>
+                    <button class="btn btn-danger" data-dismiss="modal" id="sure2">Delete</button>
                 </div>
             </div>
             <%--模态窗口修改--%>
@@ -249,7 +249,7 @@
                     <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
                     <h3 id="myModalLabel1">Edit User</h3>
                 </div>
-                <form id="tab" method="post" onsubmit="return false" action="##" action="">
+                <form id="tab" method="post" onsubmit="return false" action="##" >
                     <div class="modal-body">
                         <input type="hidden" name="id">
 
@@ -303,10 +303,28 @@
 
 
 <script type="text/javascript">
+
+ /* $(window).beforeunload(function () {
+        window.location.href="../EasyBuyUser?action=gtAllUser";
+
+    })*/
     function modify(){
         $.post("../EasyBuyUser?action=modify",
             {
                 "userid": $("input[name=id]").val(),
+                "type": $("input[name=type]").val(),
+                "loginName": $("input[name=loginName]").val(),
+                "userName": $("input[name=userName]").val(),
+                "sex1": $("input[name=sex1]").val(),
+                "identityCode": $("input[name=identityCode]").val(),
+                "email": $("input[name=email]").val(),
+                "phone": $("input[name=phone]").val(),
+
+            },
+            function (data) {
+                if(data=="true"){
+                    history.go(0);
+                }
             }
         )
 
@@ -476,23 +494,27 @@
     //进行删除用户操作
     $(function () {
         $("a[href=#myModal]").click(function () {
-            $("#sure").removeAttr("value");
-            var userId = $(this).parents("tr").children("td").eq(0).html()
+            $("#sure2").removeAttr("value");
+            var userId = $(this).parents("tr").children("td[name=id]").html()
             /*被删除的用户id*/
 
-            $("#sure").attr("value", userId);
+
+            $("#sure2").attr("value", userId);
 
         })
-        $("#sure").click(function () {
+        $("#sure2").click(function () {
             var userid = $(this).attr("value");
+
             $.get("${pageContext.request.contextPath}/EasyBuyUser?action=delById&userid=" + userid, function (data) {
                 if (data == "true") {
                     history.go(0);
                 }
                 $("#sure").removeAttr("value");
             });
-
         })
+
+
+
 
     })
 
