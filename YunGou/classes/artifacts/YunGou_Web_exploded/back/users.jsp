@@ -177,6 +177,7 @@
                 </button>
                 <button class="btn">Import</button>
                 <button class="btn">Export</button>
+                <button class="btn pull-right btn-danger" onclick="window.location.href='../EasyBuyUser?action=gtAllUser'"><strong>flush</strong></button>
                 <div class="btn-group">
                 </div>
             </div>
