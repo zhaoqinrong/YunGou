@@ -1,16 +1,12 @@
 package bdqn.filter;
 
-import java.io.IOException;
-import java.util.regex.Pattern;
+import bdqn.entity.EasybuyUser;
 
-import javax.servlet.Filter;
-import javax.servlet.FilterChain;
-import javax.servlet.FilterConfig;
-import javax.servlet.ServletException;
-import javax.servlet.ServletRequest;
-import javax.servlet.ServletResponse;
+import javax.servlet.*;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import java.io.IOException;
+import java.util.regex.Pattern;
 
 
 
@@ -30,11 +26,11 @@ public class LoginFilter implements Filter{
 			throws IOException, ServletException {
 		HttpServletRequest req=(HttpServletRequest)request;
 		HttpServletResponse resp=(HttpServletResponse)response;
-		Object username = req.getSession().getAttribute("username");
+		EasybuyUser user = (EasybuyUser) req.getSession().getAttribute("user");
 	StringBuffer requestURL = req.getRequestURL();
 	//如果是会员权利,需要跳转到login.jsp,要求用户登录
 		if(requestURL.indexOf("my")>-1||requestURL.indexOf("back")>-1){
-			if (username!=null&&!"".equals(username)) {
+			if (user.getLoginName()!=null&&!"".equals(user.getLoginName())) {
 				chain.doFilter(request, response);
 			}else{
 

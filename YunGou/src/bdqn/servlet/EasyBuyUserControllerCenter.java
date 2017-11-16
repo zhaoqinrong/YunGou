@@ -1,25 +1,19 @@
 package bdqn.servlet;
 
-import bdqn.Service.EasybuyUserService;
 import bdqn.Service.ServiceImpl.EasybuyUserServiceImpl;
 import bdqn.entity.EasybuyUser;
-import bdqn.servlet.util.Md5Util;
+import org.apache.log4j.Logger;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
-import javax.servlet.http.*;
-import javax.servlet.jsp.PageContext;
-
-import org.apache.log4j.Logger;
-
-import com.sun.corba.se.spi.orbutil.fsm.Action;
-
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 import java.io.IOException;
 import java.io.UnsupportedEncodingException;
-import java.net.URLEncoder;
 import java.security.NoSuchAlgorithmException;
 import java.sql.SQLException;
-import java.util.Date;
 import java.util.List;
 
 @WebServlet({"/EasyBuyUser"})
@@ -117,11 +111,29 @@ public class EasyBuyUserControllerCenter extends HttpServlet {
 
         } else if ("valida".equals(action)) {
             validaServlet(resp, loginName, user, userid1);
+        }else if("loginOut".equals(action)){
+            loginOut(req, resp);
         }
 
 
     }
 
+    private void loginOut(HttpServletRequest req, HttpServletResponse resp) {
+        req.getSession().invalidate();
+        try {
+            resp.sendRedirect("login.jsp");
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+
+    /**
+     * 用户在修改信息的时候,验证用户名
+     * @param resp
+     * @param loginName
+     * @param user
+     * @param userid1
+     */
     private void validaServlet(HttpServletResponse resp, String loginName, EasybuyUser user, Integer userid1) {
         EasybuyUser user1 = easybuyUserService.findByLoginName(loginName);
         System.out.println(user1);
@@ -160,6 +172,12 @@ public class EasyBuyUserControllerCenter extends HttpServlet {
         }
     }
 
+    /**
+     * 修改用户信息
+     * @param resp
+     * @param user
+     * @param userid1
+     */
     private void modifyServlet(HttpServletResponse resp, EasybuyUser user, Integer userid1) {
         EasybuyUser user1 = null;
         try {
@@ -183,6 +201,11 @@ public class EasyBuyUserControllerCenter extends HttpServlet {
         }
     }
 
+    /**
+     * 通过id删除用户
+     * @param resp
+     * @param userid
+     */
     private void delByIdServlet(HttpServletResponse resp, String userid) {
         if (userid == null) {
             return;
@@ -207,6 +230,11 @@ public class EasyBuyUserControllerCenter extends HttpServlet {
         }
     }
 
+    /**
+     * 获取所有用户
+     * @param req
+     * @param resp
+     */
     private void getAllUserServlet(HttpServletRequest req, HttpServletResponse resp) {
         String flag = req.getParameter("flag");
 
@@ -233,6 +261,11 @@ public class EasyBuyUserControllerCenter extends HttpServlet {
         }
     }
 
+    /**
+     * 通过用户名来查找用户
+     * @param resp
+     * @param loginName
+     */
     private void findByLoginName(HttpServletResponse resp, String loginName) {
         if (loginName.trim() != null && loginName.trim() != "") {
 
@@ -257,6 +290,15 @@ public class EasyBuyUserControllerCenter extends HttpServlet {
         }
     }
 
+    /**
+     * 登录的Servlet
+     * @param req
+     * @param resp
+     * @param loginName
+     * @param password
+     * @param isCookie
+     * @param user
+     */
     private void loginServlet(HttpServletRequest req, HttpServletResponse resp, String loginName, String password, String isCookie, EasybuyUser user) {
         //对用户的用户名和密码进行判断
         if (loginName != null && loginName.trim() != "") {
@@ -275,6 +317,13 @@ public class EasyBuyUserControllerCenter extends HttpServlet {
             }
         }
     }
+
+    /**
+     * 新增用户
+     * @param req
+     * @param resp
+     * @param user
+     */
 
     private void addServlet(HttpServletRequest req, HttpServletResponse resp, EasybuyUser user) {
         try {

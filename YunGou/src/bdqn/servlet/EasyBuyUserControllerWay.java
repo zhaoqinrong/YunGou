@@ -4,8 +4,6 @@ import bdqn.Service.EasybuyUserService;
 import bdqn.Service.ServiceImpl.EasybuyUserServiceImpl;
 import bdqn.entity.EasybuyUser;
 import bdqn.servlet.util.Md5Util;
-import com.sun.corba.se.impl.oa.NullServantImpl;
-
 
 import javax.servlet.ServletException;
 import javax.servlet.http.Cookie;
@@ -14,8 +12,6 @@ import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 import java.io.IOException;
 import java.io.UnsupportedEncodingException;
-import java.net.URLDecoder;
-import java.net.URLEncoder;
 import java.security.NoSuchAlgorithmException;
 
 
@@ -53,8 +49,8 @@ public class EasyBuyUserControllerWay {
 
     private static void setSession(HttpServletRequest req, HttpServletResponse resp, EasybuyUser user) {
         HttpSession session = req.getSession();
-        session.setAttribute("username", user.getLoginName());
-        session.setAttribute("password", user.getPassword());
+        session.setAttribute("user", user);
+//        session.setAttribute("password", user.getPassword());
 
     }
 
@@ -122,17 +118,17 @@ public class EasyBuyUserControllerWay {
         if (easybuyUser.getLoginName()!=null) {
 
 
-            setSession(req, resp, user);
+            setSession(req, resp, easybuyUser);
             if(isCookie){EasyBuyUserControllerWay.setCookie(req,resp,user);}
             Integer type = easybuyUser.getType();
 
-            if (type==2){
+            /*if (type==2){
 //                 req.getRequestDispatcher("/EasyBuyUser?action=gtAllUser").forward(req,resp);
 
                resp.sendRedirect("/EasyBuyUser?action=gtAllUser");
                     return ;
 
-            }
+            }*/
 
 
             resp.sendRedirect(sb + "index.jsp");

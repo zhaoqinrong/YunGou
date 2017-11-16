@@ -25,6 +25,11 @@
     <link rel="stylesheet" href=" ${pageContext.request.contextPath} lib/font-awesome/css/font-awesome.css">
     <link rel="shortcut icon" type="image/x-icon" href=" ${pageContext.request.contextPath} img/icon/favicon.ico">
 
+    <link rel="stylesheet" type="text/css" href="lib/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="lib/bootstrap/css/bootstrap-responsive.css">
+    <link rel="stylesheet" type="text/css" href="stylesheets/theme.css">
+    <link rel="stylesheet" href="lib/font-awesome/css/font-awesome.css">
+
 
     <script src="${pageContext.request.contextPath}lib/jquery-1.8.1.min.js" type="text/javascript"></script>
 

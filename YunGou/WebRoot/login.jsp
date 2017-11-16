@@ -71,9 +71,16 @@
 						<div>
 							<input type="checkbox" name="cookie" value="y">&nbsp;&nbsp;记住密码
 						</div>
-						<div class="pc-submit-ss">
-							<input type="submit" value="登录" placeholder="">
+                        <div>
+
+                            <div id="captcha2">
+                                <p id="wait2" class="show">正在加载验证码......</p>
+                            </div>
+                        </div>
+						<div class="pc-submit-ss" style="margin: 10px 0px">
+							<input type="submit"id="submit2" value="登录" placeholder="">
 						</div>
+
 						<div class="pc-item-san clearfix">
 							<a href="https://wx.qq.com/"><img src="img/icon/weixin.png"
 								alt="">微信登录</a> <a href="https://weibo.com/"><img
@@ -102,6 +109,8 @@
 	<script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
 	<script type="text/javascript" src="../../js/jquery.validate.min.js"></script>
 	<script type="text/javascript" src="js/login.js"></script>
+    <script src="js/gt.js"></script>
+    <script src="js/loginValidate.js"></script>
 
 </body>
 </html>

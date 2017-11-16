@@ -1,27 +1,28 @@
 package bdqn.Service.ServiceImpl;
 
 
+import bdqn.Service.EasybuyUserService;
+import bdqn.dao.EasybuyUserDao;
+import bdqn.dao.impl.EasybuyUserDaoImpl;
+import bdqn.entity.EasybuyUser;
+import org.apache.log4j.Logger;
+
 import java.io.Serializable;
 import java.sql.SQLException;
 import java.util.List;
 
-import org.apache.log4j.Logger;
-
-import bdqn.Service.EasybuyUserService;
-import bdqn.dao.impl.EasybuyUserDaoImpl;
-import bdqn.entity.EasybuyUser;
-
 public class EasybuyUserServiceImpl implements EasybuyUserService {
+   private EasybuyUserDao easybuyUserDao= new EasybuyUserDaoImpl();
 	private Logger logger=Logger.getLogger(EasybuyUserServiceImpl.class);
     @Override
     public List<EasybuyUser> getAllUser() {
-        return     new EasybuyUserDaoImpl().getAll();
+        return    easybuyUserDao.getAll();
 
     }
 
     @Override
     public int  addUser(EasybuyUser easybuyUser) {
-       int rownum= new EasybuyUserDaoImpl().add(easybuyUser);
+       int rownum= easybuyUserDao.add(easybuyUser);
        if(rownum>0){
     	   logger.info("增加成功");
         }else {
@@ -32,7 +33,7 @@ public class EasybuyUserServiceImpl implements EasybuyUserService {
 
     @Override
     public int updateUser(EasybuyUser easybuyUser) {
-       int rowsnum= new EasybuyUserDaoImpl().update(easybuyUser);
+       int rowsnum=easybuyUserDao.update(easybuyUser);
        if(rowsnum>0){
     	   logger.info("修改成功");
        }else{
@@ -44,7 +45,7 @@ public class EasybuyUserServiceImpl implements EasybuyUserService {
 
     @Override
     public int deleUser(Serializable id) {
-     int rownum = new EasybuyUserDaoImpl().delete(id);
+     int rownum = easybuyUserDao.delete(id);
      if(rownum>0){
     	 logger.info("删除成功");
      }else{
@@ -55,15 +56,14 @@ public class EasybuyUserServiceImpl implements EasybuyUserService {
 
     @Override
     public EasybuyUser login(String loginName, String password) {
-        EasybuyUser user = new EasybuyUserDaoImpl().getUserByNameAndPassword(loginName, password);
 
-         return user;
+         return easybuyUserDao.getUserByNameAndPassword(loginName, password);
 
     }
     @Override
     public EasybuyUser findByLoginName(String loginName){
 
-        return new EasybuyUserDaoImpl().findByLoginName(loginName);
+        return easybuyUserDao.findByLoginName(loginName);
 
 
     }
@@ -71,6 +71,6 @@ public class EasybuyUserServiceImpl implements EasybuyUserService {
     @Override
     public EasybuyUser findById(Serializable id) throws SQLException {
 
-        return new EasybuyUserDaoImpl().findById(id);
+        return easybuyUserDao.findById(id);
     }
 }

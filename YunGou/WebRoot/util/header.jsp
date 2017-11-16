@@ -26,54 +26,8 @@
                     if (session.getAttribute("username") == null) {
                 %>
                 <a href="login.jsp" target="_self"> 请登录 </a>
-               <%--<a href="register.jsp" target="_blank"></a>--%>
-                <a  data-toggle="modal" data-target="#myModal">
-                    免费注册
-                </a>
-                <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-                    <div class="modal-dialog">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
-                                    &times;
-                                </button>
-                                <h4 class="modal-title" id="myModalLabel">
-                                    模态框（Modal）标题
-                                </h4>
-                            </div>
-                            <div class="modal-body">
-                                在这里添加一些文本
-                            </div>
-                            <div class="modal-footer">
-                                <button type="button" class="btn btn-default" data-dismiss="modal">关闭
-                                </button>
-                                <button type="button" class="btn btn-primary">
-                                    提交更改
-                                </button>
-                            </div>
-                        </div><!-- /.modal-content -->
-                    </div><!-- /.modal -->
-                </div>
-             <%--   <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
-                    免费注册
-                </button>
-                <div class="modal fade" tabindex="-1" role="dialog">
-                    <div class="modal-dialog" role="document">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                                <h4 class="modal-title">Modal title</h4>
-                            </div>
-                            <div class="modal-body">
-                                <p>One fine body&hellip;</p>
-                            </div>
-                            <div class="modal-footer">
-                                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                                <button type="button" class="btn btn-primary">Save changes</button>
-                            </div>
-                        </div><!-- /.modal-content -->
-                    </div><!-- /.modal-dialog -->
-                </div><!-- /.modal -->--%>
+                <a href="register.jsp" target="_self"> 用户注册 </a>
+
                 <%
                     }
                 %>
@@ -119,7 +73,7 @@
         </div>
         <div class="head-form fl">
             <form class="clearfix">
-                <input class="search-text" accesskey="" id="key" height="36" autocomplete="off" placeholder="洗衣机" type="text">
+                <input class="search-text" accesskey="" id="key" autocomplete="off" placeholder="洗衣机" style="height: 37px;" type="text">
                 <button class="button" onclick="search('key');return false;">搜索</button>
             </form>
             <div class="words-text clearfix">
@@ -136,27 +90,10 @@
         </div>
         <div class="fr pc-head-car">
             <i class="icon-car"></i>
-            <a href="my-car.jsp">我的购物车</a>
-            <em>10</em>
+            <a href="my-car.jsp" target="_blank">我的购物车</a>
+            <em>0</em>
         </div>
     </div>
-    <!--  顶部    start-->
-    <div class="yHeader">
-        <!-- 导航   start  -->
-        <div class="yNavIndex">
-            <ul class="yMenuIndex" style="margin-left:0">
-                <li style="background:#d1201e"><a href="" target="_blank">云购首页</a></li>
-                <li><a href="" target="_blank">女士护肤 </a></li>
-                <li><a href="" target="_blank">男士护肤</a></li>
-                <li><a href="" target="_blank">洗护染发</a></li>
-                <li><a href="" target="_blank">染发</a></li>
-                <li><a href="" target="_blank">彩妆</a></li>
-                <li><a href="" target="_blank">品牌故事</a></li>
-            </ul>
-        </div>
-        <!-- 导航   end  -->
-    </div>
-
 </header>
 <script src="js/jquery.min.js"></script>
 <script src="js/bootstrap.min.js"></script>

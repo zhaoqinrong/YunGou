@@ -35,82 +35,28 @@
     <div class="pc-header-nav">
         <div class="pc-header-con">
 
-            <div class="fl pc-header-link">您好！，${username}欢迎来云购物
+            <div class="fl pc-header-link">您好！，${user.loginName}欢迎来云购物
 
-                <%
-                    if (session.getAttribute("username") == null) {
-                %>
-                <a href="login.jsp" target="_self"> 请登录 </a>
-                <a href="register.jsp" target="_self"> 用户注册 </a>
-                <%--<a href="register.jsp" target="_blank"></a>--%>
-               <%-- <a  data-toggle="modal" data-target="#myModal">
-                    免费注册
-                </a>
-                <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-                    <div class="modal-dialog">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
-                                    &times;
-                                </button>
-                                <h4 class="modal-title" id="myModalLabel">
-                                    用户注册
-                                </h4>
-                            </div>
-                            <div class="modal-body">
-                                <input name="userName" placeholder="用户名">
-                            </div>
-                            <div class="modal-body">
-                                <input name="userName" placeholder="用户名">
-                            </div>
-                            <div class="modal-body">
-                                <input name="userName" placeholder="用户名">
-                            </div>
-                            <div class="modal-body">
-                                <input name="userName" placeholder="用户名">
-                            </div>
-                            <div class="modal-body">
-                                <input name="userName" placeholder="用户名">
-                            </div>
-                            <div class="modal-body">
-                                <input name="userName" placeholder="用户名">
-                            </div>
-                            <div class="modal-footer">
-                                <button type="button" class="btn btn-default" data-dismiss="modal">登录
-                                </button>
-                                <button type="button" class="btn btn-primary">
-                                    注册
-                                </button>
-                            </div>
-                        </div><!-- /.modal-content -->
-                    </div><!-- /.modal -->
-                </div>--%>
-                <%--   <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
-                       免费注册
-                   </button>
-                   <div class="modal fade" tabindex="-1" role="dialog">
-                       <div class="modal-dialog" role="document">
-                           <div class="modal-content">
-                               <div class="modal-header">
-                                   <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                                   <h4 class="modal-title">Modal title</h4>
-                               </div>
-                               <div class="modal-body">
-                                   <p>One fine body&hellip;</p>
-                               </div>
-                               <div class="modal-footer">
-                                   <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                                   <button type="button" class="btn btn-primary">Save changes</button>
-                               </div>
-                           </div><!-- /.modal-content -->
-                       </div><!-- /.modal-dialog -->
-                   </div><!-- /.modal -->--%>
-                <%
-                    }
-                %>
+               <c:choose>
+                   <c:when test="${user.loginName==null}">
+                       <a href="login.jsp" target="_self"> 请登录 </a>
+                       <a href="register.jsp" target="_self"> 用户注册 </a>
+                   </c:when>
+                   <c:otherwise>
+                       <a href="EasyBuyUser?action=loginOut" target="_self"> 退出系统 </a>
+                   </c:otherwise>
+               </c:choose>
+
+
+
             </div>
             <div class="fr pc-header-list top-nav">
                 <ul>
+
+                    <c:if test="${user.type==2}">
+                        <li><a href="EasyBuyUser?action=gtAllUser">平台管理</a></li>
+                    </c:if>
+
                     <li>
                         <div class="nav"><i class="pc-top-icon"></i><a href="my-dingdan.jsp">我的订单</a></div>
                         <div class="con">
@@ -133,6 +79,7 @@
                             </dl>
                         </div>
                     </li>
+
                     <li><a href="#">我的云购</a></li>
                     <li><a href="my-shoucang.jsp">我的收藏</a></li>
                     <li><a href="my-user.jsp">会员中心</a></li>
@@ -145,7 +92,7 @@
     <div class="pc-header-logo clearfix">
         <div class="pc-fl-logo fl">
             <h1>
-                <a href="index.html"></a>
+                <a href="index.jsp"></a>
             </h1>
         </div>
         <div class="head-form fl">
@@ -167,7 +114,7 @@
         </div>
         <div class="fr pc-head-car">
             <i class="icon-car"></i>
-            <a href="my-car.html" target="_blank">我的购物车</a>
+            <a href="my-car.jsp" target="_blank">我的购物车</a>
             <em>0</em>
         </div>
     </div>
