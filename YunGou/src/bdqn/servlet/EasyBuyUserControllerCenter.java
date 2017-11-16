@@ -40,11 +40,7 @@ public class EasyBuyUserControllerCenter extends HttpServlet {
 
         //从页面接收数据并进行封装
         String userid = req.getParameter("userid");
-        Integer userid1 = null;
 
-        if (userid != null) {
-            userid1 = Integer.parseInt(userid);
-        }
 
         String loginName = req.getParameter("loginName");
         String email = req.getParameter("email");
@@ -68,7 +64,12 @@ public class EasyBuyUserControllerCenter extends HttpServlet {
         user.setUserName(userName);
         user.setIdentityCode(identityCode);
 
+        Integer userid1 = null;
 
+        if (userid != null) {
+            userid1 = Integer.parseInt(userid);
+            user.setId(userid1);
+        }
         if (sex != null)
             user.setSex(new Integer(sex));
 
@@ -199,15 +200,18 @@ public class EasyBuyUserControllerCenter extends HttpServlet {
             EasybuyUser user1 = null;
             try {
                 user1 = easybuyUserService.findById(userid1);
+                user.setPassword(user1.getPassword());
             } catch (SQLException e) {
                 e.printStackTrace();
             }
+
             //通过用户名来查用户,如果用户不存在,说明名字没被使用,如果用户存在,说明名字被使用,判断是否是用户本人,还是其他人占用
             logger.debug("进入了modify");
             try {//说明是用户本人,可以进行修改其他的信息
-                int i = easybuyUserService.updateUser(user1);
+                int i = easybuyUserService.updateUser(user);
                 if (i > 0) {
-                    resp.sendRedirect("EasyBuyUser?action=gtAllUser");
+                    logger.debug(user);
+                    resp.sendRedirect("EasyBuyUser?action=gtAllUser&flag=true");
                     return;
                 }
             } catch (IOException e) {

@@ -37,9 +37,7 @@ public class LoginFilter implements Filter{
 			if (username!=null&&!"".equals(username)) {
 				chain.doFilter(request, response);
 			}else{
-			    if(requestURL.indexOf("back/users")>-1){
-                    resp.sendRedirect(req.getContextPath()+"/EasyBuyUser?action=gtAllUser");
-                }
+
 				resp.sendRedirect(req.getContextPath()+"/login.jsp");
 			}
 			

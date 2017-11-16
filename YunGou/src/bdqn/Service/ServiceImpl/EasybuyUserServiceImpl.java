@@ -35,7 +35,6 @@ public class EasybuyUserServiceImpl implements EasybuyUserService {
        int rowsnum= new EasybuyUserDaoImpl().update(easybuyUser);
        if(rowsnum>0){
     	   logger.info("修改成功");
-           System.out.println("修改成功");
        }else{
     	   logger.info("修改失败");
        }
