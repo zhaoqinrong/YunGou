@@ -66,7 +66,7 @@
         <p class="info">We are experiencing a bit of a delay.
         <br>Try again shortly.</p>
         <p><i class="icon-home"></i></p>
-        <p><a href="index.html">Back to the home page</a></p>
+        <p><a href="index.jsp">Back to the home page</a></p>
     </div>
 </div>
 

@@ -1,5 +1,5 @@
-<%@ page import="bdqn.servlet.EasyBuyUserControllerWay"%>
-<%@ page import="bdqn.entity.EasybuyUser"%>
+<%@ page import="cn.yungou.user.servlet.EasyBuyUserControllerWay"%>
+<%@ page import="cn.yungou.user.entity.EasybuyUser"%>
 <%@ page language="java" pageEncoding="UTF-8"%>
 <%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <html lang="en">

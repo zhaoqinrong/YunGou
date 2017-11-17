@@ -63,7 +63,7 @@
                 <ul class="nav pull-right">
                     
                 </ul>
-                <a class="brand" href="index.html"><span class="first">Your</span> <span class="second">Company</span></a>
+                <a class="brand" href="index.jsp"><span class="first">Your</span> <span class="second">Company</span></a>
             </div>
         </div>
     </div>
@@ -79,12 +79,12 @@
                 <form>
                     <label>Email Address</label>
                     <input type="text" class="span12"></input>
-                    <a href="index.html" class="btn btn-primary pull-right">Send</a>
+                    <a href="index.jsp" class="btn btn-primary pull-right">Send</a>
                     <div class="clearfix"></div>
                 </form>
             </div>
         </div>
-        <a href="sign-in.html">Sign in to your account</a>
+        <a href="sign-in.jsp">Sign in to your account</a>
     </div>
 </div>
 

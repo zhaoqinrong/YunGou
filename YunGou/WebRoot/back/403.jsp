@@ -65,7 +65,7 @@
         <h1>Oops!</h1>
         <p class="info">You don't have permission to view this page.</p>
         <p><i class="icon-home"></i></p>
-        <p><a href="index.html">Back to the home page</a></p>
+        <p><a href="index.jsp">Back to the home page</a></p>
     </div>
 </div>
 

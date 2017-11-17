@@ -80,12 +80,12 @@
                     <ul class="dropdown-menu">
                         <li><a tabindex="-1" href="#">Settings</a></li>
                         <li class="divider"></li>
-                        <li><a tabindex="-1" href="sign-in.html">Logout</a></li>
+                        <li><a tabindex="-1" href="sign-in.jsp">Logout</a></li>
                     </ul>
                 </li>
 
             </ul>
-            <a class="brand" href="index.html"><span class="first">Your</span> <span class="second">Company</span></a>
+            <a class="brand" href="index.jsp"><span class="first">Your</span> <span class="second">Company</span></a>
         </div>
     </div>
 </div>
@@ -201,7 +201,7 @@
                             </tr>
                             </tbody>
                         </table>
-                        <p><a href="users.html">More...</a></p>
+                        <p><a href="users.jsp">More...</a></p>
                     </div>
                 </div>
                 <div class="block span6">

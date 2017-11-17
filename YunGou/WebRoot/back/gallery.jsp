@@ -71,12 +71,12 @@
                         <ul class="dropdown-menu">
                             <li><a tabindex="-1" href="#">Settings</a></li>
                             <li class="divider"></li>
-                            <li><a tabindex="-1" href="sign-in.html">Logout</a></li>
+                            <li><a tabindex="-1" href="sign-in.jsp">Logout</a></li>
                         </ul>
                     </li>
                     
                 </ul>
-                <a class="brand" href="index.html"><span class="first">Your</span> <span class="second">Company</span></a>
+                <a class="brand" href="index.jsp"><span class="first">Your</span> <span class="second">Company</span></a>
             </div>
         </div>
     </div>
@@ -89,13 +89,13 @@
                 <div class="sidebar-nav">
                   <div class="nav-header" data-toggle="collapse" data-target="#dashboard-menu"><i class="icon-dashboard"></i>Dashboard</div>
                     <ul id="dashboard-menu" class="nav nav-list collapse in">
-                        <li><a href="index.html">Home</a></li>
-                        <li ><a href="users.html">Sample List</a></li>
-                        <li ><a href="user.html">Sample Item</a></li>
-                        <li class="active"><a href="gallery.html">Gallery</a></li>
-                        <li ><a href="calendar.html">Calendar</a></li>
-                        <li ><a href="faq.html">Faq</a></li>
-                        <li ><a href="help.html">Help</a></li>
+                        <li><a href="index.jsp">Home</a></li>
+                        <li ><a href="users.jsp">Sample List</a></li>
+                        <li ><a href="user.jsp">Sample Item</a></li>
+                        <li class="active"><a href="gallery.jsp">Gallery</a></li>
+                        <li ><a href="calendar.jsp">Calendar</a></li>
+                        <li ><a href="faq.jsp">Faq</a></li>
+                        <li ><a href="help.jsp">Help</a></li>
                         
                     </ul>
                 <div class="nav-header" data-toggle="collapse" data-target="#accounts-menu"><i class="icon-briefcase"></i>Account<span class="label label-info">+10</span></div>

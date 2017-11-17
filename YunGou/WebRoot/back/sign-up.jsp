@@ -63,7 +63,7 @@
                 <ul class="nav pull-right">
                     
                 </ul>
-                <a class="brand" href="index.html"><span class="first">Your</span> <span class="second">Company</span></a>
+                <a class="brand" href="index.jsp"><span class="first">Your</span> <span class="second">Company</span></a>
             </div>
         </div>
     </div>
@@ -87,13 +87,13 @@
                     <input type="text" class="span12">
                     <label>Password</label>
                     <input type="password" class="span12">
-                    <a href="index.html" class="btn btn-primary pull-right">Sign Up!</a>
-                    <label class="remember-me"><input type="checkbox"> I agree with the <a href="terms-and-conditions.html">Terms and Conditions</a></label>
+                    <a href="index.jsp" class="btn btn-primary pull-right">Sign Up!</a>
+                    <label class="remember-me"><input type="checkbox"> I agree with the <a href="terms-and-conditions.jsp">Terms and Conditions</a></label>
                     <div class="clearfix"></div>
                 </form>
             </div>
         </div>
-        <p><a href="privacy-policy.html">Privacy Policy</a></p>
+        <p><a href="privacy-policy.jsp">Privacy Policy</a></p>
     </div>
 </div>
 
