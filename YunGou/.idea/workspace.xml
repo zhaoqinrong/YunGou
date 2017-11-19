@@ -9,9 +9,7 @@
     <bookmark url="file://$PROJECT_DIR$" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1adddea2-994f-4e8e-8122-745fb80d184d" name="Default" comment="yungou实现了分模块,和后台页面的更换">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
-    </list>
+    <list default="true" id="1adddea2-994f-4e8e-8122-745fb80d184d" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/WebRoot/WEB-INF/classes/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -59,8 +57,8 @@
       <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="408">
-              <caret line="24" column="0" lean-forward="false" selection-start-line="24" selection-start-column="0" selection-end-line="25" selection-end-column="7" />
+            <state relative-caret-position="395">
+              <caret line="28" column="9" lean-forward="true" selection-start-line="28" selection-start-column="9" selection-end-line="28" selection-end-column="9" />
               <folding />
             </state>
           </provider>
@@ -148,7 +146,7 @@
     </option>
     <option name="RESET_MODE" value="HARD" />
     <push-targets>
-      <push-target-info target-remote="test" target-branch="master" repo="$PROJECT_DIR$/.." source="master" />
+      <push-target-info target-remote="origin" target-branch="master" repo="$PROJECT_DIR$/.." source="master" />
     </push-targets>
   </component>
   <component name="IdeDocumentHistory">
@@ -226,8 +224,8 @@
     <option name="FILTER_DEBUG" value="true" />
     <option name="CUSTOM_FILTER" />
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="112" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="332" />
     <option name="width" value="1378" />
     <option name="height" value="686" />
   </component>
@@ -256,32 +254,6 @@
             <path>
               <item name="YunGou" type="b2602c69:ProjectViewProjectNode" />
               <item name="YunGou" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="YunGou" type="b2602c69:ProjectViewProjectNode" />
-              <item name="YunGou" type="462c0819:PsiDirectoryNode" />
-              <item name="classes" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="YunGou" type="b2602c69:ProjectViewProjectNode" />
-              <item name="YunGou" type="462c0819:PsiDirectoryNode" />
-              <item name="classes" type="462c0819:PsiDirectoryNode" />
-              <item name="artifacts" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="YunGou" type="b2602c69:ProjectViewProjectNode" />
-              <item name="YunGou" type="462c0819:PsiDirectoryNode" />
-              <item name="classes" type="462c0819:PsiDirectoryNode" />
-              <item name="artifacts" type="462c0819:PsiDirectoryNode" />
-              <item name="YunGou_Web_exploded" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="YunGou" type="b2602c69:ProjectViewProjectNode" />
-              <item name="YunGou" type="462c0819:PsiDirectoryNode" />
-              <item name="classes" type="462c0819:PsiDirectoryNode" />
-              <item name="artifacts" type="462c0819:PsiDirectoryNode" />
-              <item name="YunGou_Web_exploded" type="462c0819:PsiDirectoryNode" />
-              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="YunGou" type="b2602c69:ProjectViewProjectNode" />
@@ -553,7 +525,7 @@
       <workItem from="1510981784324" duration="24066000" />
       <workItem from="1511051135575" duration="735000" />
       <workItem from="1511056068018" duration="1238000" />
-      <workItem from="1511058797854" duration="7048000" />
+      <workItem from="1511058797854" duration="8383000" />
     </task>
     <task id="LOCAL-00001" summary="云购实现了后台的增删,删除是模态窗口,修改的模态窗口已经写好,但是具体没有实现完全">
       <created>1510753955632</created>
@@ -604,11 +576,18 @@
       <option name="project" value="LOCAL" />
       <updated>1510894348144</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="yungou修改gitIgnore文件">
+      <created>1511075381713</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1511075381713</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="228421000" />
+    <option name="totallyTimeSpent" value="229756000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -620,7 +599,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="112" y="0" width="1378" height="686" extended-state="0" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.43862522" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -633,7 +612,7 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.63829786" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.81178397" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.31942338" sideWeight="0.7692308" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3184569" sideWeight="0.7692308" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24962178" sideWeight="0.50653595" order="6" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980332" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24962178" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -719,7 +698,8 @@
     <MESSAGE value="云购添加图片拖动验证,以及主页增加平台管理和退出系统的功能" />
     <MESSAGE value="修改了后台页面中的错误" />
     <MESSAGE value="yungou实现了分模块,和后台页面的更换" />
-    <option name="LAST_COMMIT_MESSAGE" value="yungou实现了分模块,和后台页面的更换" />
+    <MESSAGE value="yungou修改gitIgnore文件" />
+    <option name="LAST_COMMIT_MESSAGE" value="yungou修改gitIgnore文件" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1091,8 +1071,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="24" column="0" lean-forward="false" selection-start-line="24" selection-start-column="0" selection-end-line="25" selection-end-column="7" />
+        <state relative-caret-position="395">
+          <caret line="28" column="9" lean-forward="true" selection-start-line="28" selection-start-column="9" selection-end-line="28" selection-end-column="9" />
           <folding />
         </state>
       </provider>
