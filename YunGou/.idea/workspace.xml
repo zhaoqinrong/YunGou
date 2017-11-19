@@ -10,231 +10,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1adddea2-994f-4e8e-8122-745fb80d184d" name="Default" comment="yungou实现了分模块,和后台页面的更换">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/back1/fonts/FontAwesome.otf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/back1/fonts/fontawesome-webfont.eot" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/back1/fonts/fontawesome-webfont.ttf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/back1/fonts/fontawesome-webfont.woff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/back1/fonts/glyphicons-halflings-regular.woff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/back1/fonts/glyphicons-halflings-regular.woff2" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/back1/images/1.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/back1/images/2.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/back1/images/3.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/back1/images/a.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/back1/images/i1.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/back1/images/i2.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/back1/images/i3.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/back1/images/i4.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/back1/images/img1.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/back1/images/lock.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/back1/images/tick.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/back1/images/user.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/classes/artifacts/YunGou_Web_exploded/back1/fonts/FontAwesome.otf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/classes/artifacts/YunGou_Web_exploded/back1/fonts/fontawesome-webfont.eot" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/classes/artifacts/YunGou_Web_exploded/back1/fonts/fontawesome-webfont.ttf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/classes/artifacts/YunGou_Web_exploded/back1/fonts/fontawesome-webfont.woff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/classes/artifacts/YunGou_Web_exploded/back1/fonts/glyphicons-halflings-regular.woff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/classes/artifacts/YunGou_Web_exploded/back1/fonts/glyphicons-halflings-regular.woff2" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/classes/artifacts/YunGou_Web_exploded/back1/images/1.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/classes/artifacts/YunGou_Web_exploded/back1/images/2.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/classes/artifacts/YunGou_Web_exploded/back1/images/3.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/classes/artifacts/YunGou_Web_exploded/back1/images/a.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/classes/artifacts/YunGou_Web_exploded/back1/images/i1.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/classes/artifacts/YunGou_Web_exploded/back1/images/i2.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/classes/artifacts/YunGou_Web_exploded/back1/images/i3.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/classes/artifacts/YunGou_Web_exploded/back1/images/i4.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/classes/artifacts/YunGou_Web_exploded/back1/images/img1.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/classes/artifacts/YunGou_Web_exploded/back1/images/lock.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/classes/artifacts/YunGou_Web_exploded/back1/images/tick.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/classes/artifacts/YunGou_Web_exploded/back1/images/user.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/back/header.jsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/back/lib/bootstrap/src/EasyBuySQL.sql" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/back/lib/bootstrap/src/bdqn/Service/EasybuyUserService.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/back/lib/bootstrap/src/bdqn/Service/ServiceImpl/EasybuyUserServiceImpl.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/back/lib/bootstrap/src/bdqn/dao/EasybuyUserDao.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/back/lib/bootstrap/src/bdqn/dao/impl/EasybuyUserDaoImpl.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/back/lib/bootstrap/src/bdqn/filter/EncondingFilter.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/back/lib/bootstrap/src/bdqn/filter/LoginFilter.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/back/lib/bootstrap/src/bdqn/servlet/EasyBuyUserControllerCenter.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/back/lib/bootstrap/src/bdqn/servlet/EasyBuyUserControllerWay.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/back/lib/bootstrap/src/bdqn/servlet/util/Md5Util.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/back/nav-bar.jsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/back1/addProduct.jsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/back1/addnews.jsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/back1/adduser.jsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/back1/css/animate.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/back1/css/bootstrap.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/back1/css/clndr.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/back1/css/custom.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/back1/css/font-awesome.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/back1/css/jqvmap.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/back1/css/style.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/back1/fonts/fontawesome-webfont.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/back1/header.jsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/back1/index.jsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/back1/js/Chart.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/back1/js/bootstrap.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/back1/js/classie.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/back1/js/clndr.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/back1/js/custom.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/back1/js/jquery-1.11.1.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/back1/js/jquery.circlechart.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/back1/js/jquery.nicescroll.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/back1/js/jquery.vmap.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/back1/js/jquery.vmap.sampledata.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/back1/js/jquery.vmap.world.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/back1/js/metisMenu.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/back1/js/modernizr.custom.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/back1/js/moment-2.2.1.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/back1/js/scripts.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/back1/js/site.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/back1/js/skycons.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/back1/js/underscore-min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/back1/js/validator.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/back1/js/wow.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/back1/login.jsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/back1/nav.jsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/back1/newsClass.jsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/back1/newsDetail.jsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/back1/newsList.jsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/back1/orderList.jsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/back1/productClass.jsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/back1/productList.jsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/back1/productStock.jsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/back1/resetPassword.jsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/back1/signup.jsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/back1/usersList.jsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/back1/找网站模板就上【模板之家】cssMoban.com.url" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/back1/说明.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/classes/artifacts/YunGou_Web_exploded/back/header.jsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/classes/artifacts/YunGou_Web_exploded/back/lib/bootstrap/src/EasyBuySQL.sql" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/classes/artifacts/YunGou_Web_exploded/back/lib/bootstrap/src/bdqn/Service/EasybuyNewsService.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/classes/artifacts/YunGou_Web_exploded/back/lib/bootstrap/src/bdqn/Service/EasybuyUserService.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/classes/artifacts/YunGou_Web_exploded/back/lib/bootstrap/src/bdqn/Service/ServiceImpl/EasybuyNewsServiceImpl.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/classes/artifacts/YunGou_Web_exploded/back/lib/bootstrap/src/bdqn/Service/ServiceImpl/EasybuyUserServiceImpl.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/classes/artifacts/YunGou_Web_exploded/back/lib/bootstrap/src/bdqn/dao/CommonDao.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/classes/artifacts/YunGou_Web_exploded/back/lib/bootstrap/src/bdqn/dao/EasybuyNewsDao.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/classes/artifacts/YunGou_Web_exploded/back/lib/bootstrap/src/bdqn/dao/EasybuyUserDao.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/classes/artifacts/YunGou_Web_exploded/back/lib/bootstrap/src/bdqn/dao/baseDao/Basedao.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/classes/artifacts/YunGou_Web_exploded/back/lib/bootstrap/src/bdqn/dao/impl/EasyBuyNewsDaoImpl.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/classes/artifacts/YunGou_Web_exploded/back/lib/bootstrap/src/bdqn/dao/impl/EasybuyUserDaoImpl.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/classes/artifacts/YunGou_Web_exploded/back/lib/bootstrap/src/bdqn/dao/util/ResultSetUtil.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/classes/artifacts/YunGou_Web_exploded/back/lib/bootstrap/src/bdqn/entity/EasybuyNews.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/classes/artifacts/YunGou_Web_exploded/back/lib/bootstrap/src/bdqn/entity/EasybuyOrder.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/classes/artifacts/YunGou_Web_exploded/back/lib/bootstrap/src/bdqn/entity/EasybuyOrderDetail.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/classes/artifacts/YunGou_Web_exploded/back/lib/bootstrap/src/bdqn/entity/EasybuyProduct.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/classes/artifacts/YunGou_Web_exploded/back/lib/bootstrap/src/bdqn/entity/EasybuyProductCategory.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/classes/artifacts/YunGou_Web_exploded/back/lib/bootstrap/src/bdqn/entity/EasybuyUser.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/classes/artifacts/YunGou_Web_exploded/back/lib/bootstrap/src/bdqn/filter/EncondingFilter.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/classes/artifacts/YunGou_Web_exploded/back/lib/bootstrap/src/bdqn/filter/LoginFilter.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/classes/artifacts/YunGou_Web_exploded/back/lib/bootstrap/src/bdqn/servlet/EasyBuyUserControllerCenter.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/classes/artifacts/YunGou_Web_exploded/back/lib/bootstrap/src/bdqn/servlet/EasyBuyUserControllerWay.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/classes/artifacts/YunGou_Web_exploded/back/lib/bootstrap/src/bdqn/servlet/util/Md5Util.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/classes/artifacts/YunGou_Web_exploded/back/lib/bootstrap/src/demo/demo2/GeetestConfig.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/classes/artifacts/YunGou_Web_exploded/back/lib/bootstrap/src/demo/demo2/StartCaptchaServlet.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/classes/artifacts/YunGou_Web_exploded/back/lib/bootstrap/src/demo/demo2/VerifyLoginServlet.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/classes/artifacts/YunGou_Web_exploded/back/lib/bootstrap/src/sdk/GeetestLib.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/classes/artifacts/YunGou_Web_exploded/back/nav-bar.jsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/classes/artifacts/YunGou_Web_exploded/back1/addProduct.jsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/classes/artifacts/YunGou_Web_exploded/back1/addnews.jsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/classes/artifacts/YunGou_Web_exploded/back1/adduser.jsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/classes/artifacts/YunGou_Web_exploded/back1/css/animate.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/classes/artifacts/YunGou_Web_exploded/back1/css/bootstrap.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/classes/artifacts/YunGou_Web_exploded/back1/css/clndr.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/classes/artifacts/YunGou_Web_exploded/back1/css/custom.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/classes/artifacts/YunGou_Web_exploded/back1/css/font-awesome.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/classes/artifacts/YunGou_Web_exploded/back1/css/jqvmap.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/classes/artifacts/YunGou_Web_exploded/back1/css/style.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/classes/artifacts/YunGou_Web_exploded/back1/fonts/fontawesome-webfont.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/classes/artifacts/YunGou_Web_exploded/back1/header.jsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/classes/artifacts/YunGou_Web_exploded/back1/index.jsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/classes/artifacts/YunGou_Web_exploded/back1/js/Chart.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/classes/artifacts/YunGou_Web_exploded/back1/js/bootstrap.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/classes/artifacts/YunGou_Web_exploded/back1/js/classie.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/classes/artifacts/YunGou_Web_exploded/back1/js/clndr.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/classes/artifacts/YunGou_Web_exploded/back1/js/custom.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/classes/artifacts/YunGou_Web_exploded/back1/js/jquery-1.11.1.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/classes/artifacts/YunGou_Web_exploded/back1/js/jquery.circlechart.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/classes/artifacts/YunGou_Web_exploded/back1/js/jquery.nicescroll.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/classes/artifacts/YunGou_Web_exploded/back1/js/jquery.vmap.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/classes/artifacts/YunGou_Web_exploded/back1/js/jquery.vmap.sampledata.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/classes/artifacts/YunGou_Web_exploded/back1/js/jquery.vmap.world.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/classes/artifacts/YunGou_Web_exploded/back1/js/metisMenu.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/classes/artifacts/YunGou_Web_exploded/back1/js/modernizr.custom.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/classes/artifacts/YunGou_Web_exploded/back1/js/moment-2.2.1.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/classes/artifacts/YunGou_Web_exploded/back1/js/scripts.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/classes/artifacts/YunGou_Web_exploded/back1/js/site.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/classes/artifacts/YunGou_Web_exploded/back1/js/skycons.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/classes/artifacts/YunGou_Web_exploded/back1/js/underscore-min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/classes/artifacts/YunGou_Web_exploded/back1/js/validator.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/classes/artifacts/YunGou_Web_exploded/back1/js/wow.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/classes/artifacts/YunGou_Web_exploded/back1/login.jsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/classes/artifacts/YunGou_Web_exploded/back1/nav.jsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/classes/artifacts/YunGou_Web_exploded/back1/newsClass.jsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/classes/artifacts/YunGou_Web_exploded/back1/newsDetail.jsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/classes/artifacts/YunGou_Web_exploded/back1/newsList.jsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/classes/artifacts/YunGou_Web_exploded/back1/orderList.jsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/classes/artifacts/YunGou_Web_exploded/back1/productClass.jsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/classes/artifacts/YunGou_Web_exploded/back1/productList.jsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/classes/artifacts/YunGou_Web_exploded/back1/productStock.jsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/classes/artifacts/YunGou_Web_exploded/back1/resetPassword.jsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/classes/artifacts/YunGou_Web_exploded/back1/signup.jsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/classes/artifacts/YunGou_Web_exploded/back1/usersList.jsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/classes/artifacts/YunGou_Web_exploded/back1/找网站模板就上【模板之家】cssMoban.com.url" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/classes/artifacts/YunGou_Web_exploded/back1/说明.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/cn/yungou/commons/CommonDao/CommonDao.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/cn/yungou/commons/baseDao/Basedao.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/cn/yungou/commons/entity/EasyBuyNewsAndClass.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/cn/yungou/commons/entity/EasyBuyNewsClass.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/cn/yungou/commons/entity/EasybuyNews.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/cn/yungou/commons/entity/EasybuyOrder.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/cn/yungou/commons/entity/EasybuyOrderDetail.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/cn/yungou/commons/entity/EasybuyProduct.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/cn/yungou/commons/entity/EasybuyProductCategory.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/cn/yungou/commons/entity/EasybuyUser.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/cn/yungou/commons/util/ResultSetUtil.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/cn/yungou/news/Service/EasyBuyNewsAndClassService.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/cn/yungou/news/Service/EasybuyNewsService.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/cn/yungou/news/Service/ServiceImpl/EasyBuyNewsAndClassServiceImpl.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/cn/yungou/news/Service/ServiceImpl/EasybuyNewsServiceImpl.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/cn/yungou/news/dao/EasyBuyNewsAndClassDao.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/cn/yungou/news/dao/EasybuyNewsDao.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/cn/yungou/news/dao/impl/EasyBuyNewsAndClassDaoImpl.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/cn/yungou/news/dao/impl/EasyBuyNewsDaoImpl.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/cn/yungou/news/servlet/EasyBuyNewsControllerCenter.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/cn/yungou/user/demo2/GeetestConfig.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/cn/yungou/user/demo2/StartCaptchaServlet.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/cn/yungou/user/demo2/VerifyLoginServlet.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/cn/yungou/user/sdk/GeetestLib.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebRoot/back/users.jsp" afterPath="$PROJECT_DIR$/WebRoot/back/users.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebRoot/index.jsp" afterPath="$PROJECT_DIR$/WebRoot/index.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebRoot/login.jsp" afterPath="$PROJECT_DIR$/WebRoot/login.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/classes/artifacts/YunGou_Web_exploded/back/users.jsp" afterPath="$PROJECT_DIR$/classes/artifacts/YunGou_Web_exploded/back/users.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/classes/artifacts/YunGou_Web_exploded/index.jsp" afterPath="$PROJECT_DIR$/classes/artifacts/YunGou_Web_exploded/index.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/classes/artifacts/YunGou_Web_exploded/login.jsp" afterPath="$PROJECT_DIR$/classes/artifacts/YunGou_Web_exploded/login.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/cn/yungou/user/Service/EasybuyUserService.java" afterPath="$PROJECT_DIR$/src/cn/yungou/user/Service/EasybuyUserService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/cn/yungou/user/Service/ServiceImpl/EasybuyUserServiceImpl.java" afterPath="$PROJECT_DIR$/src/cn/yungou/user/Service/ServiceImpl/EasybuyUserServiceImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/cn/yungou/user/dao/EasybuyUserDao.java" afterPath="$PROJECT_DIR$/src/cn/yungou/user/dao/EasybuyUserDao.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/cn/yungou/user/dao/impl/EasybuyUserDaoImpl.java" afterPath="$PROJECT_DIR$/src/cn/yungou/user/dao/impl/EasybuyUserDaoImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/cn/yungou/user/filter/LoginFilter.java" afterPath="$PROJECT_DIR$/src/cn/yungou/user/filter/LoginFilter.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/cn/yungou/user/servlet/EasyBuyUserControllerCenter.java" afterPath="$PROJECT_DIR$/src/cn/yungou/user/servlet/EasyBuyUserControllerCenter.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/cn/yungou/user/servlet/EasyBuyUserControllerWay.java" afterPath="$PROJECT_DIR$/src/cn/yungou/user/servlet/EasyBuyUserControllerWay.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/cn/yungou/user/Service/EasybuyNewsService.java" afterPath="$PROJECT_DIR$/WebRoot/back/lib/bootstrap/src/bdqn/Service/EasybuyNewsService.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/cn/yungou/user/Service/ServiceImpl/EasybuyNewsServiceImpl.java" afterPath="$PROJECT_DIR$/WebRoot/back/lib/bootstrap/src/bdqn/Service/ServiceImpl/EasybuyNewsServiceImpl.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/cn/yungou/user/dao/CommonDao.java" afterPath="$PROJECT_DIR$/WebRoot/back/lib/bootstrap/src/bdqn/dao/CommonDao.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/cn/yungou/user/dao/EasybuyNewsDao.java" afterPath="$PROJECT_DIR$/WebRoot/back/lib/bootstrap/src/bdqn/dao/EasybuyNewsDao.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/cn/yungou/user/dao/baseDao/Basedao.java" afterPath="$PROJECT_DIR$/WebRoot/back/lib/bootstrap/src/bdqn/dao/baseDao/Basedao.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/cn/yungou/user/dao/impl/EasyBuyNewsDaoImpl.java" afterPath="$PROJECT_DIR$/WebRoot/back/lib/bootstrap/src/bdqn/dao/impl/EasyBuyNewsDaoImpl.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/cn/yungou/user/dao/util/ResultSetUtil.java" afterPath="$PROJECT_DIR$/WebRoot/back/lib/bootstrap/src/bdqn/dao/util/ResultSetUtil.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/cn/yungou/user/entity/EasybuyNews.java" afterPath="$PROJECT_DIR$/WebRoot/back/lib/bootstrap/src/bdqn/entity/EasybuyNews.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/cn/yungou/user/entity/EasybuyOrder.java" afterPath="$PROJECT_DIR$/WebRoot/back/lib/bootstrap/src/bdqn/entity/EasybuyOrder.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/cn/yungou/user/entity/EasybuyOrderDetail.java" afterPath="$PROJECT_DIR$/WebRoot/back/lib/bootstrap/src/bdqn/entity/EasybuyOrderDetail.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/cn/yungou/user/entity/EasybuyProduct.java" afterPath="$PROJECT_DIR$/WebRoot/back/lib/bootstrap/src/bdqn/entity/EasybuyProduct.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/cn/yungou/user/entity/EasybuyProductCategory.java" afterPath="$PROJECT_DIR$/WebRoot/back/lib/bootstrap/src/bdqn/entity/EasybuyProductCategory.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/cn/yungou/user/entity/EasybuyUser.java" afterPath="$PROJECT_DIR$/WebRoot/back/lib/bootstrap/src/bdqn/entity/EasybuyUser.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/demo/demo2/GeetestConfig.java" afterPath="$PROJECT_DIR$/WebRoot/back/lib/bootstrap/src/demo/demo2/GeetestConfig.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/demo/demo2/StartCaptchaServlet.java" afterPath="$PROJECT_DIR$/WebRoot/back/lib/bootstrap/src/demo/demo2/StartCaptchaServlet.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/demo/demo2/VerifyLoginServlet.java" afterPath="$PROJECT_DIR$/WebRoot/back/lib/bootstrap/src/demo/demo2/VerifyLoginServlet.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/sdk/GeetestLib.java" afterPath="$PROJECT_DIR$/WebRoot/back/lib/bootstrap/src/sdk/GeetestLib.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
     </list>
     <ignored path="$PROJECT_DIR$/WebRoot/WEB-INF/classes/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -264,17 +40,27 @@
         <entry file="file://$PROJECT_DIR$/src/cn/yungou/commons/util/ResultSetUtil.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="457">
-              <caret line="63" column="0" lean-forward="true" selection-start-line="63" selection-start-column="0" selection-end-line="63" selection-end-column="0" />
+              <caret line="63" column="0" lean-forward="false" selection-start-line="63" selection-start-column="0" selection-end-line="63" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="EasyBuyUserControllerCenter.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="EasyBuyUserControllerCenter.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/cn/yungou/user/servlet/EasyBuyUserControllerCenter.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="363">
-              <caret line="341" column="5" lean-forward="true" selection-start-line="341" selection-start-column="5" selection-end-line="341" selection-end-column="5" />
+            <state relative-caret-position="210">
+              <caret line="334" column="0" lean-forward="false" selection-start-line="334" selection-start-column="0" selection-end-line="335" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="68">
+              <caret line="4" column="3" lean-forward="true" selection-start-line="4" selection-start-column="3" selection-end-line="4" selection-end-column="3" />
               <folding />
             </state>
           </provider>
@@ -293,7 +79,7 @@
       <file leaf-file-name="EasyBuyUserControllerWay.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/cn/yungou/user/servlet/EasyBuyUserControllerWay.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="476">
+            <state relative-caret-position="442">
               <caret line="38" column="64" lean-forward="false" selection-start-line="38" selection-start-column="55" selection-end-line="38" selection-end-column="64" />
               <folding />
             </state>
@@ -368,7 +154,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$USER_HOME$/Desktop/cpts_594_bav/cpts_594_bav/index.html" />
         <option value="$PROJECT_DIR$/WebRoot/back/user.jsp" />
         <option value="$PROJECT_DIR$/WebRoot/back/nav-bar.jsp" />
         <option value="$PROJECT_DIR$/WebRoot/back1/index.html" />
@@ -419,6 +204,7 @@
         <option value="$PROJECT_DIR$/src/cn/yungou/news/Service/ServiceImpl/EasybuyNewsServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/cn/yungou/news/Service/EasybuyNewsService.java" />
         <option value="$PROJECT_DIR$/src/cn/yungou/commons/util/ResultSetUtil.java" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -471,6 +257,15 @@
             <path>
               <item name="YunGou" type="b2602c69:ProjectViewProjectNode" />
               <item name="YunGou" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="YunGou" type="b2602c69:ProjectViewProjectNode" />
+              <item name="YunGou" type="462c0819:PsiDirectoryNode" />
+              <item name="WebRoot" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="YunGou" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
             </path>
           </expand>
           <select />
@@ -738,7 +533,7 @@
       <workItem from="1510981784324" duration="24066000" />
       <workItem from="1511051135575" duration="735000" />
       <workItem from="1511056068018" duration="1238000" />
-      <workItem from="1511058797854" duration="3123000" />
+      <workItem from="1511058797854" duration="5413000" />
     </task>
     <task id="LOCAL-00001" summary="云购实现了后台的增删,删除是模态窗口,修改的模态窗口已经写好,但是具体没有实现完全">
       <created>1510753955632</created>
@@ -793,7 +588,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="224496000" />
+    <option name="totallyTimeSpent" value="226786000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -939,13 +734,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/WebRoot/back1/productList.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="427" column="7" lean-forward="false" selection-start-line="427" selection-start-column="7" selection-end-line="427" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/WebRoot/back1/newsClass.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
@@ -1182,7 +970,7 @@
         <state relative-caret-position="663">
           <caret line="36" column="43" lean-forward="false" selection-start-line="36" selection-start-column="43" selection-end-line="36" selection-end-column="43" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1252,14 +1040,14 @@
     <entry file="file://$PROJECT_DIR$/src/cn/yungou/commons/util/ResultSetUtil.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="457">
-          <caret line="63" column="0" lean-forward="true" selection-start-line="63" selection-start-column="0" selection-end-line="63" selection-end-column="0" />
+          <caret line="63" column="0" lean-forward="false" selection-start-line="63" selection-start-column="0" selection-end-line="63" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/cn/yungou/user/servlet/EasyBuyUserControllerWay.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
+        <state relative-caret-position="442">
           <caret line="38" column="64" lean-forward="false" selection-start-line="38" selection-start-column="55" selection-end-line="38" selection-end-column="64" />
           <folding />
         </state>
@@ -1275,8 +1063,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/cn/yungou/user/servlet/EasyBuyUserControllerCenter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="363">
-          <caret line="341" column="5" lean-forward="true" selection-start-line="341" selection-start-column="5" selection-end-line="341" selection-end-column="5" />
+        <state relative-caret-position="210">
+          <caret line="334" column="0" lean-forward="false" selection-start-line="334" selection-start-column="0" selection-end-line="335" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="3" lean-forward="true" selection-start-line="4" selection-start-column="3" selection-end-line="4" selection-end-column="3" />
           <folding />
         </state>
       </provider>
@@ -1300,7 +1096,7 @@
       </state>
       <state key="FacetStructureConfigurable.UI">
         <settings>
-          <last-edited>Hibernate</last-edited>
+          <last-edited>Web</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
