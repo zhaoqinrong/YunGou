@@ -2,7 +2,7 @@ package cn.yungou.user.servlet;
 
 import cn.yungou.user.Service.EasybuyUserService;
 import cn.yungou.user.Service.ServiceImpl.EasybuyUserServiceImpl;
-import cn.yungou.user.entity.EasybuyUser;
+import cn.yungou.commons.entity.EasybuyUser;
 import cn.yungou.user.servlet.util.Md5Util;
 
 import javax.servlet.ServletException;
@@ -39,7 +39,7 @@ public class EasyBuyUserControllerWay {
                 resp.sendRedirect("/EasyBuyUser?action=gtAllUser");
                 return ;
             }
-            resp.sendRedirect(sb + "index.jsp");
+            resp.sendRedirect(sb + "usersList.jsp");
 
         } else {
             return;
@@ -63,7 +63,7 @@ public class EasyBuyUserControllerWay {
      */
     public static void setCookie(HttpServletRequest req, HttpServletResponse resp, EasybuyUser user) throws UnsupportedEncodingException {
         //用户cookie存储中文Cookie userName = new Cookie("userName", URLEncoder.encode(user.getLoginName(), "UTF-8") );
-        Cookie userName = new Cookie("username", user.getLoginName() );
+        Cookie userName = new Cookie("loginName", user.getLoginName() );
         Cookie password = new Cookie("password", user.getPassword());
         //设置cookie的有效时间
         userName.setMaxAge(60 * 60 * 24 * 7);
@@ -131,7 +131,8 @@ public class EasyBuyUserControllerWay {
             }*/
 
 
-            resp.sendRedirect(sb + "index.jsp");
+//            resp.sendRedirect(sb + "usersList.jsp");
+            resp.sendRedirect("index.jsp");
             return;
         }
             resp.sendRedirect(sb + "login.jsp");

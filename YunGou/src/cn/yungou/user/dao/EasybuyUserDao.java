@@ -1,7 +1,8 @@
 package cn.yungou.user.dao;
 
 
-import cn.yungou.user.entity.EasybuyUser;
+import cn.yungou.commons.CommonDao.CommonDao;
+import cn.yungou.commons.entity.EasybuyUser;
 
 import java.io.Serializable;
 import java.sql.SQLException;

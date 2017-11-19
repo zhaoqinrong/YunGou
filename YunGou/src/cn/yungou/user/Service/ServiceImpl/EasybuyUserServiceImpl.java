@@ -4,7 +4,7 @@ package cn.yungou.user.Service.ServiceImpl;
 import cn.yungou.user.Service.EasybuyUserService;
 import cn.yungou.user.dao.EasybuyUserDao;
 import cn.yungou.user.dao.impl.EasybuyUserDaoImpl;
-import cn.yungou.user.entity.EasybuyUser;
+import cn.yungou.commons.entity.EasybuyUser;
 import org.apache.log4j.Logger;
 
 import java.io.Serializable;

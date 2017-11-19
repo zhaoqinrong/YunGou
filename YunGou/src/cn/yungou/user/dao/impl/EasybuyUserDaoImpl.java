@@ -1,9 +1,9 @@
 package cn.yungou.user.dao.impl;
 
 
+import cn.yungou.commons.baseDao.Basedao;
+import cn.yungou.commons.entity.EasybuyUser;
 import cn.yungou.user.dao.EasybuyUserDao;
-import cn.yungou.user.dao.baseDao.Basedao;
-import cn.yungou.user.entity.EasybuyUser;
 import org.apache.log4j.Logger;
 
 import java.io.Serializable;

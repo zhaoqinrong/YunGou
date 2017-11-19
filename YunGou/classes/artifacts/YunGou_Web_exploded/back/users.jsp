@@ -18,11 +18,6 @@
 
     <link rel="stylesheet" type="text/css" href="../css/base.css">
     <link rel="stylesheet" type="text/css" href="../css/home.css">
-    <link rel="stylesheet" type="text/css" href=" ${pageContext.request.contextPath} lib/bootstrap/css/bootstrap.css">
-    <link rel="stylesheet" type="text/css"
-          href=" ${pageContext.request.contextPath} lib/bootstrap/css/bootstrap-responsive.css">
-    <link rel="stylesheet" type="text/css" href=" ${pageContext.request.contextPath} stylesheets/theme.css">
-    <link rel="stylesheet" href=" ${pageContext.request.contextPath} lib/font-awesome/css/font-awesome.css">
     <link rel="shortcut icon" type="image/x-icon" href=" ${pageContext.request.contextPath} img/icon/favicon.ico">
 
     <link rel="stylesheet" type="text/css" href="lib/bootstrap/css/bootstrap.css">
@@ -103,78 +98,15 @@
 <body>
 <!--<![endif]-->
 
-<div class="navbar">
-    <div class="navbar-inner">
-        <div class="container-fluid">
-            <ul class="nav pull-right">
-
-                <li id="fat-menu" class="dropdown">
-                    <a href="#" id="drop3" role="button" class="dropdown-toggle" data-toggle="dropdown">
-                        <i class="icon-user"></i>${username}
-                        <i class="icon-caret-down"></i>
-
-                    </a>
-
-                    <ul class="dropdown-menu">
-                        <li><a tabindex="-1" href="#">Settings</a></li>
-                        <li class="divider"></li>
-                        <li><a tabindex="-1" href="sign-in.jsp">Logout</a></li>
-                    </ul>
-                </li>
-
-            </ul>
-            <a class="brand" href="index.jsp"><span class="first">Your</span> <span class="second">Company</span></a>
-        </div>
-    </div>
-</div>
+<jsp:include page="header.jsp"/>
 
 
 <div class="container-fluid">
 
     <div class="row-fluid">
         <div class="span3">
-            <div class="sidebar-nav">
-                <div class="nav-header" data-toggle="collapse" data-target="#dashboard-menu"><i
-                        class="icon-dashboard"></i>Dashboard
-                </div>
-                <ul id="dashboard-menu" class="nav nav-list collapse in">
-                    <li><a href="index.jsp">Home</a></li>
-                    <li class="active"><a href="users.jsp">Sample List</a></li>
-                    <li><a href="user.jsp">Sample Item</a></li>
-                    <li><a href="gallery.jsp">Gallery</a></li>
-                    <li><a href="calendar.jsp">Calendar</a></li>
-                    <li><a href="faq.jsp">Faq</a></li>
-                    <li><a href="help.jsp">Help</a></li>
-
-                </ul>
-            </div>
-            <div class="nav-header" data-toggle="collapse" data-target="#accounts-menu"><i
-                    class="icon-briefcase"></i>Account<span class="label label-info">+10</span></div>
-            <ul id="accounts-menu" class="nav nav-list collapse in">
-                <li><a href="sign-in.jsp">Sign In</a></li>
-                <li><a href="sign-up.jsp">Sign Up</a></li>
-                <li><a href="reset-password.jsp">Reset Password</a></li>
-            </ul>
-
-            <div class="nav-header" data-toggle="collapse" data-target="#settings-menu"><i
-                    class="icon-exclamation-sign"></i>Error Pages
-            </div>
-            <ul id="settings-menu" class="nav nav-list collapse in">
-                <li><a href="403.jsp">403 page</a></li>
-                <li><a href="404.jsp">404 page</a></li>
-                <li><a href="500.jsp">500 page</a></li>
-                <li><a href="503.jsp">503 page</a></li>
-            </ul>
-
-            <div class="nav-header" data-toggle="collapse" data-target="#legal-menu"><i class="icon-legal"></i>Legal
-
-                <ul id="legal-menu" class="nav nav-list collapse in">
-                    <li><a href="privacy-policy.jsp">Privacy Policy</a></li>
-                    <li><a href="terms-and-conditions.jsp">Terms and Conditions</a></li>
-                </ul>
-            </div>
+           <jsp:include page="nav-bar.jsp"/>
         </div>
-
         <div class="span9">
             <h1 class="page-title">Users</h1>
             <div class="btn-toolbar">
@@ -182,7 +114,8 @@
                 </button>
                 <button class="btn">Import</button>
                 <button class="btn">Export</button>
-                <button class="btn pull-right btn-danger" onclick="window.location.href='../EasyBuyUser?action=gtAllUser'"><strong>flush</strong></button>
+                <button class="btn pull-right btn-danger"
+                        onclick="window.location.href='../EasyBuyUser?action=gtAllUser'"><strong>flush</strong></button>
                 <div class="btn-group">
                 </div>
             </div>
@@ -256,7 +189,7 @@
                     <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
                     <h3 id="myModalLabel1">Edit User</h3>
                 </div>
-                <form id="tab" method="post" onsubmit="return false" action="##" >
+                <form id="tab" method="post" onsubmit="return false" action="##">
                     <div class="modal-body">
                         <input type="hidden" name="id">
 
@@ -311,34 +244,38 @@
 
 <script type="text/javascript">
 
- /* $(window).beforeunload(function () {
-        window.location.href="../EasyBuyUser?action=gtAllUser";
+    /* $(window).beforeunload(function () {
+           window.location.href="../EasyBuyUser?action=gtAllUser";
 
-    })*/
- /*修改用户信息*/
+       })*/
+    /*修改用户信息*/
 
 
-    function modify(){
-        $.post("../EasyBuyUser?action=modify",
-            {
-                "userid": $("input[name=id]").val(),
-                "type": $("input[name=type]").val(),
-                "loginName": $("input[name=loginName]").val(),
-                "userName": $("input[name=userName]").val(),
-                "sex1": $("input[name=sex1]").val(),
-                "identityCode": $("input[name=identityCode]").val(),
-                "email": $("input[name=email]").val(),
-                "phone": $("input[name=phone]").val(),
+    function modify() {
+        if(flag.form()){
+            $.post("../EasyBuyUser?action=modify",
+                {
+                    "userid": $("input[name=id]").val(),
+                    "type": $("input[name=type]").val(),
+                    "loginName": $("input[name=loginName]").val(),
+                    "userName": $("input[name=userName]").val(),
+                    "sex1": $("input[name=sex1]").val(),
+                    "identityCode": $("input[name=identityCode]").val(),
+                    "email": $("input[name=email]").val(),
+                    "phone": $("input[name=phone]").val(),
 
-            },
-            function (data) {
-                if(data=="true"){
-                    window.location.href="users.jsp"
+                },
+                function (data) {
+                    if (data == "true") {
+                        window.location.href = "users.jsp"
+                    }
                 }
-            }
-        )
+            )
+        }
+
 
     }
+
     /*模态窗口获取数据*/
     $("a[href=#myModal1]").click(function () {
         //获取用户id
@@ -518,13 +455,11 @@
             $.get("${pageContext.request.contextPath}/EasyBuyUser?action=delById&userid=" + userid, function (data) {
                 if (data == "true") {
 //                    history.go(0);
-                    window.location.href="users.jsp"
+                    window.location.href = "users.jsp"
                 }
                 $("#deluserid").val("");
             });
         })
-
-
 
 
     })

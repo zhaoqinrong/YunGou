@@ -1,7 +1,7 @@
 package cn.yungou.user.servlet;
 
 import cn.yungou.user.Service.ServiceImpl.EasybuyUserServiceImpl;
-import cn.yungou.user.entity.EasybuyUser;
+import cn.yungou.commons.entity.EasybuyUser;
 import org.apache.log4j.Logger;
 
 import javax.servlet.ServletException;
@@ -254,7 +254,7 @@ public class EasyBuyUserControllerCenter extends HttpServlet {
         try {
 //                StringBuffer sb1 = new StringBuffer(req.getScheme() + "://" + req.getServerName() + ":"+req.getServerPort()+req.getContextPath()+"/");
 //                req.getRequestDispatcher("/back/users.jsp").forward(req,resp);
-            resp.sendRedirect("/back/users.jsp");
+            resp.sendRedirect("/back1/usersList.jsp");
         } catch (IOException e) {
             logger.error(e + "\"gtAllUser\".equals(action)抛出IOException异常======未被注册");
 

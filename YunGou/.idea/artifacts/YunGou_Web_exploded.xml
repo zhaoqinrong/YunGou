@@ -1,0 +1,25 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="YunGou:Web exploded">
+    <output-path>$PROJECT_DIR$/classes/artifacts/YunGou_Web_exploded</output-path>
+    <root id="root">
+      <element id="javaee-facet-resources" facet="YunGou/web/Web" />
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="YunGou" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="library" level="project" name="log4j-1.2.17" />
+          <element id="library" level="project" name="mysql-connector-java-5.1.43-bin" />
+          <element id="library" level="project" name="jstl:jstl:1.2" />
+          <element id="file-copy" path="$PROJECT_DIR$/WebRoot/WEB-INF/lib/json-jena-1.0.jar" />
+          <element id="file-copy" path="$PROJECT_DIR$/WebRoot/WEB-INF/lib/log4j-1.2.17.jar" />
+          <element id="file-copy" path="$PROJECT_DIR$/WebRoot/WEB-INF/lib/mysql-connector-java-5.1.43-bin.jar" />
+          <element id="file-copy" path="$PROJECT_DIR$/WebRoot/WEB-INF/lib/json-jena-1.0_2.jar" />
+          <element id="file-copy" path="$PROJECT_DIR$/WebRoot/WEB-INF/lib/org.apache.felix.webconsole-1.0.0.jar" />
+          <element id="library" level="project" name="lib" />
+          <element id="library" level="project" name="junit-4.12" />
+        </element>
+      </element>
+    </root>
+  </artifact>
+</component>

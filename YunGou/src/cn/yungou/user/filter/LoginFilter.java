@@ -1,6 +1,6 @@
 package cn.yungou.user.filter;
 
-import cn.yungou.user.entity.EasybuyUser;
+import cn.yungou.commons.entity.EasybuyUser;
 
 import javax.servlet.*;
 import javax.servlet.http.HttpServletRequest;
@@ -30,7 +30,7 @@ public class LoginFilter implements Filter{
 	StringBuffer requestURL = req.getRequestURL();
 	//如果是会员权利,需要跳转到login.jsp,要求用户登录
 		if(requestURL.indexOf("my")>-1||requestURL.indexOf("back")>-1){
-			if (user.getLoginName()!=null&&!"".equals(user.getLoginName())) {
+			if (user!=null&&user.getLoginName()!=null&&!"".equals(user.getLoginName())) {
 				chain.doFilter(request, response);
 			}else{
 

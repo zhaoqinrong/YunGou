@@ -1,7 +1,7 @@
 package cn.yungou.user.Service;
 
 
-import cn.yungou.user.entity.EasybuyUser;
+import cn.yungou.commons.entity.EasybuyUser;
 
 import java.io.Serializable;
 import java.sql.SQLException;
