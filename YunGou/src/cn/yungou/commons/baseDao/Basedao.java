@@ -4,6 +4,9 @@ package cn.yungou.commons.baseDao;
 
 import org.apache.log4j.Logger;
 
+import javax.naming.InitialContext;
+import javax.naming.NamingException;
+import javax.sql.DataSource;
 import java.sql.*;
 import java.util.ResourceBundle;
 
@@ -17,10 +20,21 @@ public class Basedao {
     public static String password;
     public static String url;
     public static String driver;
+    public static DataSource dataSource;
 
     static {
 
-        bundle = ResourceBundle.getBundle("mysql");
+        try {
+            InitialContext context = new InitialContext();
+             dataSource = (DataSource) context.lookup("java:comp/env/jdbc.mysql");
+            conn=dataSource.getConnection();
+        } catch (NamingException e) {
+            e.printStackTrace();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+
+      /*  bundle = ResourceBundle.getBundle("mysql");
         driver = bundle.getString("DRIVER");
         url = bundle.getString("URL");
         username = bundle.getString("USERNAME");
@@ -32,14 +46,14 @@ public class Basedao {
             logger.error(e + "BaseDao中驱动找不到");
         } catch (SQLException e) {
             logger.error(e + "BaseDao中静态代码块 获取连接失败");
-        }
+        }*/
 
     }
 
     public static Connection getConnection() {
         if (conn == null) {
             try {
-                conn = DriverManager.getConnection(url, username, password);
+                conn = dataSource.getConnection();
             } catch (SQLException e) {
                 logger.error(e + "getConnection方法内获取连接错误");
             }

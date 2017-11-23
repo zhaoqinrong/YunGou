@@ -27,9 +27,9 @@ public class LoginFilter implements Filter{
 		HttpServletRequest req=(HttpServletRequest)request;
 		HttpServletResponse resp=(HttpServletResponse)response;
 		EasybuyUser user = (EasybuyUser) req.getSession().getAttribute("user");
-	StringBuffer requestURL = req.getRequestURL();
+	String requestURI = req.getRequestURI();
 	//如果是会员权利,需要跳转到login.jsp,要求用户登录
-		if(requestURL.indexOf("my")>-1||requestURL.indexOf("back")>-1){
+		if(requestURI.indexOf("my")>-1||requestURI.indexOf("back")>-1){
 			if (user!=null&&user.getLoginName()!=null&&!"".equals(user.getLoginName())) {
 				chain.doFilter(request, response);
 			}else{

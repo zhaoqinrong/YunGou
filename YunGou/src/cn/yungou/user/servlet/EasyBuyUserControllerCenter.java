@@ -220,10 +220,7 @@ public class EasyBuyUserControllerCenter extends HttpServlet {
 
         if (flag) {
             try {
-
-
                 resp.sendRedirect("/EasyBuyUser?action=gtAllUser&flag=" + flag);
-
             } catch (IOException e) {
                 logger.error(e + "\"delById\".equals(action)抛出IOException异常======未被注册");
             }
@@ -267,7 +264,7 @@ public class EasyBuyUserControllerCenter extends HttpServlet {
      * @param loginName
      */
     private void findByLoginName(HttpServletResponse resp, String loginName) {
-        if (loginName.trim() != null && loginName.trim() != "") {
+        if (loginName.trim() != null &&!"".equals(loginName.trim()) ) {
 
             EasybuyUser user1 = easybuyUserService.findByLoginName(loginName);
             //已经被注册
@@ -301,8 +298,8 @@ public class EasyBuyUserControllerCenter extends HttpServlet {
      */
     private void loginServlet(HttpServletRequest req, HttpServletResponse resp, String loginName, String password, String isCookie, EasybuyUser user) {
         //对用户的用户名和密码进行判断
-        if (loginName != null && loginName.trim() != "") {
-            if (password != null && password.trim() != "") {
+        if (loginName != null && !"".equals(loginName.trim()) ) {
+            if (password != null && ! "".equals(password.trim())) {
                 boolean flag = isCookie != null ? true : false;
 
                 try {

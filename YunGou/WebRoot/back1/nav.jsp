@@ -63,7 +63,7 @@
                             <a href="newsClass.jsp">新闻分类 <span class="nav-badge-btm">05</span></a>
                         </li>
                         <li>
-                            <a href="../EasyBuyNews?action=getAllNewsAndClass">新闻列表</a>
+                            <a href="${pageContext.request.contextPath}/EasyBuyNews?action=getAllNewsAndClass">新闻列表</a>
                         </li>
                         <li>
                             <a href="addnews.jsp">添加新闻</a>

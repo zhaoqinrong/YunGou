@@ -35,7 +35,7 @@ public class EasyBuyUserControllerWay {
         int i = easybuyUserService.addUser(user1);
         if (i > 0) {
             setSession(req, resp, user);
-            if(user.getType()!=null&&user.getType()!=1){
+            if(user!=null&&user.getType()!=null&&user.getType()!=1){
                 resp.sendRedirect("/EasyBuyUser?action=gtAllUser");
                 return ;
             }
@@ -115,7 +115,7 @@ public class EasyBuyUserControllerWay {
         String password = Md5Util.SetMd5(user.getLoginName(), user.getPassword());
 
         EasybuyUser easybuyUser = easybuyUserService.login(user.getLoginName(), password);
-        if (easybuyUser.getLoginName()!=null) {
+        if (easybuyUser!=null&&easybuyUser.getLoginName()!=null) {
 
 
             setSession(req, resp, easybuyUser);
