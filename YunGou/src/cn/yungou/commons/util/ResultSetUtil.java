@@ -1,6 +1,6 @@
 package cn.yungou.commons.util;
 
-import org.apache.log4j.Logger;
+import cn.yungou.commons.constant.Constant;
 
 import java.lang.reflect.Field;
 import java.sql.ResultSet;
@@ -9,7 +9,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class ResultSetUtil {
-	private static Logger logger=Logger.getLogger(ResultSetUtil.class);
     public static <T> List<T> eachResult(ResultSet resultSet, Class<T> clazz) {
         List<T> list = new ArrayList<T>();
 
@@ -29,11 +28,11 @@ public class ResultSetUtil {
                 list.add(object);
             }
         } catch (SQLException e) {
-        	logger.error(e+"ResultSetUtil1.eachResult()抛出SQLException异常");
+            Constant.LOGGER.error(e+"ResultSetUtil1.eachResult()抛出SQLException异常");
         } catch (IllegalAccessException e) {
-        	logger.error(e+"ResultSetUtil1.eachResult()抛出IllegalAccessException异常");
+            Constant.LOGGER.error(e+"ResultSetUtil1.eachResult()抛出IllegalAccessException异常");
         } catch (InstantiationException e) {
-        	logger.error(e+"ResultSetUtil1.eachResult()抛出InstantiationException异常");
+            Constant.LOGGER.error(e+"ResultSetUtil1.eachResult()抛出InstantiationException异常");
         }
         return list;
     }
@@ -51,12 +50,12 @@ public class ResultSetUtil {
                 }
             }
         } catch (SQLException e) {
-        	logger.error(e+"ResultSetUtil1.findOne()抛出SQLException异常");
+            Constant.LOGGER.error(e+"ResultSetUtil1.findOne()抛出SQLException异常");
          
         } catch (IllegalAccessException e) {
-        	logger.error(e+"ResultSetUtil1.findOne()抛出IllegalAccessException异常");
+            Constant.LOGGER.error(e+"ResultSetUtil1.findOne()抛出IllegalAccessException异常");
         } catch (InstantiationException e) {
-        	logger.error(e+"ResultSetUtil1.findOne()抛出InstantiationException异常");
+            Constant.LOGGER.error(e+"ResultSetUtil1.findOne()抛出InstantiationException异常");
         }
         return object;
     }

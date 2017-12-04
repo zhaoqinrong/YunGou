@@ -5,12 +5,310 @@
       <artifact name="YunGou:Web exploded" />
     </artifacts-to-build>
   </component>
-  <component name="BookmarkManager">
-    <bookmark url="file://$PROJECT_DIR$" />
-  </component>
   <component name="ChangeListManager">
-    <list default="true" id="1adddea2-994f-4e8e-8122-745fb80d184d" name="Default" comment="" />
-    <ignored path="$PROJECT_DIR$/WebRoot/WEB-INF/classes/" />
+    <list default="true" id="ae903958-3da0-4cfe-8844-1d6a17e9e9fc" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/artifacts/YunGou_Web_exploded/productImg/1512313831552600050127001.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/artifacts/YunGou_Web_exploded/productImg/1512313964933206010127001.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/artifacts/YunGou_Web_exploded/productImg/1512314187755300000127001.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/artifacts/YunGou_Web_exploded/productImg/1512314259816303020127001.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/artifacts/YunGou_Web_exploded/productImg/1512314300156807050127001.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/artifacts/YunGou_Web_exploded/productImg/1512314612970103050127001.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/artifacts/YunGou_Web_exploded/upload/15122190143344.08.07.0127001.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/artifacts/YunGou_Web_exploded/upload/15122191582616.01.05.0127001.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/artifacts/YunGou_Web_exploded/upload/15122193986593.02.02.0127001.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/artifacts/YunGou_Web_exploded/upload/15122196674744.06.01.0127001.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/artifacts/YunGou_Web_exploded/upload/1512220300520904050127001.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/artifacts/YunGou_Web_exploded/upload/1512220393110502040127001.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/artifacts/YunGou_Web_exploded/upload/1512288148753705040127001.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/productImg/1512313831552600050127001.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/productImg/1512313964933206010127001.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/productImg/1512314187755300000127001.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/productImg/1512314259816303020127001.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/productImg/1512314300156807050127001.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/productImg/1512314612970103050127001.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/404.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/500.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/artifacts/YunGou_Web_exploded/META-INF/MANIFEST.MF" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/artifacts/YunGou_Web_exploded/WEB-INF/classes/EasyBuySQL.sql" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/artifacts/YunGou_Web_exploded/WEB-INF/classes/bean.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/artifacts/YunGou_Web_exploded/WEB-INF/classes/log4j.properties" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/artifacts/YunGou_Web_exploded/WEB-INF/classes/memcached.properties" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/artifacts/YunGou_Web_exploded/WEB-INF/classes/mysql.properties" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/artifacts/YunGou_Web_exploded/WEB-INF/web.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/bean.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/memcached.properties" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/production/YunGou/EasyBuySQL.sql" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/production/YunGou/bean.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/production/YunGou/log4j.properties" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/production/YunGou/memcached.properties" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/production/YunGou/mysql.properties" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/jsp/index.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/jsp/msg.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/jsp/nav.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/jsp/register.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/static/js/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/static/js/register.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebRoot/success.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/bean.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/cn/yungou/commons/baseServlet/BaseServlet.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/cn/yungou/commons/commonService/CommonService.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/cn/yungou/commons/constant/Constant.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/cn/yungou/commons/entity/Page.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/cn/yungou/commons/myconvert/Myconvet.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/cn/yungou/commons/util/BeanFactory.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/cn/yungou/commons/util/Configuration.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/cn/yungou/commons/util/EmailUtils.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/cn/yungou/commons/util/FileUploadUtils.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/cn/yungou/commons/util/JsonUtils.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/cn/yungou/commons/util/MD5Utils.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/cn/yungou/commons/util/MemcachedUtil.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/cn/yungou/commons/util/UUIDUtils.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/cn/yungou/news/Service/EasyBuyNewsClassService.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/cn/yungou/news/Service/ServiceImpl/EasyBuyNewsClassServiceImpl.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/cn/yungou/news/dao/EasyBuyNewsClassDao.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/cn/yungou/news/dao/impl/EasyBuyNewsClassDaoImpl.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/cn/yungou/news/servlet/NewsServlet.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/cn/yungou/product/dao/CategoryDao.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/cn/yungou/product/dao/ProductDao.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/cn/yungou/product/dao/impl/CategoryDaoImpl.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/cn/yungou/product/dao/impl/ProductDaoImpl.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/cn/yungou/product/service/CategoryService.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/cn/yungou/product/service/EasyBuyProductService.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/cn/yungou/product/service/impl/CategoryServiceImpl.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/cn/yungou/product/service/impl/EasyBuyProductServiceImpl.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/cn/yungou/product/servlet/CategoryServlet.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/cn/yungou/product/servlet/ProductServlet.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/cn/yungou/test/Test.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/cn/yungou/test/fu.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/cn/yungou/test/sun.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/cn/yungou/user/servlet/AdminUserServlet.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/cn/yungou/user/servlet/IndexServlet.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/cn/yungou/user/servlet/UserServlet.java" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/dataSources.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/dataSources/d5e21401-3a86-4b59-a396-6a6a6f9646c7.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/encodings.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/jstl_jstl_1_2.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/junit_4_12.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/lib.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/log4j_1_2_17.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/mysql_connector_java_5_1_43_bin.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WebRoot/back1/addProduct.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WebRoot/back1/addnews.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WebRoot/back1/adduser.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WebRoot/back1/css/animate.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WebRoot/back1/css/bootstrap.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WebRoot/back1/css/clndr.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WebRoot/back1/css/custom.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WebRoot/back1/css/font-awesome.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WebRoot/back1/css/jqvmap.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WebRoot/back1/css/style.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WebRoot/back1/fonts/FontAwesome.otf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WebRoot/back1/fonts/fontawesome-webfont.eot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WebRoot/back1/fonts/fontawesome-webfont.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WebRoot/back1/fonts/fontawesome-webfont.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WebRoot/back1/fonts/fontawesome-webfont.woff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WebRoot/back1/fonts/glyphicons-halflings-regular.woff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WebRoot/back1/fonts/glyphicons-halflings-regular.woff2" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WebRoot/back1/images/1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WebRoot/back1/images/2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WebRoot/back1/images/3.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WebRoot/back1/images/a.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WebRoot/back1/images/i1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WebRoot/back1/images/i2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WebRoot/back1/images/i3.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WebRoot/back1/images/i4.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WebRoot/back1/images/img1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WebRoot/back1/images/lock.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WebRoot/back1/images/tick.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WebRoot/back1/images/user.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WebRoot/back1/js/bootstrap.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WebRoot/back1/js/classie.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WebRoot/back1/js/jquery.nicescroll.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WebRoot/back1/js/jquery.vmap.world.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WebRoot/back1/js/moment-2.2.1.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WebRoot/back1/js/scripts.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WebRoot/back1/js/site.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WebRoot/back1/js/skycons.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WebRoot/back1/login.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WebRoot/back1/newsClass.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WebRoot/back1/newsDetail.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WebRoot/back1/newsList.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WebRoot/back1/orderList.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WebRoot/back1/productClass.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WebRoot/back1/productList.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WebRoot/back1/productStock.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WebRoot/back1/resetPassword.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WebRoot/back1/signup.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WebRoot/back1/usersList.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WebRoot/css/home.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WebRoot/js/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WebRoot/js/register.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WebRoot/register.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/cn/yungou/news/servlet/EasyBuyNewsControllerCenter.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/cn/yungou/user/servlet/EasyBuyUserControllerCenter.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/cn/yungou/user/servlet/EasyBuyUserControllerWay.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/cn/yungou/user/servlet/util/Md5Util.java" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.classpath" afterPath="$PROJECT_DIR$/.classpath" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/artifacts/YunGou_Web_exploded.xml" afterPath="$PROJECT_DIR$/.idea/artifacts/YunGou_Web_exploded.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.settings/org.eclipse.jdt.core.prefs" afterPath="$PROJECT_DIR$/.settings/org.eclipse.jdt.core.prefs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.settings/org.eclipse.wst.common.project.facet.core.xml" afterPath="$PROJECT_DIR$/.settings/org.eclipse.wst.common.project.facet.core.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebRoot/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/WebRoot/WEB-INF/web.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebRoot/index.jsp" afterPath="$PROJECT_DIR$/WebRoot/index.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/YunGou.iml" afterPath="$PROJECT_DIR$/YunGou.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/cn/yungou/commons/baseDao/Basedao.java" afterPath="$PROJECT_DIR$/src/cn/yungou/commons/baseDao/Basedao.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/cn/yungou/commons/entity/EasyBuyNewsAndClass.java" afterPath="$PROJECT_DIR$/src/cn/yungou/commons/entity/EasyBuyNewsAndClass.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/cn/yungou/commons/entity/EasybuyNews.java" afterPath="$PROJECT_DIR$/src/cn/yungou/commons/entity/EasybuyNews.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/cn/yungou/commons/entity/EasybuyProduct.java" afterPath="$PROJECT_DIR$/src/cn/yungou/commons/entity/EasybuyProduct.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/cn/yungou/commons/entity/EasybuyUser.java" afterPath="$PROJECT_DIR$/src/cn/yungou/commons/entity/EasybuyUser.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/cn/yungou/commons/util/ResultSetUtil.java" afterPath="$PROJECT_DIR$/src/cn/yungou/commons/util/ResultSetUtil.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/cn/yungou/news/Service/EasyBuyNewsAndClassService.java" afterPath="$PROJECT_DIR$/src/cn/yungou/news/Service/EasyBuyNewsAndClassService.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/cn/yungou/news/Service/EasybuyNewsService.java" afterPath="$PROJECT_DIR$/src/cn/yungou/news/Service/EasybuyNewsService.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/cn/yungou/news/Service/ServiceImpl/EasyBuyNewsAndClassServiceImpl.java" afterPath="$PROJECT_DIR$/src/cn/yungou/news/Service/ServiceImpl/EasyBuyNewsAndClassServiceImpl.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/cn/yungou/news/Service/ServiceImpl/EasybuyNewsServiceImpl.java" afterPath="$PROJECT_DIR$/src/cn/yungou/news/Service/ServiceImpl/EasybuyNewsServiceImpl.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/cn/yungou/news/dao/EasyBuyNewsAndClassDao.java" afterPath="$PROJECT_DIR$/src/cn/yungou/news/dao/EasyBuyNewsAndClassDao.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/cn/yungou/news/dao/EasybuyNewsDao.java" afterPath="$PROJECT_DIR$/src/cn/yungou/news/dao/EasybuyNewsDao.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/cn/yungou/news/dao/impl/EasyBuyNewsAndClassDaoImpl.java" afterPath="$PROJECT_DIR$/src/cn/yungou/news/dao/impl/EasyBuyNewsAndClassDaoImpl.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/cn/yungou/news/dao/impl/EasyBuyNewsDaoImpl.java" afterPath="$PROJECT_DIR$/src/cn/yungou/news/dao/impl/EasyBuyNewsDaoImpl.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/cn/yungou/user/Service/EasybuyUserService.java" afterPath="$PROJECT_DIR$/src/cn/yungou/user/Service/EasybuyUserService.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/cn/yungou/user/Service/ServiceImpl/EasybuyUserServiceImpl.java" afterPath="$PROJECT_DIR$/src/cn/yungou/user/Service/ServiceImpl/EasybuyUserServiceImpl.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/cn/yungou/user/dao/EasybuyUserDao.java" afterPath="$PROJECT_DIR$/src/cn/yungou/user/dao/EasybuyUserDao.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/cn/yungou/user/dao/impl/EasybuyUserDaoImpl.java" afterPath="$PROJECT_DIR$/src/cn/yungou/user/dao/impl/EasybuyUserDaoImpl.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/cn/yungou/user/filter/LoginFilter.java" afterPath="$PROJECT_DIR$/src/cn/yungou/user/filter/LoginFilter.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/WebRoot/back1/header.jsp" afterPath="$PROJECT_DIR$/WebRoot/jsp/admin/header.jsp" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/WebRoot/back1/index.jsp" afterPath="$PROJECT_DIR$/WebRoot/jsp/admin/index.jsp" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/WebRoot/back1/js/Chart.js" afterPath="$PROJECT_DIR$/WebRoot/jsp/admin/js/Chart.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/WebRoot/back1/js/clndr.js" afterPath="$PROJECT_DIR$/WebRoot/jsp/admin/js/clndr.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/WebRoot/back1/js/custom.js" afterPath="$PROJECT_DIR$/WebRoot/jsp/admin/js/custom.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/WebRoot/back1/js/jquery-1.11.1.min.js" afterPath="$PROJECT_DIR$/WebRoot/jsp/admin/js/jquery-1.11.1.min.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/WebRoot/back1/js/jquery.circlechart.js" afterPath="$PROJECT_DIR$/WebRoot/jsp/admin/js/jquery.circlechart.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/WebRoot/back1/js/jquery.vmap.js" afterPath="$PROJECT_DIR$/WebRoot/jsp/admin/js/jquery.vmap.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/WebRoot/back1/js/jquery.vmap.sampledata.js" afterPath="$PROJECT_DIR$/WebRoot/jsp/admin/js/jquery.vmap.sampledata.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/WebRoot/back1/js/metisMenu.min.js" afterPath="$PROJECT_DIR$/WebRoot/jsp/admin/js/metisMenu.min.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/WebRoot/back1/js/modernizr.custom.js" afterPath="$PROJECT_DIR$/WebRoot/jsp/admin/js/modernizr.custom.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/WebRoot/back1/js/underscore-min.js" afterPath="$PROJECT_DIR$/WebRoot/jsp/admin/js/underscore-min.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/WebRoot/back1/js/validator.min.js" afterPath="$PROJECT_DIR$/WebRoot/jsp/admin/js/validator.min.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/WebRoot/back1/js/wow.min.js" afterPath="$PROJECT_DIR$/WebRoot/jsp/admin/js/wow.min.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/WebRoot/back1/nav.jsp" afterPath="$PROJECT_DIR$/WebRoot/jsp/admin/nav.jsp" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/WebRoot/back1/找网站模板就上【模板之家】cssMoban.com.url" afterPath="$PROJECT_DIR$/WebRoot/jsp/admin/找网站模板就上【模板之家】cssMoban.com.url" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/WebRoot/back1/说明.txt" afterPath="$PROJECT_DIR$/WebRoot/jsp/admin/说明.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/WebRoot/css/base.css" afterPath="$PROJECT_DIR$/WebRoot/static/css/base.css" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/WebRoot/css/bootstrap.min.css" afterPath="$PROJECT_DIR$/WebRoot/static/css/bootstrap.min.css" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/WebRoot/css/car/base.css" afterPath="$PROJECT_DIR$/WebRoot/static/css/car/base.css" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/WebRoot/css/car/home.css" afterPath="$PROJECT_DIR$/WebRoot/static/css/car/home.css" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/WebRoot/css/car/index.js" afterPath="$PROJECT_DIR$/WebRoot/static/css/car/index.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/WebRoot/css/car/jquery-1.11.1.min.js" afterPath="$PROJECT_DIR$/WebRoot/static/css/car/jquery-1.11.1.min.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/WebRoot/css/car/jquery_cart.js" afterPath="$PROJECT_DIR$/WebRoot/static/css/car/jquery_cart.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/WebRoot/css/car/unslider.min.js" afterPath="$PROJECT_DIR$/WebRoot/static/css/car/unslider.min.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/WebRoot/css/member.css" afterPath="$PROJECT_DIR$/WebRoot/static/css/member.css" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/WebRoot/images/140x140.gif" afterPath="$PROJECT_DIR$/WebRoot/static/images/140x140.gif" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/WebRoot/images/170x170.gif" afterPath="$PROJECT_DIR$/WebRoot/static/images/170x170.gif" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/WebRoot/images/BR2.png" afterPath="$PROJECT_DIR$/WebRoot/static/images/BR2.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/WebRoot/images/BR3.png" afterPath="$PROJECT_DIR$/WebRoot/static/images/BR3.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/WebRoot/images/BR4.png" afterPath="$PROJECT_DIR$/WebRoot/static/images/BR4.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/WebRoot/images/BR5.png" afterPath="$PROJECT_DIR$/WebRoot/static/images/BR5.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/WebRoot/images/BR6.png" afterPath="$PROJECT_DIR$/WebRoot/static/images/BR6.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/WebRoot/images/BR7.png" afterPath="$PROJECT_DIR$/WebRoot/static/images/BR7.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/WebRoot/images/add_cart.png" afterPath="$PROJECT_DIR$/WebRoot/static/images/add_cart.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/WebRoot/images/background.png" afterPath="$PROJECT_DIR$/WebRoot/static/images/background.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/WebRoot/images/banner1.jpg" afterPath="$PROJECT_DIR$/WebRoot/static/images/banner1.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/WebRoot/images/big_bg_img_v3.png" afterPath="$PROJECT_DIR$/WebRoot/static/images/big_bg_img_v3.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/WebRoot/images/dust.png" afterPath="$PROJECT_DIR$/WebRoot/static/images/dust.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/WebRoot/images/furley_bg.png" afterPath="$PROJECT_DIR$/WebRoot/static/images/furley_bg.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/WebRoot/images/middleman.png" afterPath="$PROJECT_DIR$/WebRoot/static/images/middleman.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/WebRoot/images/shangpinxiangqing/14.png" afterPath="$PROJECT_DIR$/WebRoot/static/images/shangpinxiangqing/14.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/WebRoot/images/shangpinxiangqing/16.png" afterPath="$PROJECT_DIR$/WebRoot/static/images/shangpinxiangqing/16.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/WebRoot/images/shangpinxiangqing/X-1.png" afterPath="$PROJECT_DIR$/WebRoot/static/images/shangpinxiangqing/X-1.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/WebRoot/images/shangpinxiangqing/X1.png" afterPath="$PROJECT_DIR$/WebRoot/static/images/shangpinxiangqing/X1.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/WebRoot/images/shangpinxiangqing/X10.png" afterPath="$PROJECT_DIR$/WebRoot/static/images/shangpinxiangqing/X10.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/WebRoot/images/shangpinxiangqing/X13.png" afterPath="$PROJECT_DIR$/WebRoot/static/images/shangpinxiangqing/X13.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/WebRoot/images/shangpinxiangqing/X14.png" afterPath="$PROJECT_DIR$/WebRoot/static/images/shangpinxiangqing/X14.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/WebRoot/images/shangpinxiangqing/X15.png" afterPath="$PROJECT_DIR$/WebRoot/static/images/shangpinxiangqing/X15.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/WebRoot/images/shangpinxiangqing/X2.png" afterPath="$PROJECT_DIR$/WebRoot/static/images/shangpinxiangqing/X2.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/WebRoot/images/shangpinxiangqing/X3.png" afterPath="$PROJECT_DIR$/WebRoot/static/images/shangpinxiangqing/X3.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/WebRoot/images/shangpinxiangqing/X4.png" afterPath="$PROJECT_DIR$/WebRoot/static/images/shangpinxiangqing/X4.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/WebRoot/images/shangpinxiangqing/X5.png" afterPath="$PROJECT_DIR$/WebRoot/static/images/shangpinxiangqing/X5.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/WebRoot/images/shangpinxiangqing/X6.png" afterPath="$PROJECT_DIR$/WebRoot/static/images/shangpinxiangqing/X6.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/WebRoot/images/shangpinxiangqing/X7.png" afterPath="$PROJECT_DIR$/WebRoot/static/images/shangpinxiangqing/X7.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/WebRoot/images/shangpinxiangqing/X8.png" afterPath="$PROJECT_DIR$/WebRoot/static/images/shangpinxiangqing/X8.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/WebRoot/images/shangpinxiangqing/X9.png" afterPath="$PROJECT_DIR$/WebRoot/static/images/shangpinxiangqing/X9.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/WebRoot/images/shangpinxiangqing/jia.jpg" afterPath="$PROJECT_DIR$/WebRoot/static/images/shangpinxiangqing/jia.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/WebRoot/images/shangpinxiangqing/jian.jpg" afterPath="$PROJECT_DIR$/WebRoot/static/images/shangpinxiangqing/jian.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/WebRoot/images/subtle_surface.png" afterPath="$PROJECT_DIR$/WebRoot/static/images/subtle_surface.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/WebRoot/images/taobao_adding.jpg" afterPath="$PROJECT_DIR$/WebRoot/static/images/taobao_adding.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/WebRoot/images/taobao_minus.jpg" afterPath="$PROJECT_DIR$/WebRoot/static/images/taobao_minus.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/WebRoot/images/xlqg1.jpg" afterPath="$PROJECT_DIR$/WebRoot/static/images/xlqg1.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/WebRoot/images/xlqg10.jpg" afterPath="$PROJECT_DIR$/WebRoot/static/images/xlqg10.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/WebRoot/images/xlqg11.jpg" afterPath="$PROJECT_DIR$/WebRoot/static/images/xlqg11.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/WebRoot/images/xlqg12.jpg" afterPath="$PROJECT_DIR$/WebRoot/static/images/xlqg12.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/WebRoot/images/xlqg13.jpg" afterPath="$PROJECT_DIR$/WebRoot/static/images/xlqg13.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/WebRoot/images/xlqg14.jpg" afterPath="$PROJECT_DIR$/WebRoot/static/images/xlqg14.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/WebRoot/images/xlqg15.jpg" afterPath="$PROJECT_DIR$/WebRoot/static/images/xlqg15.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/WebRoot/images/xlqg16.jpg" afterPath="$PROJECT_DIR$/WebRoot/static/images/xlqg16.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/WebRoot/images/xlqg17.jpg" afterPath="$PROJECT_DIR$/WebRoot/static/images/xlqg17.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/WebRoot/images/xlqg18.jpg" afterPath="$PROJECT_DIR$/WebRoot/static/images/xlqg18.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/WebRoot/images/xlqg19.jpg" afterPath="$PROJECT_DIR$/WebRoot/static/images/xlqg19.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/WebRoot/images/xlqg2.jpg" afterPath="$PROJECT_DIR$/WebRoot/static/images/xlqg2.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/WebRoot/images/xlqg3.jpg" afterPath="$PROJECT_DIR$/WebRoot/static/images/xlqg3.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/WebRoot/images/xlqg4.jpg" afterPath="$PROJECT_DIR$/WebRoot/static/images/xlqg4.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/WebRoot/images/xlqg5.jpg" afterPath="$PROJECT_DIR$/WebRoot/static/images/xlqg5.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/WebRoot/images/xlqg6.jpg" afterPath="$PROJECT_DIR$/WebRoot/static/images/xlqg6.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/WebRoot/images/xlqg7.jpg" afterPath="$PROJECT_DIR$/WebRoot/static/images/xlqg7.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/WebRoot/images/xlqg8.jpg" afterPath="$PROJECT_DIR$/WebRoot/static/images/xlqg8.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/WebRoot/images/xlqg9.jpg" afterPath="$PROJECT_DIR$/WebRoot/static/images/xlqg9.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/WebRoot/images/yListNameicon.png" afterPath="$PROJECT_DIR$/WebRoot/static/images/yListNameicon.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/WebRoot/img/ad/ad1.jpg" afterPath="$PROJECT_DIR$/WebRoot/static/img/ad/ad1.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/WebRoot/img/ad/ad2.jpg" afterPath="$PROJECT_DIR$/WebRoot/static/img/ad/ad2.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/WebRoot/img/ad/ad3.jpg" afterPath="$PROJECT_DIR$/WebRoot/static/img/ad/ad3.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/WebRoot/img/ad/ad4.jpg" afterPath="$PROJECT_DIR$/WebRoot/static/img/ad/ad4.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/WebRoot/img/ad/ad5.jpg" afterPath="$PROJECT_DIR$/WebRoot/static/img/ad/ad5.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/WebRoot/img/banner/login-banner.jpg" afterPath="$PROJECT_DIR$/WebRoot/static/img/banner/login-banner.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/WebRoot/img/icon/code.png" afterPath="$PROJECT_DIR$/WebRoot/static/img/icon/code.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/WebRoot/img/icon/favicon.ico" afterPath="$PROJECT_DIR$/WebRoot/static/img/icon/favicon.ico" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/WebRoot/img/icon/iphone.png" afterPath="$PROJECT_DIR$/WebRoot/static/img/icon/iphone.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/WebRoot/img/icon/logo.png" afterPath="$PROJECT_DIR$/WebRoot/static/img/icon/logo.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/WebRoot/img/icon/star.png" afterPath="$PROJECT_DIR$/WebRoot/static/img/icon/star.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/WebRoot/img/icon/tengxun.png" afterPath="$PROJECT_DIR$/WebRoot/static/img/icon/tengxun.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/WebRoot/img/icon/user.png" afterPath="$PROJECT_DIR$/WebRoot/static/img/icon/user.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/WebRoot/img/icon/weibo.png" afterPath="$PROJECT_DIR$/WebRoot/static/img/icon/weibo.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/WebRoot/img/icon/weixin.png" afterPath="$PROJECT_DIR$/WebRoot/static/img/icon/weixin.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/WebRoot/img/mem.png" afterPath="$PROJECT_DIR$/WebRoot/static/img/mem.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/WebRoot/js/bootstrap.min.js" afterPath="$PROJECT_DIR$/WebRoot/static/js/bootstrap.min.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/WebRoot/js/gt.js" afterPath="$PROJECT_DIR$/WebRoot/static/js/gt.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/WebRoot/js/jquery-1.10.2.min.js" afterPath="$PROJECT_DIR$/WebRoot/static/js/jquery-1.10.2.min.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/WebRoot/js/jquery.SuperSlide.js" afterPath="$PROJECT_DIR$/WebRoot/static/js/jquery.SuperSlide.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/WebRoot/js/jquery.js" afterPath="$PROJECT_DIR$/WebRoot/static/js/jquery.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/WebRoot/js/jquery.min.js" afterPath="$PROJECT_DIR$/WebRoot/static/js/jquery.min.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/WebRoot/js/jquery.validate.min.js" afterPath="$PROJECT_DIR$/WebRoot/static/js/jquery.validate.min.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/WebRoot/js/login.js" afterPath="$PROJECT_DIR$/WebRoot/static/js/login.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/WebRoot/js/loginValidate.js" afterPath="$PROJECT_DIR$/WebRoot/static/js/loginValidate.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/WebRoot/js/modernizr-custom-v2.7.1.min.js" afterPath="$PROJECT_DIR$/WebRoot/static/js/modernizr-custom-v2.7.1.min.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/WebRoot/js/page.js" afterPath="$PROJECT_DIR$/WebRoot/static/js/page.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/WebRoot/login.jsp" afterPath="$PROJECT_DIR$/WebRoot/jsp/login.jsp" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/WebRoot/my-add.jsp" afterPath="$PROJECT_DIR$/WebRoot/jsp/my-add.jsp" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/WebRoot/my-all.jsp" afterPath="$PROJECT_DIR$/WebRoot/jsp/my-all.jsp" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/WebRoot/my-apy.jsp" afterPath="$PROJECT_DIR$/WebRoot/jsp/my-apy.jsp" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/WebRoot/my-car.jsp" afterPath="$PROJECT_DIR$/WebRoot/jsp/my-car.jsp" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/WebRoot/my-class.jsp" afterPath="$PROJECT_DIR$/WebRoot/jsp/my-class.jsp" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/WebRoot/my-dingdan.jsp" afterPath="$PROJECT_DIR$/WebRoot/jsp/my-dingdan.jsp" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/WebRoot/my-new.jsp" afterPath="$PROJECT_DIR$/WebRoot/jsp/my-new.jsp" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/WebRoot/my-pingjia.jsp" afterPath="$PROJECT_DIR$/WebRoot/jsp/my-pingjia.jsp" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/WebRoot/my-shoucang.jsp" afterPath="$PROJECT_DIR$/WebRoot/jsp/my-shoucang.jsp" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/WebRoot/my-tuihuo-jilu.jsp" afterPath="$PROJECT_DIR$/WebRoot/jsp/my-tuihuo-jilu.jsp" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/WebRoot/my-tuihuo.jsp" afterPath="$PROJECT_DIR$/WebRoot/jsp/my-tuihuo.jsp" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/WebRoot/my-user.jsp" afterPath="$PROJECT_DIR$/WebRoot/jsp/my-user.jsp" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/WebRoot/page.jsp" afterPath="$PROJECT_DIR$/WebRoot/jsp/page.jsp" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/WebRoot/search.jsp" afterPath="$PROJECT_DIR$/WebRoot/jsp/search.jsp" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/WebRoot/util/footer.jsp" afterPath="$PROJECT_DIR$/WebRoot/jsp/util/footer.jsp" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/WebRoot/util/header.jsp" afterPath="$PROJECT_DIR$/WebRoot/jsp/util/header.jsp" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/cn/yungou/commons/CommonDao/CommonDao.java" afterPath="$PROJECT_DIR$/src/cn/yungou/commons/commonDao/CommonDao.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/cn/yungou/user/demo2/GeetestConfig.java" afterPath="$PROJECT_DIR$/src/cn/yungou/user/servlet/loginValidate/demo2/GeetestConfig.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/cn/yungou/user/demo2/StartCaptchaServlet.java" afterPath="$PROJECT_DIR$/src/cn/yungou/user/servlet/loginValidate/demo2/StartCaptchaServlet.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/cn/yungou/user/demo2/VerifyLoginServlet.java" afterPath="$PROJECT_DIR$/src/cn/yungou/user/servlet/loginValidate/demo2/VerifyLoginServlet.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/cn/yungou/user/sdk/GeetestLib.java" afterPath="$PROJECT_DIR$/src/cn/yungou/user/servlet/loginValidate/sdk/GeetestLib.java" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -18,68 +316,110 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="CodeInsightWorkspaceSettings">
-    <option name="optimizeImportsOnTheFly" value="true" />
-  </component>
-  <component name="DatabaseView">
-    <option name="SHOW_INTERMEDIATE" value="true" />
-    <option name="GROUP_SCHEMA" value="true" />
-    <option name="GROUP_CONTENTS" value="false" />
-    <option name="SORT_POSITIONED" value="false" />
-    <option name="SHOW_TABLE_DETAILS" value="true" />
-    <option name="SHOW_EMPTY_GROUPS" value="false" />
-    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
-    <expand />
-    <select />
-  </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="ResultSetUtil.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/cn/yungou/commons/util/ResultSetUtil.java">
+      <file leaf-file-name="productList.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/WebRoot/jsp/admin/product/productList.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="457">
-              <caret line="63" column="0" lean-forward="false" selection-start-line="63" selection-start-column="0" selection-end-line="63" selection-end-column="0" />
+            <state relative-caret-position="1887">
+              <caret line="111" column="47" lean-forward="false" selection-start-line="111" selection-start-column="47" selection-end-line="111" selection-end-column="47" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="EasyBuyUserControllerCenter.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/cn/yungou/user/servlet/EasyBuyUserControllerCenter.java">
+      <file leaf-file-name="orderList.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/WebRoot/jsp/admin/product/orderList.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="23">
-              <caret line="334" column="0" lean-forward="false" selection-start-line="334" selection-start-column="0" selection-end-line="335" selection-end-column="0" />
+            <state relative-caret-position="4964">
+              <caret line="292" column="0" lean-forward="false" selection-start-line="292" selection-start-column="0" selection-end-line="292" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/.gitignore">
+      <file leaf-file-name="productClass.jsp" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/WebRoot/jsp/admin/product/productClass.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="395">
-              <caret line="28" column="9" lean-forward="true" selection-start-line="28" selection-start-column="9" selection-end-line="28" selection-end-column="9" />
+            <state relative-caret-position="255">
+              <caret line="18" column="31" lean-forward="true" selection-start-line="18" selection-start-column="31" selection-end-line="18" selection-end-column="31" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="EasybuyUserServiceImpl.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/cn/yungou/user/Service/ServiceImpl/EasybuyUserServiceImpl.java">
+      <file leaf-file-name="ProductServlet.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/cn/yungou/product/servlet/ProductServlet.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="17" column="29" lean-forward="false" selection-start-line="17" selection-start-column="29" selection-end-line="17" selection-end-column="29" />
+            <state relative-caret-position="272">
+              <caret line="30" column="30" lean-forward="false" selection-start-line="30" selection-start-column="18" selection-end-line="30" selection-end-column="30" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="FileUploadUtils.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/cn/yungou/commons/util/FileUploadUtils.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1496">
+              <caret line="99" column="28" lean-forward="false" selection-start-line="99" selection-start-column="28" selection-end-line="99" selection-end-column="28" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="EasyBuyUserControllerWay.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/cn/yungou/user/servlet/EasyBuyUserControllerWay.java">
+      <file leaf-file-name="addProduct.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/WebRoot/jsp/admin/product/addProduct.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="442">
-              <caret line="38" column="64" lean-forward="false" selection-start-line="38" selection-start-column="55" selection-end-line="38" selection-end-column="64" />
+            <state relative-caret-position="918">
+              <caret line="54" column="90" lean-forward="false" selection-start-line="54" selection-start-column="90" selection-end-line="54" selection-end-column="90" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="productStock.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/WebRoot/jsp/admin/product/productStock.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="EasyBuyProductServiceImpl.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/cn/yungou/product/service/impl/EasyBuyProductServiceImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="272">
+              <caret line="24" column="37" lean-forward="false" selection-start-line="24" selection-start-column="37" selection-end-line="24" selection-end-column="37" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CommonDao.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/cn/yungou/commons/commonDao/CommonDao.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="102">
+              <caret line="7" column="8" lean-forward="false" selection-start-line="7" selection-start-column="8" selection-end-line="7" selection-end-column="8" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ProductDaoImpl.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/cn/yungou/product/dao/impl/ProductDaoImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="289">
+              <caret line="28" column="40" lean-forward="false" selection-start-line="28" selection-start-column="40" selection-end-line="28" selection-end-column="40" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -89,9 +429,6 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="web" />
-        <option value="JavaScript File" />
-        <option value="Jsp File" />
         <option value="Interface" />
         <option value="Class" />
       </list>
@@ -99,110 +436,78 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>new user</find>
-      <find>geetest_logo</find>
-      <find>eetest_log</find>
-      <find>http://www.geetest.com/first_page</find>
-      <find>login</find>
-      <find>Colored Rows Table:</find>
-      <find>Modal title</find>
-      <find>html</find>
-      <find>si</find>
-      <find>side</find>
-      <find>save</find>
-      <find>delete</find>
-      <find>delet</find>
-      <find>sid</find>
-      <find>colo</find>
-      <find>page-</find>
-      <find>color</find>
-      <find>dasha</find>
-      <find>page</find>
-      <find>myModal</find>
-      <find>Pagination</find>
-      <find>gridSystemModal</find>
-      <find>deluserid</find>
-      <find>button</find>
-      <find>users</find>
-      <find>users.jsp</find>
-      <find>input</find>
-      <find>submit</find>
-      <find>tab</find>
-      <find>add</find>
+      <find>删除</find>
+      <find>static</find>
+      <find>getAllClass</find>
+      <find>getAllNewsAndClass</find>
+      <find>newsandclassdao</find>
     </findStrings>
-    <replaceStrings>
-      <replace>jsp</replace>
-    </replaceStrings>
-    <dirStrings>
-      <dir>E:\MyEclipse 2017 CI\Workspaces\YunGou\WebRoot\back1</dir>
-    </dirStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
-    <option name="RECENT_BRANCH_BY_REPOSITORY">
-      <map>
-        <entry key="$PROJECT_DIR$/.." value="brh" />
-      </map>
+    <option name="PUSH_TAGS">
+      <GitPushTagMode />
     </option>
-    <option name="RESET_MODE" value="HARD" />
-    <push-targets>
-      <push-target-info target-remote="origin" target-branch="master" repo="$PROJECT_DIR$/.." source="master" />
-    </push-targets>
+  </component>
+  <component name="GradleLocalSettings">
+    <option name="externalProjectsViewState">
+      <projects_view />
+    </option>
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/WebRoot/back/user.jsp" />
-        <option value="$PROJECT_DIR$/WebRoot/back/nav-bar.jsp" />
-        <option value="$PROJECT_DIR$/WebRoot/back1/index.html" />
-        <option value="$PROJECT_DIR$/WebRoot/header.jsp" />
-        <option value="$PROJECT_DIR$/WebRoot/back1/header.jsp" />
-        <option value="$PROJECT_DIR$/src/cn/yungou/user/servlet/EasyBuyUserControllerCenter.java" />
-        <option value="$PROJECT_DIR$/WebRoot/back1/tables.html" />
-        <option value="$PROJECT_DIR$/WebRoot/back1/warrp.jsp" />
-        <option value="$PROJECT_DIR$/WebRoot/back1/general.html" />
-        <option value="$PROJECT_DIR$/WebRoot/back/users.jsp" />
-        <option value="$PROJECT_DIR$/src/cn/yungou/user/VerifyLoginServlet.java" />
-        <option value="$PROJECT_DIR$/src/cn/yungou/user/demo2/VerifyLoginServlet.java" />
-        <option value="$PROJECT_DIR$/WebRoot/back1/index.jsp" />
-        <option value="$PROJECT_DIR$/src/cn/yungou/user/filter/LoginFilter.java" />
-        <option value="$PROJECT_DIR$/src/cn/yungou/user/servlet/EasyBuyUserControllerWay.java" />
-        <option value="$PROJECT_DIR$/WebRoot/back1/usersList.jsp" />
-        <option value="$PROJECT_DIR$/WebRoot/back1/productList.jsp" />
-        <option value="$PROJECT_DIR$/WebRoot/back1/newsClass.jsp" />
-        <option value="$PROJECT_DIR$/WebRoot/back1/css/style.css" />
-        <option value="$PROJECT_DIR$/WebRoot/back1/signup.jsp" />
-        <option value="$PROJECT_DIR$/WebRoot/back1/adduser.jsp" />
-        <option value="$PROJECT_DIR$/src/cn/yungou/news/entity/EasybuyNews.java" />
-        <option value="$PROJECT_DIR$/src/cn/yungou/news/entity/EasyBuyNewsClass.java" />
-        <option value="$PROJECT_DIR$/src/cn/yungou/user/dao/CommonDao.java" />
-        <option value="$PROJECT_DIR$/src/cn/yungou/user/dao/impl/EasyBuyNewsDaoImpl.java" />
-        <option value="$PROJECT_DIR$/WebRoot/back1/nav.jsp" />
-        <option value="$PROJECT_DIR$/WebRoot/back1/newsDetail.jsp" />
-        <option value="$PROJECT_DIR$/WebRoot/back1/newsList.jsp" />
-        <option value="$PROJECT_DIR$/src/cn/yungou/news/dao/EasyBuyNewsAndClassDao.java" />
-        <option value="$PROJECT_DIR$/src/cn/yungou/news/Service/EasyBuyNewsAndClassService.java" />
-        <option value="$PROJECT_DIR$/src/cn/yungou/news/Service/ServiceImpl/EasyBuyNewsAndClassServiceImpl.java" />
-        <option value="$PROJECT_DIR$/src/cn/yungou/news/servlet/EasyBuyNewsControllerCenter.java" />
-        <option value="$PROJECT_DIR$/src/cn/yungou/news/entity/EasyBuyNewsAndClass.java" />
-        <option value="$PROJECT_DIR$/src/cn/yungou/news/dao/util/ResultSetUtil.java" />
-        <option value="$PROJECT_DIR$/src/cn/yungou/commons/CommonDao/CommonDao.java" />
-        <option value="$PROJECT_DIR$/src/cn/yungou/commons/entity/EasyBuyNewsClass.java" />
-        <option value="$PROJECT_DIR$/src/cn/yungou/commons/entity/EasybuyUser.java" />
-        <option value="$PROJECT_DIR$/src/cn/yungou/commons/entity/EasybuyNews1.java" />
-        <option value="$PROJECT_DIR$/src/cn/yungou/commons/entity/EasybuyNews.java" />
+        <option value="$PROJECT_DIR$/WebRoot/jsp/index.jsp" />
+        <option value="$PROJECT_DIR$/WebRoot/jsp/login.jsp" />
+        <option value="$PROJECT_DIR$/WebRoot/jsp/util/header.jsp" />
+        <option value="$PROJECT_DIR$/src/cn/yungou/user/servlet/IndexServlet.java" />
+        <option value="$PROJECT_DIR$/src/cn/yungou/commons/util/Md5Util.java" />
+        <option value="$PROJECT_DIR$/WebRoot/jsp/admin/news/newsList.jsp" />
+        <option value="$PROJECT_DIR$/WebRoot/jsp/admin/news/newsDetail.jsp" />
         <option value="$PROJECT_DIR$/src/cn/yungou/commons/baseDao/Basedao.java" />
-        <option value="$PROJECT_DIR$/src/cn/yungou/user/dao/impl/EasybuyUserDaoImpl.java" />
-        <option value="$PROJECT_DIR$/src/cn/yungou/user/dao/EasybuyUserDao.java" />
-        <option value="$PROJECT_DIR$/src/cn/yungou/user/Service/EasybuyNewsService.java" />
-        <option value="$PROJECT_DIR$/src/cn/yungou/user/Service/ServiceImpl/EasybuyNewsServiceImpl.java" />
-        <option value="$PROJECT_DIR$/src/cn/yungou/news/dao/EasybuyNewsDao.java" />
-        <option value="$PROJECT_DIR$/src/cn/yungou/news/dao/impl/EasyBuyNewsAndClassDaoImpl.java" />
         <option value="$PROJECT_DIR$/src/cn/yungou/news/dao/impl/EasyBuyNewsDaoImpl.java" />
-        <option value="$PROJECT_DIR$/src/cn/yungou/news/Service/ServiceImpl/EasybuyNewsServiceImpl.java" />
-        <option value="$PROJECT_DIR$/src/cn/yungou/news/Service/EasybuyNewsService.java" />
         <option value="$PROJECT_DIR$/src/cn/yungou/commons/util/ResultSetUtil.java" />
-        <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/src/cn/yungou/news/dao/impl/EasyBuyNewsClassDaoImpl.java" />
+        <option value="$PROJECT_DIR$/WebRoot/jsp/admin/news/newsClass.jsp" />
+        <option value="$PROJECT_DIR$/WebRoot/WEB-INF/lib/servlet-api.jar!/javax/servlet/ServletContext.class" />
+        <option value="$PROJECT_DIR$/WebRoot/jsp/admin/news/addnews.jsp" />
+        <option value="$PROJECT_DIR$/WebRoot/static/js/loginValidate.js" />
+        <option value="$PROJECT_DIR$/src/cn/yungou/news/servlet/EasyNewsUtil.java" />
+        <option value="$PROJECT_DIR$/src/cn/yungou/product/service/EasyBuyProductService.java" />
+        <option value="$PROJECT_DIR$/src/cn/yungou/user/servlet/AdminUserServlet.java" />
+        <option value="$PROJECT_DIR$/src/cn/yungou/news/servlet/EasyBuyNewsControllerCenter.java" />
+        <option value="$PROJECT_DIR$/src/cn/yungou/news/Service/EasyBuyNewsAndClassService.java" />
+        <option value="$PROJECT_DIR$/src/cn/yungou/commons/commonService/CommonService.java" />
+        <option value="$PROJECT_DIR$/src/cn/yungou/news/Service/ServiceImpl/EasybuyNewsServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/cn/yungou/user/Service/EasybuyUserService.java" />
+        <option value="$PROJECT_DIR$/src/cn/yungou/product/dao/ProductDao.java" />
+        <option value="$PROJECT_DIR$/src/cn/yungou/commons/commonDao/CommonDao.java" />
+        <option value="$PROJECT_DIR$/src/cn/yungou/news/dao/EasybuyNewsDao.java" />
+        <option value="$PROJECT_DIR$/src/cn/yungou/news/dao/EasyBuyNewsClassDao.java" />
+        <option value="$PROJECT_DIR$/src/cn/yungou/user/dao/EasybuyUserDao.java" />
+        <option value="$PROJECT_DIR$/src/cn/yungou/user/dao/impl/EasybuyUserDaoImpl.java" />
+        <option value="$PROJECT_DIR$/src/cn/yungou/user/Service/ServiceImpl/EasybuyUserServiceImpl.java" />
+        <option value="$PROJECT_DIR$/WebRoot/jsp/admin/nav.jsp" />
+        <option value="$PROJECT_DIR$/src/cn/yungou/news/servlet/NewsServlet.java" />
+        <option value="$PROJECT_DIR$/src/cn/yungou/news/Service/EasyBuyNewsClassService.java" />
+        <option value="$PROJECT_DIR$/src/cn/yungou/news/Service/ServiceImpl/EasyBuyNewsClassServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/bean.xml" />
+        <option value="$PROJECT_DIR$/src/cn/yungou/commons/util/BeanFactory.java" />
+        <option value="$PROJECT_DIR$/src/cn/yungou/news/Service/ServiceImpl/EasyBuyNewsAndClassServiceImpl.java" />
+        <option value="$PROJECT_DIR$/resources/bean.xml" />
+        <option value="$PROJECT_DIR$/src/cn/yungou/news/dao/impl/EasyBuyNewsAndClassDaoImpl.java" />
+        <option value="$PROJECT_DIR$/src/cn/yungou/commons/entity/EasybuyProduct.java" />
+        <option value="$PROJECT_DIR$/src/cn/yungou/product/service/CategoryService.java" />
+        <option value="$PROJECT_DIR$/src/cn/yungou/product/dao/CategoryDao.java" />
+        <option value="$PROJECT_DIR$/src/cn/yungou/product/dao/impl/CategoryDaoImpl.java" />
+        <option value="$PROJECT_DIR$/src/cn/yungou/product/servlet/CategoryServlet.java" />
+        <option value="$PROJECT_DIR$/src/cn/yungou/product/service/impl/CategoryServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/cn/yungou/product/dao/impl/ProductDaoImpl.java" />
+        <option value="$PROJECT_DIR$/src/cn/yungou/product/service/impl/EasyBuyProductServiceImpl.java" />
+        <option value="$PROJECT_DIR$/WebRoot/jsp/admin/product/addProduct.jsp" />
+        <option value="$PROJECT_DIR$/src/cn/yungou/commons/util/FileUploadUtils.java" />
+        <option value="$PROJECT_DIR$/src/cn/yungou/product/servlet/ProductServlet.java" />
+        <option value="$PROJECT_DIR$/WebRoot/jsp/admin/product/productList.jsp" />
       </list>
     </option>
   </component>
@@ -212,11 +517,6 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="JsbtTreeLayoutManager">
-    <layout place="tools.popupGrunt">
-      <scroll-view-position x="0" y="0" />
-    </layout>
-  </component>
   <component name="LogFilters">
     <option name="FILTER_ERRORS" value="false" />
     <option name="FILTER_WARNINGS" value="false" />
@@ -224,10 +524,17 @@
     <option name="FILTER_DEBUG" value="true" />
     <option name="CUSTOM_FILTER" />
   </component>
+  <component name="MavenProjectNavigator">
+    <treeState>
+      <expand />
+      <select />
+    </treeState>
+  </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="332" />
-    <option name="width" value="1378" />
-    <option name="height" value="686" />
+    <option name="x" value="38" />
+    <option name="y" value="46" />
+    <option name="width" value="801" />
+    <option name="height" value="584" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -246,18 +553,14 @@
     </navigator>
     <panes>
       <pane id="PackagesPane" />
-      <pane id="Scratches" />
       <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
               <item name="YunGou" type="b2602c69:ProjectViewProjectNode" />
               <item name="YunGou" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="YunGou" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
             </path>
           </expand>
           <select />
@@ -266,48 +569,17 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="settings.editor.selected.configurable" value="preferences.fileTypes" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="com.intellij.database.dataSource.DataSourceTemplate" value="MySQL" />
-    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/.." />
+    <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="JPA.DatabaseSchemaImportDialog" value="d5e21401-3a86-4b59-a396-6a6a6f9646c7" />
-    <property name="settings.editor.splitter.proportion" value="0.23317972" />
-    <property name="extract.method.default.visibility" value="private" />
-    <property name="full.screen.before.presentation.mode" value="false" />
-    <property name="findjar.last.used.dir" value="$PROJECT_DIR$/WebRoot/WEB-INF/lib" />
-    <property name="Downloaded.Files.Path.Enabled" value="false" />
-    <property name="Repository.Attach.JavaDocs" value="false" />
-    <property name="Repository.Attach.Sources" value="false" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="E:\MyEclipse 2017 CI\Workspaces\YunGou\WebRoot\back1" />
-      <recent name="E:\MyEclipse 2017 CI\Workspaces\YunGou\WebRoot\back\lib\bootstrap\css" />
-      <recent name="E:\MyEclipse 2017 CI\Workspaces\YunGou\WebRoot\back\lib\bootstrap\js" />
-      <recent name="E:\MyEclipse 2017 CI\Workspaces\YunGou\WebRoot\back" />
-      <recent name="E:\MyEclipse 2017 CI\Workspaces\YunGou\WebRoot\back1\css" />
-    </key>
-    <key name="ImportMappingsDialog.RecentPackages">
-      <recent name="cn.yungou.news.servlet" />
-      <recent name="bdqn.entity" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="E:\MyEclipse 2017 CI\Workspaces\YunGou\WebRoot\back1" />
-      <recent name="E:\MyEclipse 2017 CI\Workspaces\YunGou\src\cn\yungou\news" />
-      <recent name="E:\MyEclipse 2017 CI\Workspaces\YunGou\src\cn\yungou\news\dao" />
-      <recent name="E:\MyEclipse 2017 CI\Workspaces\YunGou\WebRoot\back\lib\bootstrap" />
-      <recent name="E:\MyEclipse 2017 CI\Workspaces\YunGou\WebRoot\back\stylesheets" />
-    </key>
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="cn.yungou.news.Service.ServiceImpl" />
-      <recent name="cn.yungou.news.dao.impl" />
-      <recent name="sdk" />
-    </key>
-    <key name="CreateClassDialog.RecentsKey">
-      <recent name="bdqn.servlet" />
+      <recent name="E:\MyEclipse 2017 CI\Workspaces\YunGou\WebRoot\WEB-INF\lib" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -322,7 +594,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Tomcat Server.tomcat">
+  <component name="RunManager" selected="Tomcat Server.tomcat8">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="HTML_USED" value="false" />
       <option name="WIDTH" value="400" />
@@ -404,15 +676,9 @@
       <properties />
       <listeners />
     </configuration>
-    <configuration name="json-jena-1.0_2.jar" type="JarApplication" factoryName="JAR Application" temporary="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <option name="JAR_PATH" value="$PROJECT_DIR$/WebRoot/WEB-INF/lib/json-jena-1.0_2.jar" />
-      <envs />
-    </configuration>
-    <configuration name="tomcat" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 8.5" ALTERNATIVE_JRE_ENABLED="false">
+    <configuration name="tomcat8" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 8.5" ALTERNATIVE_JRE_ENABLED="false">
       <option name="UPDATE_ON_FRAME_DEACTIVATION" value="true" />
       <option name="UPDATE_CLASSES_ON_FRAME_DEACTIVATION" value="true" />
-      <option name="UPDATING_POLICY" value="redeploy-artifacts" />
       <deployment>
         <artifact name="YunGou:Web exploded">
           <settings>
@@ -422,7 +688,7 @@
       </deployment>
       <server-settings>
         <option name="BASE_DIRECTORY_NAME" value="Unnamed_YunGou" />
-        <option name="HTTP_PORT" value="8080" />
+        <option name="HTTP_PORT" value="80" />
       </server-settings>
       <predefined_log_file id="Tomcat" enabled="true" />
       <predefined_log_file id="Tomcat Catalina" enabled="true" />
@@ -431,7 +697,7 @@
       <predefined_log_file id="Tomcat Localhost Access" enabled="false" />
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <RunnerSettings RunnerId="Debug">
-        <option name="DEBUG_PORT" value="10955" />
+        <option name="DEBUG_PORT" value="1151" />
       </RunnerSettings>
       <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
         <option name="USE_ENV_VARIABLES" value="true" />
@@ -484,595 +750,461 @@
         </option>
       </method>
     </configuration>
-    <list size="2">
-      <item index="0" class="java.lang.String" itemvalue="Tomcat Server.tomcat" />
-      <item index="1" class="java.lang.String" itemvalue="JAR Application.json-jena-1.0_2.jar" />
-    </list>
-    <recent_temporary>
-      <list size="1">
-        <item index="0" class="java.lang.String" itemvalue="JAR Application.json-jena-1.0_2.jar" />
-      </list>
-    </recent_temporary>
   </component>
   <component name="ShelveChangesManager" show_recycled="false">
     <option name="remove_strategy" value="false" />
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="1adddea2-994f-4e8e-8122-745fb80d184d" name="Default" comment="" />
-      <created>1510035325998</created>
+      <changelist id="ae903958-3da0-4cfe-8844-1d6a17e9e9fc" name="Default" comment="" />
+      <created>1512016601318</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1510035325998</updated>
-      <workItem from="1510035333299" duration="6405000" />
-      <workItem from="1510045217000" duration="2261000" />
-      <workItem from="1510055756797" duration="13722000" />
-      <workItem from="1510127411886" duration="22636000" />
-      <workItem from="1510208986056" duration="755000" />
-      <workItem from="1510327323574" duration="5419000" />
-      <workItem from="1510371482380" duration="1535000" />
-      <workItem from="1510501762599" duration="1417000" />
-      <workItem from="1510620229885" duration="4086000" />
-      <workItem from="1510627886143" duration="7770000" />
-      <workItem from="1510638821305" duration="12169000" />
-      <workItem from="1510662684695" duration="13445000" />
-      <workItem from="1510712192897" duration="40200000" />
-      <workItem from="1510792133248" duration="13137000" />
-      <workItem from="1510812799417" duration="9858000" />
-      <workItem from="1510835381664" duration="1216000" />
-      <workItem from="1510838881155" duration="1185000" />
-      <workItem from="1510891767080" duration="38118000" />
-      <workItem from="1510981784324" duration="24066000" />
-      <workItem from="1511051135575" duration="735000" />
-      <workItem from="1511056068018" duration="1238000" />
-      <workItem from="1511058797854" duration="8383000" />
+      <updated>1512016601318</updated>
+      <workItem from="1512016613961" duration="2039000" />
+      <workItem from="1512195966049" duration="20440000" />
+      <workItem from="1512268085120" duration="1029000" />
+      <workItem from="1512269295196" duration="1054000" />
+      <workItem from="1512272610506" duration="1083000" />
+      <workItem from="1512274725162" duration="727000" />
+      <workItem from="1512275917558" duration="16925000" />
+      <workItem from="1512304034739" duration="10746000" />
+      <workItem from="1512357663982" duration="745000" />
     </task>
-    <task id="LOCAL-00001" summary="云购实现了后台的增删,删除是模态窗口,修改的模态窗口已经写好,但是具体没有实现完全">
-      <created>1510753955632</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1510753955632</updated>
-    </task>
-    <task id="LOCAL-00002" summary="云购新增模态表单进行修改">
-      <created>1510759220933</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1510759220933</updated>
-    </task>
-    <task id="LOCAL-00003" summary="云购实现了增删改查">
-      <created>1510762303094</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1510762303094</updated>
-    </task>
-    <task id="LOCAL-00004" summary="云购实现了增删改查">
-      <created>1510796264142</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1510796264142</updated>
-    </task>
-    <task id="LOCAL-00005" summary="云购中EasyBuyUserControllerCenter类中的代码进行优化">
-      <created>1510798165916</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1510798165916</updated>
-    </task>
-    <task id="LOCAL-00006" summary="云购添加图片拖动验证,以及主页增加平台管理和退出系统的功能">
-      <created>1510824572785</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1510824572785</updated>
-    </task>
-    <task id="LOCAL-00007" summary="修改了后台页面中的错误">
-      <created>1510894348144</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1510894348144</updated>
-    </task>
-    <task id="LOCAL-00008" summary="yungou修改gitIgnore文件">
-      <created>1511075381713</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1511075381713</updated>
-    </task>
-    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="229756000" />
-  </component>
-  <component name="TodoView">
-    <todo-panel id="selected-file">
-      <is-autoscroll-to-source value="true" />
-    </todo-panel>
-    <todo-panel id="all">
-      <are-packages-shown value="true" />
-      <is-autoscroll-to-source value="true" />
-    </todo-panel>
+    <option name="totallyTimeSpent" value="54788000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.43862522" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32242227" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32733223" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32569557" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.690671" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.63829786" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.81178397" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.622549" sideWeight="0.526475" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32843137" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980332" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.7352941" sideWeight="0.48108926" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3184569" sideWeight="0.7692308" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24962178" sideWeight="0.50653595" order="6" side_tool="true" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980332" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24962178" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25859246" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26626325" sideWeight="0.49346405" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2624811" sideWeight="0.50653595" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4334342" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.34477124" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24810892" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32843137" sideWeight="0.47352496" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Persistence" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.30937973" sideWeight="0.23076923" order="4" side_tool="true" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32242227" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
-    <layout-to-restore>
-      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32569557" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980332" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24962178" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.44353518" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.024549918" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32394367" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32843137" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.7577741" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.63829786" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.81178397" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Persistence" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24962178" sideWeight="0.50653595" order="4" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19591528" sideWeight="0.49346405" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24962178" sideWeight="0.50653595" order="6" side_tool="true" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32394367" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
-    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
-  </component>
-  <component name="Vcs.Log.Tabs.Properties">
-    <option name="TAB_STATES">
-      <map>
-        <entry key="MAIN">
-          <value>
-            <State>
-              <option name="LONG_EDGES_VISIBLE" value="true" />
-              <option name="RECENTLY_FILTERED_USER_GROUPS">
-                <collection />
-              </option>
-              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
-                <collection />
-              </option>
-              <option name="COLUMN_ORDER">
-                <list>
-                  <option value="0" />
-                  <option value="2" />
-                  <option value="1" />
-                  <option value="3" />
-                </list>
-              </option>
-            </State>
-          </value>
-        </entry>
-      </map>
-    </option>
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="云购实现了后台的增删,删除是模态窗口,修改的模态窗口已经写好,但是具体没有实现完全" />
-    <MESSAGE value="云购新增模态表单进行修改" />
-    <MESSAGE value="云购实现了增删改查" />
-    <MESSAGE value="云购中EasyBuyUserControllerCenter类中的代码进行优化" />
-    <MESSAGE value="云购添加图片拖动验证,以及主页增加平台管理和退出系统的功能" />
-    <MESSAGE value="修改了后台页面中的错误" />
-    <MESSAGE value="yungou实现了分模块,和后台页面的更换" />
-    <MESSAGE value="yungou修改gitIgnore文件" />
-    <option name="LAST_COMMIT_MESSAGE" value="yungou修改gitIgnore文件" />
+    <MESSAGE value="用户模块,新闻基本写完,查询所有商品并分页以及商品分类的三级联动已完成" />
+    <option name="LAST_COMMIT_MESSAGE" value="用户模块,新闻基本写完,查询所有商品并分页以及商品分类的三级联动已完成" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/WebRoot/my-pingjia.jsp</url>
-          <line>23</line>
-          <properties />
-          <option name="timeStamp" value="5" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/cn/yungou/user/servlet/EasyBuyUserControllerCenter.java</url>
-          <line>269</line>
-          <properties />
-          <option name="timeStamp" value="23" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/WebRoot/back1/adduser.jsp</url>
-          <line>113</line>
-          <properties />
-          <option name="timeStamp" value="41" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/cn/yungou/news/servlet/EasyBuyNewsControllerCenter.java</url>
-          <line>53</line>
-          <properties />
-          <option name="timeStamp" value="45" />
-        </line-breakpoint>
-      </breakpoints>
-      <option name="time" value="46" />
+      <option name="time" value="16" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/WebRoot/back1/newsClass.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="49" column="2" lean-forward="false" selection-start-line="49" selection-start-column="2" selection-end-line="116" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/WebRoot/back1/login.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3060">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/WebRoot/back1/header.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-289">
-          <caret line="16" column="20" lean-forward="true" selection-start-line="16" selection-start-column="20" selection-end-line="16" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/WebRoot/back1/usersList.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="82">
-          <caret line="49" column="4" lean-forward="true" selection-start-line="49" selection-start-column="4" selection-end-line="116" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/WebRoot/back1/css/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="496">
-          <caret line="4078" column="25" lean-forward="false" selection-start-line="4078" selection-start-column="25" selection-end-line="4078" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/WebRoot/back1/signup.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="227">
-          <caret line="230" column="27" lean-forward="true" selection-start-line="230" selection-start-column="27" selection-end-line="230" selection-end-column="27" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/WebRoot/back1/adduser.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="406">
-          <caret line="161" column="59" lean-forward="false" selection-start-line="161" selection-start-column="59" selection-end-line="161" selection-end-column="59" />
-          <folding>
-            <element signature="n#div#0;n#form#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#1;n#form#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#2;n#form#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#3;n#form#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#4;n#form#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#0;n#div#4;n#form#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#5;n#form#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#0;n#div#5;n#form#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#1;n#div#5;n#form#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#8;n#form#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#1;n#div#8;n#form#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#3;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#script#1;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="e#12938#12980#0#HTML" expanded="false" />
-            <element signature="e#13017#13055#0#HTML" expanded="false" />
-            <element signature="n#script#4;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#script#8;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#script#13;n#body#0;n#html#0;n#!!top" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/cn/yungou/news/servlet/EasybuyNews.java" />
-    <entry file="file://$PROJECT_DIR$/src/cn/yungou/news/servlet/EasybuyNewsClass.java" />
-    <entry file="file://$PROJECT_DIR$/src/cn/yungou/news/servlet/EasybuyNewsClass.hbm.xml" />
-    <entry file="file://$PROJECT_DIR$/src/cn/yungou/user/dao/EasybuyNewsDao.java" />
-    <entry file="file://$PROJECT_DIR$/src/cn/yungou/user/dao/CommonDao.java" />
-    <entry file="file://$PROJECT_DIR$/src/cn/yungou/user/dao/impl/EasyBuyNewsDaoImpl.java" />
-    <entry file="file://$PROJECT_DIR$/WebRoot/back1/nav.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="65" column="77" lean-forward="false" selection-start-line="65" selection-start-column="77" selection-end-line="65" selection-end-column="77" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_144/src.zip!/java/lang/Override.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="446">
-          <caret line="50" column="18" lean-forward="false" selection-start-line="50" selection-start-column="18" selection-end-line="50" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/WebRoot/back1/newsDetail.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="57" column="0" lean-forward="false" selection-start-line="57" selection-start-column="0" selection-end-line="57" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/WebRoot/back1/newsList.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="276">
-          <caret line="85" column="125" lean-forward="false" selection-start-line="85" selection-start-column="125" selection-end-line="85" selection-end-column="125" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/cn/yungou/commons/util/ResultSetUtil1.java" />
-    <entry file="file://$PROJECT_DIR$/src/cn/yungou/commons/CommonDao/CommonDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="5" column="17" lean-forward="false" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/cn/yungou/commons/entity/EasyBuyNewsAndClass.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="4" column="13" lean-forward="false" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/cn/yungou/commons/entity/EasyBuyNewsClass.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/cn/yungou/commons/entity/EasybuyOrder.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-8">
-          <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/cn/yungou/commons/entity/EasybuyOrderDetail.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-8">
-          <caret line="4" column="13" lean-forward="false" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/cn/yungou/commons/entity/EasybuyProduct.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-8">
-          <caret line="4" column="13" lean-forward="false" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/cn/yungou/commons/entity/EasybuyProductCategory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-8">
-          <caret line="4" column="13" lean-forward="false" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/cn/yungou/commons/entity/EasybuyUser.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="35" column="26" lean-forward="true" selection-start-line="35" selection-start-column="26" selection-end-line="35" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/cn/yungou/commons/entity/EasybuyNews.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="42" column="5" lean-forward="false" selection-start-line="42" selection-start-column="5" selection-end-line="42" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/cn/yungou/commons/entity/EasybuyNews.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="354">
-          <caret line="42" column="5" lean-forward="false" selection-start-line="42" selection-start-column="5" selection-end-line="42" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/cn/yungou/commons/baseDao/Basedao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="9" column="13" lean-forward="false" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/cn/yungou/commons/baseDao/Basedao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-442">
-          <caret line="9" column="13" lean-forward="false" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/cn/yungou/user/dao/impl/EasybuyUserDaoImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="14" column="64" lean-forward="true" selection-start-line="14" selection-start-column="64" selection-end-line="14" selection-end-column="64" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/cn/yungou/user/dao/EasybuyUserDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="9" column="17" lean-forward="false" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/cn/yungou/user/filter/LoginFilter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="274">
-          <caret line="32" column="28" lean-forward="false" selection-start-line="32" selection-start-column="28" selection-end-line="32" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/cn/yungou/user/Service/EasybuyNewsService.java" />
-    <entry file="file://$PROJECT_DIR$/src/cn/yungou/user/Service/ServiceImpl/EasybuyNewsServiceImpl.java" />
-    <entry file="file://$PROJECT_DIR$/src/cn/yungou/user/Service/EasybuyUserService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="9" column="17" lean-forward="false" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/cn/yungou/user/servlet/util/Md5Util.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="6" column="13" lean-forward="false" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/cn/yungou/news/dao/impl/EasyBuyNewsAndClassDaoImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="663">
-          <caret line="36" column="43" lean-forward="false" selection-start-line="36" selection-start-column="43" selection-end-line="36" selection-end-column="43" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/cn/yungou/news/dao/impl/EasyBuyNewsDaoImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="24" column="31" lean-forward="false" selection-start-line="24" selection-start-column="31" selection-end-line="24" selection-end-column="31" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/cn/yungou/news/dao/EasyBuyNewsAndClassDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="36" lean-forward="false" selection-start-line="9" selection-start-column="36" selection-end-line="9" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/cn/yungou/news/dao/EasybuyNewsDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/cn/yungou/news/Service/EasyBuyNewsAndClassService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="36" lean-forward="false" selection-start-line="10" selection-start-column="36" selection-end-line="10" selection-end-column="36" />
+        <state relative-caret-position="136">
+          <caret line="12" column="1" lean-forward="true" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/cn/yungou/news/Service/EasybuyNewsService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="12" column="27" lean-forward="false" selection-start-line="12" selection-start-column="27" selection-end-line="12" selection-end-column="27" />
-          <folding />
+        <state relative-caret-position="85">
+          <caret line="5" column="17" lean-forward="false" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/cn/yungou/news/Service/ServiceImpl/EasybuyNewsServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
+        <state relative-caret-position="153">
           <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cn/yungou/news/servlet/EasyBuyNewsControllerCenter.java" />
+    <entry file="file://$PROJECT_DIR$/src/cn/yungou/news/servlet/EasyNewsUtil.java" />
+    <entry file="file://$PROJECT_DIR$/src/cn/yungou/user/Service/EasybuyUserService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="24" column="1" lean-forward="true" selection-start-line="24" selection-start-column="1" selection-end-line="24" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cn/yungou/product/service/EasyBuyProductService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="17" lean-forward="false" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cn/yungou/news/dao/EasybuyNewsDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="9" column="1" lean-forward="true" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cn/yungou/news/dao/EasyBuyNewsClassDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="10" column="0" lean-forward="true" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cn/yungou/user/dao/EasybuyUserDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="20" column="0" lean-forward="true" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cn/yungou/user/dao/impl/EasybuyUserDaoImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="94" column="18" lean-forward="false" selection-start-line="94" selection-start-column="18" selection-end-line="94" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cn/yungou/user/Service/ServiceImpl/EasybuyUserServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="186">
+          <caret line="105" column="45" lean-forward="false" selection-start-line="105" selection-start-column="45" selection-end-line="105" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cn/yungou/user/servlet/AdminUserServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="40" column="22" lean-forward="false" selection-start-line="40" selection-start-column="22" selection-end-line="40" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cn/yungou/user/servlet/IndexServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="14" column="13" lean-forward="false" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cn/yungou/user/servlet/UserServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="21" column="13" lean-forward="false" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WebRoot/jsp/admin/news/newsDetail.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-561">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WebRoot/jsp/admin/news/newsClass.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-459">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WebRoot/jsp/admin/news/newsList.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="969">
+          <caret line="90" column="33" lean-forward="true" selection-start-line="90" selection-start-column="33" selection-end-line="90" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cn/yungou/news/Service/EasyBuyNewsClassService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="10" column="18" lean-forward="false" selection-start-line="10" selection-start-column="18" selection-end-line="10" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cn/yungou/news/Service/ServiceImpl/EasyBuyNewsClassServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="493">
+          <caret line="44" column="0" lean-forward="false" selection-start-line="44" selection-start-column="0" selection-end-line="44" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cn/yungou/news/dao/impl/EasyBuyNewsClassDaoImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="13" column="13" lean-forward="false" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cn/yungou/news/dao/EasyBuyNewsAndClassDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="13" column="42" lean-forward="false" selection-start-line="13" selection-start-column="42" selection-end-line="13" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/bean.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="8" lean-forward="false" selection-start-line="14" selection-start-column="8" selection-end-line="14" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cn/yungou/commons/util/BeanFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="28" column="85" lean-forward="false" selection-start-line="28" selection-start-column="23" selection-end-line="28" selection-end-column="85" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/cn/yungou/news/Service/ServiceImpl/EasyBuyNewsAndClassServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="19" column="47" lean-forward="false" selection-start-line="19" selection-start-column="47" selection-end-line="19" selection-end-column="47" />
+        <state relative-caret-position="85">
+          <caret line="15" column="142" lean-forward="false" selection-start-line="15" selection-start-column="127" selection-end-line="15" selection-end-column="142" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/cn/yungou/news/servlet/EasyBuyNewsControllerCenter.java">
+    <entry file="file://$PROJECT_DIR$/resources/bean.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="548">
-          <caret line="53" column="75" lean-forward="false" selection-start-line="53" selection-start-column="75" selection-end-line="53" selection-end-column="75" />
+        <state relative-caret-position="136">
+          <caret line="8" column="88" lean-forward="false" selection-start-line="8" selection-start-column="88" selection-end-line="8" selection-end-column="88" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cn/yungou/news/dao/impl/EasyBuyNewsAndClassDaoImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="154">
+          <caret line="49" column="8" lean-forward="false" selection-start-line="49" selection-start-column="8" selection-end-line="49" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WebRoot/jsp/admin/nav.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="66" column="102" lean-forward="false" selection-start-line="66" selection-start-column="84" selection-end-line="66" selection-end-column="102" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cn/yungou/commons/entity/EasybuyProductCategory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="28" lean-forward="false" selection-start-line="7" selection-start-column="20" selection-end-line="7" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cn/yungou/product/dao/ProductDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="9" column="1" lean-forward="false" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="1" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cn/yungou/product/dao/CategoryDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="13" column="49" lean-forward="false" selection-start-line="13" selection-start-column="49" selection-end-line="13" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cn/yungou/product/dao/impl/CategoryDaoImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="714">
+          <caret line="50" column="56" lean-forward="false" selection-start-line="50" selection-start-column="56" selection-end-line="50" selection-end-column="56" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cn/yungou/product/servlet/CategoryServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="32" column="34" lean-forward="false" selection-start-line="32" selection-start-column="18" selection-end-line="32" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cn/yungou/product/service/impl/CategoryServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="714">
+          <caret line="51" column="37" lean-forward="false" selection-start-line="51" selection-start-column="37" selection-end-line="51" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WebRoot/jsp/admin/user/adduser.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="86">
+          <caret line="50" column="3" lean-forward="true" selection-start-line="50" selection-start-column="3" selection-end-line="191" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cn/yungou/news/servlet/NewsServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-211">
+          <caret line="80" column="52" lean-forward="true" selection-start-line="80" selection-start-column="52" selection-end-line="80" selection-end-column="52" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cn/yungou/commons/entity/EasybuyProduct.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="38" lean-forward="false" selection-start-line="12" selection-start-column="20" selection-end-line="12" selection-end-column="38" />
+          <folding>
+            <element signature="e#957#958#0" expanded="false" />
+            <element signature="e#985#986#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WebRoot/jsp/admin/news/addnews.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="498">
+          <caret line="64" column="53" lean-forward="false" selection-start-line="64" selection-start-column="46" selection-end-line="64" selection-end-column="53" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cn/yungou/commons/commonService/CommonService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="12" column="11" lean-forward="false" selection-start-line="12" selection-start-column="11" selection-end-line="12" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cn/yungou/product/service/CategoryService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="13" column="49" lean-forward="false" selection-start-line="13" selection-start-column="33" selection-end-line="13" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cn/yungou/commons/commonDao/CommonDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="7" column="8" lean-forward="false" selection-start-line="7" selection-start-column="8" selection-end-line="7" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cn/yungou/product/service/impl/EasyBuyProductServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="24" column="37" lean-forward="false" selection-start-line="24" selection-start-column="37" selection-end-line="24" selection-end-column="37" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/cn/yungou/commons/util/ResultSetUtil.java">
+    <entry file="file://$PROJECT_DIR$/src/cn/yungou/commons/util/MD5Utils.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="457">
-          <caret line="63" column="0" lean-forward="false" selection-start-line="63" selection-start-column="0" selection-end-line="63" selection-end-column="0" />
+        <state relative-caret-position="306">
+          <caret line="19" column="0" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cn/yungou/product/servlet/ProductServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="30" column="30" lean-forward="false" selection-start-line="30" selection-start-column="18" selection-end-line="30" selection-end-column="30" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cn/yungou/commons/util/FileUploadUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1496">
+          <caret line="99" column="28" lean-forward="false" selection-start-line="99" selection-start-column="28" selection-end-line="99" selection-end-column="28" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/cn/yungou/user/servlet/EasyBuyUserControllerWay.java">
+    <entry file="file://$PROJECT_DIR$/WebRoot/jsp/admin/product/addProduct.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="38" column="64" lean-forward="false" selection-start-line="38" selection-start-column="55" selection-end-line="38" selection-end-column="64" />
+        <state relative-caret-position="918">
+          <caret line="54" column="90" lean-forward="false" selection-start-line="54" selection-start-column="90" selection-end-line="54" selection-end-column="90" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/cn/yungou/user/Service/ServiceImpl/EasybuyUserServiceImpl.java">
+    <entry file="file://$PROJECT_DIR$/WebRoot/jsp/admin/product/productStock.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="17" column="29" lean-forward="false" selection-start-line="17" selection-start-column="29" selection-end-line="17" selection-end-column="29" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/cn/yungou/user/servlet/EasyBuyUserControllerCenter.java">
+    <entry file="file://$PROJECT_DIR$/WebRoot/jsp/admin/product/productList.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="23">
-          <caret line="334" column="0" lean-forward="false" selection-start-line="334" selection-start-column="0" selection-end-line="335" selection-end-column="0" />
+        <state relative-caret-position="1887">
+          <caret line="111" column="47" lean-forward="false" selection-start-line="111" selection-start-column="47" selection-end-line="111" selection-end-column="47" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
+    <entry file="file://$PROJECT_DIR$/WebRoot/jsp/admin/product/orderList.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="395">
-          <caret line="28" column="9" lean-forward="true" selection-start-line="28" selection-start-column="9" selection-end-line="28" selection-end-column="9" />
+        <state relative-caret-position="4964">
+          <caret line="292" column="0" lean-forward="false" selection-start-line="292" selection-start-column="0" selection-end-line="292" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cn/yungou/product/dao/impl/ProductDaoImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="28" column="40" lean-forward="false" selection-start-line="28" selection-start-column="40" selection-end-line="28" selection-end-column="40" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WebRoot/jsp/admin/product/productClass.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="18" column="31" lean-forward="true" selection-start-line="18" selection-start-column="31" selection-end-line="18" selection-end-column="31" />
           <folding />
         </state>
       </provider>
@@ -1096,7 +1228,7 @@
       </state>
       <state key="FacetStructureConfigurable.UI">
         <settings>
-          <last-edited>Web</last-edited>
+          <last-edited>Detection</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
@@ -1108,7 +1240,6 @@
       </state>
       <state key="GlobalLibrariesConfigurable.UI">
         <settings>
-          <last-edited>junit-4.12</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
@@ -1120,7 +1251,7 @@
       </state>
       <state key="JdkListConfigurable.UI">
         <settings>
-          <last-edited>1.7</last-edited>
+          <last-edited>1.8</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
@@ -1132,19 +1263,7 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
-          <last-edited>Web|YunGou</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ProjectJDKs.UI">
-        <settings>
-          <last-edited>1.7</last-edited>
+          <last-edited>YunGou</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
@@ -1156,7 +1275,6 @@
       </state>
       <state key="ProjectLibrariesConfigurable.UI">
         <settings>
-          <last-edited>jstl:jstl:1.2</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

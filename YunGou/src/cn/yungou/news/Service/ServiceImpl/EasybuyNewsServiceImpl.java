@@ -1,50 +1,57 @@
 package cn.yungou.news.Service.ServiceImpl;
 
 
+import cn.yungou.commons.constant.Constant;
 import cn.yungou.commons.entity.EasybuyNews;
+import cn.yungou.commons.entity.Page;
 import cn.yungou.news.Service.EasybuyNewsService;
 import cn.yungou.news.dao.impl.EasyBuyNewsDaoImpl;
-import com.sun.istack.internal.logging.Logger;
 
 import java.io.Serializable;
 import java.util.List;
 
 public class EasybuyNewsServiceImpl implements EasybuyNewsService {
-	private Logger logger=Logger.getLogger(EasybuyNewsServiceImpl.class);
-    @Override
-    public List<EasybuyNews> getAllNews() {
-        return     new EasyBuyNewsDaoImpl().getAll();
 
+
+
+
+
+    @Override
+    public Page getAllByPage(Integer id) {
+        return null;
     }
 
     @Override
-    public void  addNews(EasybuyNews easybuyNews) {
-       int rownum= new EasyBuyNewsDaoImpl().add(easybuyNews);
+    public  int add(Object easybuyNews) {
+       int rownum= new EasyBuyNewsDaoImpl().add((EasybuyNews) easybuyNews);
        if(rownum>0){
-    	   logger.info("增加成功");
+    	   Constant.LOGGER.info("增加成功");
         }else {
-        	logger.info("增加失败");
+           Constant.LOGGER.info("增加失败");
        }
+       return rownum;
     }
 
     @Override
-    public void updateNews(EasybuyNews easybuyNews) {
-       int rowsnum= new EasyBuyNewsDaoImpl().update(easybuyNews);
+    public int update(Object easybuyNews) {
+       int rowsnum= new EasyBuyNewsDaoImpl().update((EasybuyNews) easybuyNews);
        if(rowsnum>0){
-           logger.info("修改成功");
+           Constant.LOGGER.info("修改成功");
        }else{
-           logger.info("修改失败");
+           Constant.LOGGER.info("修改失败");
        }
+       return rowsnum;
 
     }
 
     @Override
-    public void deleNews(Serializable id) {
+    public int delete(Serializable id) {
      int rownum = new EasyBuyNewsDaoImpl().delete(id);
      if(rownum>0){
-    	 logger.info("删除成功");
+         Constant.LOGGER.info("删除成功");
      }else{
-    	 logger.info("删除失败");
+         Constant.LOGGER.info("删除失败");
      }
+        return rownum;
     }
 }

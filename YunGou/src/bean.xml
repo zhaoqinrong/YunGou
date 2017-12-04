@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans>
+    <bean id="userdao" class="cn.yungou.user.dao.impl.EasybuyUserDaoImpl"></bean>
+    <bean id="userservice" class="cn.yungou.user.Service.ServiceImpl.EasybuyUserServiceImpl"></bean>
+    <bean id="newsdao" class="cn.yungou.news.dao.impl.EasyBuyNewsDaoImpl"></bean>
+    <bean id="newsclassdao" class="cn.yungou.news.dao.impl.EasyBuyNewsClassDaoImpl"/>
+    <bean id="newsservice" class="cn.yungou.news.Service.ServiceImpl.EasybuyNewsServiceImpl"></bean>
+    <bean id="newsclass" class="cn.yungou.news.Service.ServiceImpl.EasyBuyNewsClassServiceImpl"/>
+    <bean id="newsandclassdao" class="cn.yungou.news.dao.impl.EasyBuyNewsAndClassDaoImpl"/>
+    <bean id="newsandclassservice" class="cn.yungou.news.Service.ServiceImpl.EasyBuyNewsAndClassServiceImpl"/>
+    <bean id="categorydao" class="cn.yungou.product.dao.impl.CategoryDaoImpl"></bean>
+    <bean id="categoryservice" class="cn.yungou.product.service.impl.CategoryServiceImpl"></bean>
+    <bean id="productservice" class="cn.yungou.product.service.impl.EasyBuyProductServiceImpl"/>
+    <bean id="productdao" class="cn.yungou.product.dao.impl.ProductDaoImpl"/>
+</beans>

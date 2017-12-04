@@ -3,15 +3,17 @@ package cn.yungou.commons.entity;
 import java.io.Serializable;
 
 public class EasybuyUser implements Serializable {
-    private Integer id;
-    private String loginName;
-    private String userName;
-    private String password;
-    private Integer sex;
-    private String identityCode;
-    private String email;
-    private String mobile;
-    private Integer type;
+    private Integer id; //用户id
+    private String loginName; //用户登录名
+    private String userName; //用户真实姓名
+    private String password;    //用户的密码
+    private Integer sex;    //用户的性别 0 表示女,1表示男
+    private String identityCode;    //用户的身份证号
+    private String email;   //用户的邮箱
+    private String mobile;  //用户的电话号码
+    private Integer type;   //用户的类型 ,1为普通用户,2为管理员
+    private String code;    //用户的激活码
+    private Integer status; //用户的状态 0表示未激活,1表示激活
 
     public Integer getId() {
         return id;
@@ -85,7 +87,23 @@ public class EasybuyUser implements Serializable {
         this.type = type;
     }
 
-    public EasybuyUser(Integer id, String loginName, String userName, String password, Integer sex, String identityCode, String email, String mobile, Integer type) {
+    public String getCode() {
+        return code;
+    }
+
+    public void setCode(String code) {
+        this.code = code;
+    }
+
+    public Integer getStatus() {
+        return status;
+    }
+
+    public void setStatus(Integer status) {
+        this.status = status;
+    }
+
+    public EasybuyUser(Integer id, String loginName, String userName, String password, Integer sex, String identityCode, String email, String mobile, Integer type, String code, Integer status) {
         this.id = id;
         this.loginName = loginName;
         this.userName = userName;
@@ -95,9 +113,28 @@ public class EasybuyUser implements Serializable {
         this.email = email;
         this.mobile = mobile;
         this.type = type;
+        this.code = code;
+        this.status = status;
     }
 
     public EasybuyUser() {
+    }
+
+    @Override
+    public String toString() {
+        return "EasybuyUser{" +
+                "id=" + id +
+                ", loginName='" + loginName + '\'' +
+                ", userName='" + userName + '\'' +
+                ", password='" + password + '\'' +
+                ", sex=" + sex +
+                ", identityCode='" + identityCode + '\'' +
+                ", email='" + email + '\'' +
+                ", mobile='" + mobile + '\'' +
+                ", type=" + type +
+                ", code='" + code + '\'' +
+                ", status=" + status +
+                '}';
     }
 
     @Override
@@ -105,17 +142,19 @@ public class EasybuyUser implements Serializable {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
 
-        EasybuyUser user = (EasybuyUser) o;
+        EasybuyUser that = (EasybuyUser) o;
 
-        if (id != null ? !id.equals(user.id) : user.id != null) return false;
-        if (loginName != null ? !loginName.equals(user.loginName) : user.loginName != null) return false;
-        if (userName != null ? !userName.equals(user.userName) : user.userName != null) return false;
-        if (password != null ? !password.equals(user.password) : user.password != null) return false;
-        if (sex != null ? !sex.equals(user.sex) : user.sex != null) return false;
-        if (identityCode != null ? !identityCode.equals(user.identityCode) : user.identityCode != null) return false;
-        if (email != null ? !email.equals(user.email) : user.email != null) return false;
-        if (mobile != null ? !mobile.equals(user.mobile) : user.mobile != null) return false;
-        return type != null ? type.equals(user.type) : user.type == null;
+        if (id != null ? !id.equals(that.id) : that.id != null) return false;
+        if (loginName != null ? !loginName.equals(that.loginName) : that.loginName != null) return false;
+        if (userName != null ? !userName.equals(that.userName) : that.userName != null) return false;
+        if (password != null ? !password.equals(that.password) : that.password != null) return false;
+        if (sex != null ? !sex.equals(that.sex) : that.sex != null) return false;
+        if (identityCode != null ? !identityCode.equals(that.identityCode) : that.identityCode != null) return false;
+        if (email != null ? !email.equals(that.email) : that.email != null) return false;
+        if (mobile != null ? !mobile.equals(that.mobile) : that.mobile != null) return false;
+        if (type != null ? !type.equals(that.type) : that.type != null) return false;
+        if (code != null ? !code.equals(that.code) : that.code != null) return false;
+        return status != null ? status.equals(that.status) : that.status == null;
     }
 
     @Override
@@ -129,22 +168,8 @@ public class EasybuyUser implements Serializable {
         result = 31 * result + (email != null ? email.hashCode() : 0);
         result = 31 * result + (mobile != null ? mobile.hashCode() : 0);
         result = 31 * result + (type != null ? type.hashCode() : 0);
+        result = 31 * result + (code != null ? code.hashCode() : 0);
+        result = 31 * result + (status != null ? status.hashCode() : 0);
         return result;
     }
-
-    @Override
-    public String toString() {
-        return "EasybuyUser{" +
-                "id=" + id +
-                ", loginName='" + loginName + '\'' +
-                ", userName='" + userName + '\'' +
-                ", password='" + password + '\'' +
-                ", sex=" + sex +
-                ", identityCode='" + identityCode + '\'' +
-                ", email='" + email + '\'' +
-                ", mobile=" + mobile +
-                ", type=" + type +
-                '}';
-    }
-
 }

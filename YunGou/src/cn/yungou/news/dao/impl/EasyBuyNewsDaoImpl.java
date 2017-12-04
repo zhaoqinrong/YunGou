@@ -2,18 +2,18 @@ package cn.yungou.news.dao.impl;
 
 
 import cn.yungou.commons.baseDao.Basedao;
+import cn.yungou.commons.constant.Constant;
 import cn.yungou.commons.entity.EasybuyNews;
 import cn.yungou.commons.util.ResultSetUtil;
 import cn.yungou.news.dao.EasybuyNewsDao;
-import org.apache.log4j.Logger;
 
 import java.io.Serializable;
 import java.sql.ResultSet;
+import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 
 public class EasyBuyNewsDaoImpl extends Basedao implements EasybuyNewsDao {
-    private static Logger logger = Logger.getLogger(EasyBuyNewsDaoImpl.class);
 
 
     @Override
@@ -24,7 +24,7 @@ public class EasyBuyNewsDaoImpl extends Basedao implements EasybuyNewsDao {
         try {
             list= ResultSetUtil.eachResult(query,EasybuyNews.class);
         } catch (Exception e) {
-            logger.error(e + "EasyBuyNewsDaoImpl类中gerAllEasyBuyNews有误");
+            Constant.LOGGER.error(e + "EasyBuyNewsDaoImpl类中gerAllEasyBuyNews有误");
         }
 
 
@@ -34,16 +34,16 @@ public class EasyBuyNewsDaoImpl extends Basedao implements EasybuyNewsDao {
 
     @Override
     public int add(EasybuyNews easybuyNews) {
-        String sql = "insert into easybuy_news values(?,?,?,?)";
-        Object[] params = {easybuyNews.getId(), easybuyNews.getTitle(), easybuyNews.getContent(), easybuyNews.getCreateTime()};
+        String sql = "insert into easybuy_news values(?,?,?,?,?,?)";
+        Object[] params = {easybuyNews.getId(), easybuyNews.getTitle(), easybuyNews.getContent(), easybuyNews.getCreateTime(),easybuyNews.getClassid(),easybuyNews.getImg()};
         int rownum = update(sql, params);
         return rownum;
     }
 
     @Override
     public int update(EasybuyNews easybuyNews) {
-        String sql = "update easybuy_news set title=?,content=?,createTime=? where id=?";
-        Object[] params={easybuyNews.getTitle(),easybuyNews.getContent(),easybuyNews.getCreateTime(),easybuyNews.getId()};
+        String sql = "update easybuy_news set title=?,content=?,createTime=? ,classid=?,img=? where id=?";
+        Object[] params={easybuyNews.getTitle(),easybuyNews.getContent(),easybuyNews.getCreateTime(),easybuyNews.getClassid(),easybuyNews.getImg(),easybuyNews.getId()};
         int rownum=update(sql,params);
         return rownum;
     }
@@ -56,4 +56,9 @@ public class EasyBuyNewsDaoImpl extends Basedao implements EasybuyNewsDao {
     }
 
 
+    @Override
+    public Integer getCount() {
+        String sql="select count(*) from  easybuy_news";
+        return Basedao.getCount(sql);
+    }
 }

@@ -10,6 +10,7 @@ public class EasyBuyNewsAndClass {
     private Integer classid;
     private Integer cid;
     private String className;
+    private String img;
 
     public Integer getId() {
         return id;
@@ -70,6 +71,14 @@ public class EasyBuyNewsAndClass {
     public EasyBuyNewsAndClass() {
     }
 
+    public String getImg() {
+        return img;
+    }
+
+    public void setImg(String img) {
+        this.img = img;
+    }
+
     @Override
     public String toString() {
         return "EasyBuyNewsAndClass{" +
@@ -80,6 +89,7 @@ public class EasyBuyNewsAndClass {
                 ", classid=" + classid +
                 ", cid=" + cid +
                 ", className='" + className + '\'' +
+                ", img='" + img + '\'' +
                 '}';
     }
 }

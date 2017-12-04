@@ -2,12 +2,15 @@ package cn.yungou.commons.baseDao;
 
 
 
-import org.apache.log4j.Logger;
+import cn.yungou.commons.constant.Constant;
 
 import javax.naming.InitialContext;
 import javax.naming.NamingException;
 import javax.sql.DataSource;
-import java.sql.*;
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
 import java.util.ResourceBundle;
 
 public class Basedao {
@@ -15,7 +18,6 @@ public class Basedao {
     private static Connection conn = null;
     private static PreparedStatement stmt = null;
     private static ResultSet rs = null;
-    private static Logger logger = Logger.getLogger(Basedao.class);
     public static String username;
     public static String password;
     public static String url;
@@ -43,9 +45,9 @@ public class Basedao {
             Class.forName(driver);
             conn = DriverManager.getConnection(url, username, password);
         } catch (ClassNotFoundException e) {
-            logger.error(e + "BaseDao中驱动找不到");
+            Constant.LOGGER.error(e + "BaseDao中驱动找不到");
         } catch (SQLException e) {
-            logger.error(e + "BaseDao中静态代码块 获取连接失败");
+            Constant.LOGGER.error(e + "BaseDao中静态代码块 获取连接失败");
         }*/
 
     }
@@ -55,7 +57,7 @@ public class Basedao {
             try {
                 conn = dataSource.getConnection();
             } catch (SQLException e) {
-                logger.error(e + "getConnection方法内获取连接错误");
+               Constant.LOGGER.error(e + "getConnection方法内获取连接错误");
             }
         }
         return conn;
@@ -66,7 +68,7 @@ public class Basedao {
             try {
                 rs.close();
             } catch (SQLException e) {
-                logger.error(e + "关闭ResultSet错误");
+                Constant.LOGGER.error(e + "关闭ResultSet错误");
             }
 
         }
@@ -74,14 +76,14 @@ public class Basedao {
             try {
                 stmt.close();
             } catch (SQLException e) {
-                logger.error(e + "stmt关闭错误");
+                Constant.LOGGER.error(e + "stmt关闭错误");
             }
         }
         if (conn != null) {
             try {
                 conn.close();
             } catch (SQLException e) {
-                logger.error(e + "关闭conn出错");
+                Constant.LOGGER.error(e + "关闭conn出错");
             }
         }
     }
@@ -96,7 +98,7 @@ public class Basedao {
             rownum=stmt.executeUpdate();
 
         } catch (SQLException e) {
-           logger.error(e+"basedao中update方法有问题");
+           Constant.LOGGER.error(e+"basedao中update方法有问题");
         }
         return rownum;
     }
@@ -108,8 +110,20 @@ public class Basedao {
             }
             rs=stmt.executeQuery();
         } catch (SQLException e) {
-          logger.error(e+"baseDao通用查询有错");
+          Constant.LOGGER.error(e+"baseDao通用查询有错");
         }
         return rs;
+    }
+    public static Integer getCount(String sql){
+        ResultSet query = Basedao.query(sql);
+        try {
+            if (query.next()){
+                int anInt = query.getInt(1);
+                return anInt;
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        return null;
     }
 }
