@@ -61,7 +61,7 @@ SmartPhone Compatible web template, free WebDesigns for Nokia, Samsung, LG, Sony
                         <div class="sign-up2">
 
                             <div class="form-group"><label for="one" style="margin: 1.6em 0.2em 1em 0.5em">一级</label>
-                                <select name="one" id="one">
+                                <select name="categorygoryLevel1" id="one">
                                     <option selected>请选择</option>
                                     <c:forEach items="${category}" var="item">
                                         <option value="${item.id}">${item.name}</option>
@@ -69,13 +69,13 @@ SmartPhone Compatible web template, free WebDesigns for Nokia, Samsung, LG, Sony
                                 </select>
 
                                 <label for="two" style="margin: 1.6em 0.2em 1em 0.5em">二级</label>
-                                <select name="two" id="two">
+                                <select name="categorygoryLevel2" id="two">
                                     <option selected>请选择</option>
 
                                 </select>
 
                                 <label for="three" style="margin: 1.6em 0.2em 1em 0.5em">三级</label>
-                                <select name="three" id="three">
+                                <select name="categorygoryLevel3" id="three">
                                     <option selected>请选择</option>
 
                                 </select>
@@ -292,15 +292,15 @@ function hideURLbar() {
 
             //验证规则
             rules: {
-               one : {
+                categorygoryLevel1 : {
                     required: true,
                     Fclass:true
                 },
-                two : {
+                categorygoryLevel2 : {
                     required: true,
                     Fclass:true
                 },
-                three : {
+                categorygoryLevel3 : {
                     required: true,
                     Fclass:true
                 },
@@ -327,15 +327,15 @@ function hideURLbar() {
             },//rules end
             //不符合验证规则的提示信息
             messages: {
-                one: {
+                categorygoryLevel1: {
                     required : "请选择二级分类",
                     Fclass: "请选择二级分类"
                 },
-                two: {
+                categorygoryLevel2: {
                     required : "请选择二级分类",
                     Fclass: "请选择二级分类"
                 },
-                three: {
+                categorygoryLevel3: {
                     required : "请选择三级分类",
                     Fclass: "请选择三级分类"
                 },

@@ -55,31 +55,31 @@ SmartPhone Compatible web template, free WebDesigns for Nokia, Samsung, LG, Sony
                     <div class="form-two">
 
                         <div class="form-body" style="padding: 10px;" data-example-id="simple-form-inline">
-                            <form class="form-inline" action="${pageContext.request.contextPath}/product?action=getProductBy" method="post">
+                            <form class="form-inline"
+                                  action="${pageContext.request.contextPath}/product?action=getProductBy" method="post">
                                 <div class="form-group"><label for="one">一级分类</label>
-                                    <select name="one" id="one">
-                                        <option selected>请选择</option>
-                                        <c:forEach items="${category}" var="item" >
+                                    <select name="categorygoryLevel1" id="one">
+                                        <option selected value="0">请选择</option>
+                                        <c:forEach items="${category}" var="item">
                                             <option value="${item.id}">${item.name}</option>
                                         </c:forEach>
                                     </select>
                                 </div>
                                 <div class="form-group"><label for="two">二级分类</label>
-                                    <select name="" id="two">
-                                        <option selected>请选择</option>
+                                    <select name="categorygoryLevel2" id="two">
+                                        <option selected value="0">请选择</option>
 
                                     </select>
                                 </div>
                                 <div class="form-group"><label for="three">三级分类</label>
-                                    <select name="" id="three">
-                                        <option selected>请选择</option>
+                                    <select name="categorygoryLevel3" id="three">
+                                        <option selected value="0">请选择</option>
 
                                     </select>
                                 </div>
                                 <div class="form-group"><label for="serach">关键字</label>
-                                    <input type="serach" id="serach" name="serach">
+                                    <input type="serach" id="serach" name="serachWords">
                                 </div>
-                                <button type="button" class="btn btn-default">搜索</button>
                             </form>
                         </div>
                     </div>
@@ -97,7 +97,7 @@ SmartPhone Compatible web template, free WebDesigns for Nokia, Samsung, LG, Sony
                         </tr>
                         </thead>
                         <tbody id="tbody">
-                        <c:if test="${not empty products}">
+                      <%--  <c:if test="${not empty products}">
                             <c:forEach varStatus="item" var="product" items="${products.list}">
                                 <tr>
                                     <th scope="row">${item.index}</th>
@@ -113,40 +113,60 @@ SmartPhone Compatible web template, free WebDesigns for Nokia, Samsung, LG, Sony
                                     </c:if>
 
                                     <td>
-                                        <a href="${pageContext.request.contextPath}/news?action=getNewsBuyId&id=${newsPage.id}" role="button" data-toggle="modal" ><i class=" glyphicon glyphicon-eye-open" ></i></a>
-                                        <a href="#myModal1" role="button" data-toggle="modal"><i class="glyphicon glyphicon-pencil"></i></a>
+                                        <a href="${pageContext.request.contextPath}/news?action=getNewsBuyId&id=${newsPage.id}"
+                                           role="button" data-toggle="modal"><i
+                                                class=" glyphicon glyphicon-eye-open"></i></a>
+                                        <a href="#myModal1" role="button" data-toggle="modal"><i
+                                                class="glyphicon glyphicon-pencil"></i></a>
                                     </td>
                                 </tr>
                             </c:forEach>
-                        </c:if>
-
-
+                        </c:if>--%>
 
 
                         </tbody>
                     </table>
                     <nav class="col-md-offset-4">
-                        <ul class="pagination pagination-lg">
-                            <c:if test="${products.currPage==1}">
-                                <li class="disabled"><a href="javascript:void(0);" aria-label="Previous"><span aria-hidden="true">«</span></a></li>
+                        <ul class="pagination pagination-lg" id="nav">
+                           <%-- <c:if test="${products.currPage==1}">
+                                <li class="disabled" id='pre'>
+                                    <input type="hidden" value="${products.currPage} ">
+                                    <a href="javascript:void(0);" aria-label="Previous"><span
+                                            aria-hidden="true">«</span></a>
+                                </li>
                             </c:if>
                             <c:if test="${products.currPage !=1}">
-                                <li ><a href="${pageContext.request.contextPath}/product?action=getAllByPage&currPage=${products.currPage-1}" aria-label="Previous"><span aria-hidden="true">«</span></a></li>
+                                <li id='pre'>
+                                    <input type="hidden" value="${products.currPage} ">
+                                    <a href="javascript:void(0);"
+                                       aria-label="Previous"><span aria-hidden="true">«</span></a></li>
                             </c:if>
-                            <c:forEach begin="1" end="${products.pages}" var="page">
+                            <c:forEach begin="1" end="${products.pages}" var="page" varStatus="item">
                                 <c:if test="${products.currPage==page}">
-                                    <li class="active"><a href="${pageContext.request.contextPath}/product?action=getAllByPage&currPage=${page}">${page}</a></li>
+                                    <li class="active" value="${products.currPage}">
+                                        <input type="hidden" name="currPage" value="${products.currPage}">
+                                        <a href="javascript:void(0);">${page}</a>
+                                    </li>
                                 </c:if>
                                 <c:if test="${products.currPage !=page}">
-                                    <li><a href="${pageContext.request.contextPath}/product?action=getAllByPage&currPage=${page}">${page}</a></li>
+                                    <li>
+                                        <input type="hidden" name="currPage" value="${item.index}">
+                                        <a href="javascript:void(0);">${page}</a>
+                                    </li>
                                 </c:if>
                             </c:forEach>
                             <c:if test="${products.currPage== products.pages}">
-                                <li class="disabled"><a href="javascript:void(0)" aria-label="Previous"><span aria-hidden="true">»</span></a></li>
+                                <li class="disabled" id='next'>
+                                    <input type="hidden" value="${products.currPage}">
+                                    <a href="javascript:void(0)" aria-label="Previous"><span
+                                            aria-hidden="true">»</span></a></li>
                             </c:if>
                             <c:if test="${products.currPage != products.pages}">
-                                <li ><a href="${pageContext.request.contextPath}/product?action=getAllByPage&currPage=${products.currPage+1}" aria-label="Previous"><span aria-hidden="true">»</span></a></li>
-                            </c:if>
+                                <li id='next'>
+                                    <input type="hidden" value="${products.currPage}">
+                                    <a href="javascript:void(0);"
+                                       aria-label="Previous"><span aria-hidden="true">»</span></a></li>
+                            </c:if>--%>
                         </ul>
                     </nav>
                 </div>
@@ -207,56 +227,164 @@ function hideURLbar() {
 <script src="${pageContext.request.contextPath}/jsp/admin/js/jquery.validate.min.js"></script>
 <script type="text/javascript">
     $(
-
-  /*  var $two=$("#two").val();
-    var $three=$("$three").val();*/
+        /*  var $two=$("#two").val();
+          var $three=$("$three").val();*/
         //获取二级分类
         $("#one").change(function () {
-            var $two=$("#two").empty().append("<option >请选择</option>");
-            var $three=$("#three").empty().append("<option >请选择</option>");
-            var $one=$("#one").val();
-            if($one==null){
+            var $two = $("#two").empty().append("<option value='0' >请选择</option>");
+            var $three = $("#three").empty().append("<option  value='0'>请选择</option>");
+            var $one = $("#one").val();
+            if ($one == null) {
                 return;
             }
 
             $.ajax({
-                url:"${pageContext.request.contextPath}/category?action=getlevelParentId&parentId="+$one,
-                type:"POST",
-                success:function (data) {
+                url: "${pageContext.request.contextPath}/category?action=getlevelParentId&parentId=" + $one,
+                type: "POST",
+                success: function (data) {
 
-                    $(data).each(function (index,item) {
-                        $two.append($("<option value='"+item.id+"'>"+item.name+"</option>"))
+                    $(data).each(function (index, item) {
+                        $two.append($("<option value='" + item.id + "'>" + item.name + "</option>"))
                     })
 
 
                 },
-                dataType:"json"
+                dataType: "json"
             })
-        })
 
+        })
     )
-    $(function () {
+    $(function () {//获取三级分类
         $("#two").change(function () {
-            var $three=$("#three").empty().append("<option >请选择</option>");
-            var $two=$("#two").val();
-            if($two==null){
+            var $three = $("#three").empty().append("<option  value='0'>请选择</option>");
+            var $two = $("#two").val();
+            if ($two == null) {
                 return;
             }
 
             $.ajax({
-                url:"${pageContext.request.contextPath}/category?action=getlevelParentId&parentId="+$two,
-                type:"POST",
-                success:function (data) {
+                url: "${pageContext.request.contextPath}/category?action=getlevelParentId&parentId=" + $two,
+                type: "POST",
+                success: function (data) {
 
-                    $(data).each(function (index,item) {
-                        $three.append($("<option value='"+item.id+"'>"+item.name+"</option>"))
+                    $(data).each(function (index, item) {
+                        $three.append($("<option value='" + item.id + "'>" + item.name + "</option>"))
                     })
 
 
                 },
-                dataType:"json"
+                dataType: "json"
             })
         })
+    })
+    var currPage = parseInt($("li[class=active] input").val())//网页一刷新,获取一下当前页
+    $(function () {//通过条件查找商品,发送ajax
+        $("[name=categorygoryLevel1]").change(function () {
+            getProductBy(1);
+        })
+        $("[name=categorygoryLevel2]").change(function () {
+            getProductBy(1);
+        })
+        $("[name=categorygoryLevel3]").change(function () {
+            getProductBy(1);
+        })
+        $("[name=serachWords]").keyup(function () {
+            getProductBy(1);
+        })
+        $("#nav").delegate("li", "click", function () {
+            var currPage = parseInt($(this).find("input").val());
+            if (currPage > 1) {
+                if ($(this).attr("id") == "pre") {
+                    currPage -= 1;
+                }
+            }
+            if (currPage < ($("#nav li").length - 2)) {
+                if ($(this).attr("id") == "next") {
+                    currPage += 1;
+                }
+            }
+            $(this).find("input[value=" + currPage + "]").parent("li").addClass("active");
+            $(this).siblings().removeClass("active");
+            getProductBy(currPage);
+        })
+        getProductBy(1);
+        function getProductBy(currPage) {
+            var condition = new Array();
+            condition.push($("#one").val());
+            condition.push($("#two").val());
+            condition.push($("#three").val());
+            condition.push($("#serach").val());
+            condition.push(currPage);
+
+            $.ajax({
+                url: "${pageContext.request.contextPath}/product?action=getProductBy",
+                data: {
+                    "categorygoryLevel1": condition[0],
+                    "categorygoryLevel2": condition[1],
+                    "categorygoryLevel3": condition[2],
+                    "serachWords": condition[3],
+                    "currPage": condition[4]
+                },
+                type: "post",
+                success: function (data) {
+                    var $tbody = $("tbody").empty();
+                    var $ul = $("#nav").empty();
+                    $(data.list).each(function (index, item) {
+                        var isDelete = "出售中";
+                        if (item.isDelete != 0) {
+                            isDelete = "已删除"
+                        }
+                        $tbody.append("<tr>\n" +
+                            "                    <th scope='row'>" + index + "</th>\n" +
+                            "                        <td>" + item.id + "</td>\n" +
+                            "                        <td>" + item.name + "</td>\n" +
+                            "                        <td>" + item.price + "</td>\n" +
+                            "                        <td>" + item.stock + "</td>\n" +
+                            "                        <td>" + isDelete + "</td>\n" +
+                            "                        <td>\n" +
+                            "                        <a href='${pageContext.request.contextPath}/product?action=getProductBy&id=${newsPage.id}' role='button'\n" +
+                            "                    data-toggle='modal'><i class='glyphicon glyphicon-eye-open'></i></a>\n" +
+                            "                    <a href='#myModal1' role='button' data-toggle='modal'><i class='glyphicon glyphicon-pencil'></i></a>\n" +
+                            "                    </td>\n" +
+                            "                    </tr>")
+
+
+                    })
+
+                    if (data.pages > 0) {//说明有上下页
+
+
+                        $ul.append($("<li id='pre'>" +
+                            " <input type='hidden' name='currPage' value='" + data.currPage + "'>" +
+                            "<a href='javascript:void(0);' aria-label='Previous'><span aria-hidden='true'>«</span></a></li>  "))
+                        for (var i = 1; i <= data.pages; i++) {
+
+                            if (i == data.currPage) {//当前页增加class属性
+                                $ul.append("<li class='active'>" +
+                                    " <input type='hidden' name='currPage' value='" + i + "'>" +
+                                    "<a  href='javascript:void(0);'>" + i + "</a></li>");
+                            } else {
+                                $ul.append("<li >" +
+                                    " <input type='hidden' name='currPage' value='" + i + "'>" +
+                                    "<a  href='javascript:void(0);'>" + i + "</a></li>");
+                            }
+
+                        }
+
+                        $ul.append("<li id='next' >" +
+                            " <input type='hidden' name='currPage' value='" + data.currPage + "'>" +
+                            "<a href='javascript:void(0);' aria-label='Previous'><span aria-hidden='true'>»</span></a></li>");
+
+                    }
+
+
+                },
+                dataType: "json"
+            })
+
+        }
+
+
     })
 </script>
 </body>

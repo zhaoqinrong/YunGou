@@ -34,10 +34,10 @@ public class FileUploadUtils {
         //获取文件的后缀名
         String fileExt = smart.getFiles().getFile(0).getFileExt();
         //拼接文件名:
-        fileName = fileName + "." + fileExt;
+        fileName = "E:\\MyEclipse 2017 CI\\Workspaces\\YunGou\\WebRoot\\upload"+File.separator+fileName + "." + fileExt;
         //文件保存
         System.out.println(request.getServletContext().getRealPath("/") + "upload" + File.separator + fileName);
-        smart.getFiles().getFile(0).saveAs("E:\\MyEclipse 2017 CI\\Workspaces\\YunGou\\WebRoot\\upload" + File.separator + fileName);
+        smart.getFiles().getFile(0).saveAs( fileName);
         EasybuyNews news = new EasybuyNews();
         //获取数据
         Request request1 = smart.getRequest();
@@ -77,16 +77,16 @@ public class FileUploadUtils {
         //获取文件的后缀名
         String fileExt = smart.getFiles().getFile(0).getFileExt();
         //拼接文件名:
-        fileName = fileName + "." + fileExt;
+        fileName = "E:\\MyEclipse 2017 CI\\Workspaces\\YunGou\\WebRoot\\productImg" + File.separator +fileName + "." + fileExt;
         //文件保存
 //        System.out.println(request.getServletContext().getRealPath("/")+"productImg"+ File.separator+fileName);
-        smart.getFiles().getFile(0).saveAs("E:\\MyEclipse 2017 CI\\Workspaces\\YunGou\\WebRoot\\productImg" + File.separator + fileName);
+        smart.getFiles().getFile(0).saveAs( fileName);
         EasybuyProduct product = new EasybuyProduct();
         //获取数据
         Request request1 = smart.getRequest();
-        String categorygoryLevel1 = request1.getParameter("one");
-        String categorygoryLevel2 = request1.getParameter("two");
-        String categorygoryLevel3 = request1.getParameter("three");
+        String categorygoryLevel1 = request1.getParameter("categorygoryLevel1");
+        String categorygoryLevel2 = request1.getParameter("categorygoryLevel2");
+        String categorygoryLevel3 = request1.getParameter("categorygoryLevel3");
         String name = request1.getParameter("name");
         String description = request1.getParameter("description");
         String price = request1.getParameter("price");

@@ -3,6 +3,7 @@ package cn.yungou.product.service.impl;
 import cn.yungou.commons.constant.Constant;
 import cn.yungou.commons.entity.EasybuyProduct;
 import cn.yungou.commons.entity.Page;
+import cn.yungou.commons.entity.ProductCondition;
 import cn.yungou.commons.util.BeanFactory;
 import cn.yungou.product.dao.ProductDao;
 import cn.yungou.product.service.EasyBuyProductService;
@@ -43,5 +44,14 @@ public class EasyBuyProductServiceImpl implements EasyBuyProductService {
         PRODUCT_DAO.getAllByPage(page);
 
         return page;
+    }
+
+    @Override
+    public Page<EasybuyProduct> getProductBycondition(ProductCondition productCondition) {
+        Page<EasybuyProduct> page=new Page<>();
+        page.setCurrPage(productCondition.getCurrPage());
+        page.setPageSize(6);
+        page.setTotal(PRODUCT_DAO.getCountByContion(productCondition));
+        return  PRODUCT_DAO.getProductBycondition(productCondition,page);
     }
 }
