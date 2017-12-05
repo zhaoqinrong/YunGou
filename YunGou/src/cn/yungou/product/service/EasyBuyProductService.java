@@ -14,4 +14,16 @@ public interface EasyBuyProductService extends CommonService{
     EasybuyProduct getProductByid(Integer id);
 
     Integer modify(EasybuyProduct productupload);
+
+    List<EasybuyProduct> getProBycate1(Integer id1);
+
+    List<EasybuyProduct> getProBycate2(Integer id2);
+
+    List<EasybuyProduct> getProBycate3(Integer id1);
+
+    String findByLike(String words);
+
+    List<EasybuyProduct> searchPro(String words);
+
+    EasybuyProduct getProductByName(String words);
 }

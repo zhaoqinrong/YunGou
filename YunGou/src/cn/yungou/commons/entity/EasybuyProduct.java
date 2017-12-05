@@ -13,6 +13,15 @@ public class EasybuyProduct implements Serializable {
     private Integer categorygoryLevel3;
     private String fileName;
     private Integer isDelete;
+    private Integer hotNum;
+
+    public Integer getHotNum() {
+        return hotNum;
+    }
+
+    public void setHotNum(Integer hotNum) {
+        this.hotNum = hotNum;
+    }
 
     public Integer getId() {
         return id;
@@ -113,6 +122,7 @@ public class EasybuyProduct implements Serializable {
                 ", categorygoryLevel3=" + categorygoryLevel3 +
                 ", fileName='" + fileName + '\'' +
                 ", isDelete=" + isDelete +
+                ", hotNum=" + hotNum +
                 '}';
     }
 }

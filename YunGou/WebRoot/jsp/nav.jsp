@@ -13,13 +13,6 @@
 </div>
 <ul class="yMenuIndex" id="menuId">
     <li><a href="" target="_blank" >首页</a></li>
-    <c:forEach items="${clist}" var="cate" varStatus="item" >
-        <c:if test="${item.index<7}">
-
-
-
-        </c:if>
-    </c:forEach>
 </ul>
 </div>
 <script type="text/javascript">
@@ -31,7 +24,7 @@
 
                 $(data).each(function (index) {
                     if(index<7){
-                        $("#menuId").append($("<li><a href='' target='_blank'>"+this.name+" </a></li>"));
+                        $("#menuId").append($("<li><a href='${pageContext.request.contextPath}/product?action=getProBycate1&id="+this.id+"' target='_blank'>"+this.name+" </a></li>"));
                     }
 
                 })

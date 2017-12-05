@@ -17,5 +17,9 @@ public interface CategoryDao extends CommonDao{
 
     List<EasybuyProductCategory> getAllByType(Integer i);
 
-    List<Classify<EasybuyProductCategory>> getClassify(Integer parentId);
+
+
+    EasybuyProductCategory getCategoryById(Integer id);
+
+//   Classify<EasybuyProductCategory> getClassify(Integer parentId);
 }

@@ -65,6 +65,22 @@
          margin-top:5px;
          margin-bottom: 6px;
      }
+     #viewWords{
+         width: 70%;
+         height:150%;
+         background-color: white;
+         border: 1px solid red;
+
+         position: absolute;
+         top:55px;
+
+         padding: 6px;
+         z-index: 999;
+     }
+     #viewWords>p>a{
+         line-height: 20px;
+         color: black;
+     }
     </style>
 </head>
 <body>
@@ -118,7 +134,7 @@
                     </li>
 
                     <li><a href="#">我的云购</a></li>
-                    <li><a href="my-shoucang.jsp">我的收藏</a></li>
+                    <li><a href="my-shoucang.jsp" >我的收藏</a></li>
                     <li><a href="my-user.jsp">会员中心</a></li>
                     <li><a href="#">客户服务</a></li>
                     <li><a href="#">帮助中心</a></li>
@@ -132,22 +148,46 @@
                 <a href="index.jsp"></a>
             </h1>
         </div>
-        <div class="head-form fl">
-            <form class="clearfix">
-                <input class="search-text" accesskey="" id="key" autocomplete="off" placeholder="洗衣机" type="text" style="height: 36px">
-                <button class="button" onclick="search('key');return false;">搜索</button>
+        <div class="head-form fl" style="position: relative">
+            <form class="clearfix" action="${pageContext.request.contextPath}/product?action=searchPro">
+                <input class="search-text" accesskey="" name="words" id="key" autocomplete="off" placeholder="洗衣机" type="text" style="height: 36px">
+                <button class="button" type="submit" id="search">搜索</button>
+
             </form>
             <div class="words-text clearfix">
-                <a href="#" class="red">1元秒爆</a>
                 <a href="#">低至五折</a>
-                <a href="#">农用物资</a>
-                <a href="#">佳能相机</a>
-                <a href="#">服装城</a>
-                <a href="#">买4免1</a>
-                <a href="#">家电秒杀</a>
-                <a href="#">农耕机械</a>
-                <a href="#">手机新品季</a>
             </div>
+            <div id="viewWords" hidden></div>
+
+
+            <script type="text/javascript">
+                $("#key").keyup(function () {
+                    $("#viewWords").show()
+                  var $val= $(this).val();
+                  $.ajax({
+                      url:"${pageContext.request.contextPath}/product",
+                      data:{
+                          "action":"search",
+                          "words":$val
+                      },
+                      type:"post",
+                      success:function(data){
+                          $("#viewWords").empty();
+                          $(data).each(function () {
+                              $("#viewWords").append( "<a href='${pageContext.request.contextPath}/product?action=getProductByName&words="+this+"' ><p>"+this+"</p></a>");
+                          })
+
+                      },
+                      dataType:"json"
+                  })
+                })
+                $("#viewWords").mouseleave(function(){
+                    $("#viewWords").hide();
+                })
+
+
+            </script>
+
         </div>
         <div class="fr pc-head-car">
             <i class="icon-car"></i>
@@ -167,67 +207,7 @@
                 </ul>
 
                 <!-- 下拉详细列表具体分类 -->
-                <div class="yMenuListCon">
-                    <div class="yMenuListConin">
-                    </div>
-
-                    <div class="yMenuListConin">
-
-                    </div>
-
-                    <div class="yMenuListConin">
-
-                    </div>
-
-                    <div class="yMenuListConin">
-
-                    </div>
-
-                    <div class="yMenuListConin">
-
-                    </div>
-
-                    <div class="yMenuListConin">
-
-                    </div>
-
-                    <div class="yMenuListConin">
-
-                    </div>
-
-                    <div class="yMenuListConin">
-
-                    </div>
-
-                    <div class="yMenuListConin">
-
-                    </div>
-
-                    <div class="yMenuListConin">
-
-                    </div>
-
-                    <div class="yMenuListConin">
-
-                    </div>
-
-                    <div class="yMenuListConin">
-
-                    </div>
-
-                    <div class="yMenuListConin">
-
-                    </div>
-
-                    <div class="yMenuListConin">
-
-                    </div>
-
-                    <div class="yMenuListConin">
-
-                    </div>
-
-                </div>
+                <div class="yMenuListCon" id="yMenuListCon"></div>
 
 <jsp:include page="nav.jsp"></jsp:include>
         <!-- 导航   end  -->
@@ -883,8 +863,8 @@
             success:function (data) {
 
                 $(data).each(function (index) {
-                    $("#level1").append($(" <li name="+this.id+"> <i class='list-icon-"+2+"'></i> <a href=''target='_blank'>"+this.name+"</a> <span></span> </li>"));
-                       
+                    $("#level1").append($(" <li name="+this.id+"> <i class='list-icon-"+2+"'></i> <a href='${pageContext.request.contextPath}/product?action=getProBycate1&id="+this.id+"'target='_blank'>"+this.name+"</a> <span></span> </li>"));
+                      $("#yMenuListCon").append("<div class='yMenuListConin'></div>")
                 })
             },
             dataType:"json"
@@ -920,9 +900,11 @@
 
                   $(data).each(function () {
                     var id=this.id
-                     $($(".yMenuListConin")[index]).append("<div class='yMenuLCinList' ><h3 ><a href='' class='yListName'>"+this.name+"</a></h3><p id='"+id+"'></p></div>");
-                    $(this.childs).each(function(index,item){
-                        $("#"+id).append("<a href=''>"+item.name+"</a>")
+                     $($(".yMenuListConin")[index]).append("<div class='yMenuLCinList' ><h3 >" +
+                         "<a href='${pageContext.request.contextPath}/product?action=getProBycate2&id="+id+"' class='yListName'>"+this.name+"</a></h3><p id='"+id+"'></p>" +
+                         "</div>");//一级分类
+                    $(this.childs).each(function(index,item){//二级和三级分类
+                        $("#"+id).append("<a href='${pageContext.request.contextPath}/product?action=getProBycate3&id="+item.id+"'>"+item.name+"</a>")
 
 
                     })

@@ -99,6 +99,22 @@
             <em>0</em>
         </div>
     </div>
+    <div class="yHeader">
+        <!-- 导航   start  -->
+        <div class="yNavIndex">
+            <div class="pullDown">
+
+                <%--       一级目录--%>
+
+
+                <!-- 下拉详细列表具体分类 -->
+
+                <jsp:include page="nav.jsp"></jsp:include>
+                <!-- 导航   end  -->
+            </div>
+
+        </div>
+    </div>
 </header>
 
 
@@ -107,11 +123,22 @@
 <nav>
     <div class="pc-nav-d">
         <div class="center">
-            <a href="#">美妆个护</a> >
-            <a href="#">面部护肤</a> >
-            <a href="#">套装</a> >
-            <a href="#">欧莱雅（LOREAL）</a> >
-            <a href="#">欧莱雅套装</a>
+            <c:forEach items="${cates}" var="cate" varStatus="i">
+                <c:choose>
+                    <c:when test="${i.index==1}">
+                        <a href="${pageContext.request.contextPath}/product?action=getProBycate2&id=${cate.id}">${cate.name}</a>>
+                    </c:when>
+                    <c:when test="${i.index==0}">
+                        <a href="${pageContext.request.contextPath}/product?action=getProBycate1&id=${cate.id}">${cate.name}</a>>
+                    </c:when>
+                    <c:otherwise>
+                        <a href="${pageContext.request.contextPath}/product?action=getProBycate3&id=${cate.id}">${cate.name}</a>
+                    </c:otherwise>
+                </c:choose>
+
+
+            </c:forEach>
+
         </div>
     </div>
 </nav>

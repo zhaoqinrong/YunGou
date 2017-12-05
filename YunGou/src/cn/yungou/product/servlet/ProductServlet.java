@@ -19,6 +19,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.lang.reflect.InvocationTargetException;
+import java.util.Arrays;
 import java.util.List;
 
 @WebServlet("/product")
@@ -71,6 +72,14 @@ public class ProductServlet extends BaseServlet {
 
         return null;
     }
+
+    /**
+     * 添加商品
+     * @param request
+     * @param response
+     * @return
+     * @throws Exception
+     */
     public  String addProduct(HttpServletRequest request, HttpServletResponse response) throws Exception {
         EasybuyProduct productupload = FileUploadUtils.productupload(this.getServletConfig(), request, response);
         int add = PRODUCT_SERVICE.add(productupload);
@@ -96,13 +105,30 @@ public class ProductServlet extends BaseServlet {
           List<EasybuyProductCategory> list1=CATEGORY_SERVICE.getAllByType(1);
           List<EasybuyProductCategory> list2=CATEGORY_SERVICE.getAllByType(2);
           List<EasybuyProductCategory> list3=CATEGORY_SERVICE.getAllByType(3);
+
+
 //        List<EasybuyProductCategory> list=CATEGORY_SERVICE.getlevel1();
         request.setAttribute("product",product);
         request.setAttribute("allClass1",list1);
           request.setAttribute("allClass2",list2);
           request.setAttribute("allClass3",list3);
+
         return request.getContextPath()+"/jsp/admin/product/modifyProduct.jsp";
     }
+    public  String getProductByName(HttpServletRequest request, HttpServletResponse response) throws Exception {
+       EasybuyProduct product= PRODUCT_SERVICE.getProductByName(request.getParameter("words"));
+        EasybuyProductCategory[] cates=CATEGORY_SERVICE.getEasybuyProduct(product.getId());
+        request.setAttribute("product",product);
+        request.setAttribute("cates", Arrays.asList(cates));
+        return request.getContextPath()+"/jsp/page.jsp";
+    }
+    /**
+     * 修改商品
+     * @param request
+     * @param response
+     * @return
+     * @throws Exception
+     */
     public  String modify(HttpServletRequest request, HttpServletResponse response) throws Exception {
         String id = request.getParameter("id");
         Integer id1=null;
@@ -140,11 +166,107 @@ public class ProductServlet extends BaseServlet {
         if(id==null){
             return null;
         }
+        //获取商品的一二三级分类名称,并放入数组
+        EasybuyProductCategory[] cates=CATEGORY_SERVICE.getEasybuyProduct(Integer.parseInt(id));
         EasybuyProduct product=PRODUCT_SERVICE.getProductByid(Integer.parseInt(id));
         //获取所有的分类信息
 //        List<EasybuyProductCategory> list=CATEGORY_SERVICE.getlevel1();
         request.setAttribute("product",product);
+        request.setAttribute("cates", Arrays.asList(cates));
         return request.getContextPath()+"/jsp/page.jsp";
     }
+
+    /**
+     * 通过一级分类id查询商品
+     * @param request
+     * @param response
+     * @return
+     * @throws Exception
+     */
+    public  String getProBycate1(HttpServletRequest request, HttpServletResponse response) throws Exception{
+        String id = request.getParameter("id");
+
+        Integer id1=null;
+        if(id!=null){
+            id1=Integer.parseInt(id);
+        }
+      List<EasybuyProduct> list=  PRODUCT_SERVICE.getProBycate1(id1);
+
+        Constant.LOGGER.debug("list"+list);
+        request.setAttribute("products",list);
+        return request.getContextPath()+"/jsp/search.jsp";
+    }
+
+    /**
+     * 通过二级分类id查询商品
+     * @param request
+     * @param response
+     * @return
+     * @throws Exception
+     */
+    public  String getProBycate2(HttpServletRequest request, HttpServletResponse response) throws Exception{
+        String id = request.getParameter("id");
+
+        Integer id1=null;
+        if(id!=null){
+            id1=Integer.parseInt(id);
+        }
+        List<EasybuyProduct> list=  PRODUCT_SERVICE.getProBycate2(id1);
+
+        Constant.LOGGER.debug("list"+list);
+        request.setAttribute("products",list);
+        return request.getContextPath()+"/jsp/search.jsp";
+    }
+
+    /**
+     * 通过三级分类id查询商品
+     * @param request
+     * @param response
+     * @return
+     * @throws Exception
+     */
+    public  String getProBycate3(HttpServletRequest request, HttpServletResponse response) throws Exception{
+        String id = request.getParameter("id");
+
+        Integer id1=null;
+        if(id!=null){
+            id1=Integer.parseInt(id);
+        }
+        List<EasybuyProduct> list=  PRODUCT_SERVICE.getProBycate3(id1);
+
+        Constant.LOGGER.debug("list"+list);
+        request.setAttribute("products",list);
+        return request.getContextPath()+"/jsp/search.jsp";
+    }
+
+    /**
+     * 联想功能实现
+     * @param request
+     * @param response
+     * @return
+     * @throws Exception
+     */
+    public  String search(HttpServletRequest request, HttpServletResponse response) throws Exception{
+        String words = request.getParameter("words");
+        String json=PRODUCT_SERVICE.findByLike(words);
+        response.getWriter().print(json);
+        return null;
+    }
+
+    /**
+     * 模糊查询
+     * @param request
+     * @param response
+     * @return
+     * @throws Exception
+     */
+    public  String searchPro(HttpServletRequest request, HttpServletResponse response) throws Exception{
+        String words = request.getParameter("words");
+        List<EasybuyProduct> list=PRODUCT_SERVICE.searchPro(words);
+        Constant.LOGGER.debug("list"+list);
+        request.setAttribute("products",list);
+        return request.getContextPath()+"/jsp/search.jsp";
+    }
+
 
 }

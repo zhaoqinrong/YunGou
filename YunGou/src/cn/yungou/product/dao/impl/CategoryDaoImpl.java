@@ -74,15 +74,26 @@ public class CategoryDaoImpl implements CategoryDao{
 
     }
 
+    @Override
+    public EasybuyProductCategory getCategoryById(Integer id) {
+        String sql="select * from easybuy_product_category where id=?";
+        ResultSet query = Basedao.query(sql, id);
+        return ResultSetUtil.findOne(query,EasybuyProductCategory.class);
+    }
+
     /**
      * 传入一级分类的id获取所有二级三级的分类,并封装成为一个list
-     * @param parentId
+     * @param
      * @return
      */
 
-    @Override
-    public List<Classify<EasybuyProductCategory>> getClassify(Integer parentId) {
-        List<Classify<EasybuyProductCategory>> listClass=new ArrayList<>();
+ /*   @Override
+    public Classify<EasybuyProductCategory> getClassify(Integer parentId) {
+        String sql="select * from easybuy_product_category where parentId=?";
+        ResultSet query = Basedao.query(sql, parentId);
+        return ResultSetUtil.eachResult(query, EasybuyProductCategory.class)
+
+      *//*  List<Classify<EasybuyProductCategory>> listClass=new ArrayList<>();
         String sql="select * from easybuy_product_category where parentId=?";
         ResultSet query = Basedao.query(sql, parentId);
         List<EasybuyProductCategory> list = ResultSetUtil.eachResult(query, EasybuyProductCategory.class);//获取二级分类
@@ -94,8 +105,9 @@ public class CategoryDaoImpl implements CategoryDao{
             classify.setChilds(list1);
             listClass.add(classify);
         }
-        return listClass;
-    }
+        return listClass;*//*
+
+    }*/
 
 
     @Override

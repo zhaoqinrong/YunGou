@@ -9,6 +9,7 @@ import cn.yungou.commons.util.ResultSetUtil;
 import cn.yungou.product.dao.ProductDao;
 
 import java.io.Serializable;
+import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
@@ -22,9 +23,14 @@ public class ProductDaoImpl implements ProductDao {
         return null;
     }
 
+    /**
+     * 新增商品
+     * @param o
+     * @return
+     */
     @Override
     public int add(Object o) {
-        String sql="insert into easybuy_product values(?,?,?,?,?,?,?,?,?,?)";
+        String sql="insert into easybuy_product(`id`,`name`,`description`,`price`,stock,categorygoryLevel1,categorygoryLevel2,categorygoryLevel3,fileName,isDelete) values(?,?,?,?,?,?,?,?,?,?)";
         EasybuyProduct product = (EasybuyProduct) o;
         Object[] param={product.getId(),product.getName(),product.getDescription(),
                 product.getPrice(),product.getStock(),product.getCategorygoryLevel1()
@@ -33,6 +39,12 @@ public class ProductDaoImpl implements ProductDao {
 
         return Basedao.update(sql,param);
     }
+
+    /**
+     * 修改商品
+     * @param o
+     * @return
+     */
 
     @Override
     public int update(Object o) {
@@ -105,6 +117,12 @@ public class ProductDaoImpl implements ProductDao {
         return page;
     }
 
+    /**
+     * 多条件查询
+     * @param pc
+     * @return
+     */
+
     @Override
     public Integer getCountByContion(ProductCondition pc) {
         StringBuffer sb=new StringBuffer("select count(*) from easybuy_product where 1=1");
@@ -137,6 +155,107 @@ public class ProductDaoImpl implements ProductDao {
         ResultSet query = Basedao.query(sql, id);
         EasybuyProduct product = ResultSetUtil.findOne(query, EasybuyProduct.class);
         return product;
+    }
+
+    /**
+     * 通过一级分类的id查找商品
+     * @param id
+     * @return
+     */
+    @Override
+    public List<EasybuyProduct> getProBycate1(Integer id) {
+        String sql="select * from easybuy_product where categorygoryLevel1=?";
+        ResultSet query = Basedao.query(sql, id);
+
+        return ResultSetUtil.eachResult(query,EasybuyProduct.class);
+    }
+
+    /**
+     * 通过二级分类id查询商品
+     * @param id2
+     * @return
+     */
+    @Override
+    public List<EasybuyProduct> getProBycate2(Integer id2) {
+        String sql="select * from easybuy_product where categorygoryLevel2=?";
+        ResultSet query = Basedao.query(sql, id2);
+
+        return ResultSetUtil.eachResult(query,EasybuyProduct.class);
+    }
+
+    /**
+     * 通过三级分类的id查询商品
+     * @param id1
+     * @return
+     */
+    @Override
+    public List<EasybuyProduct> getProBycate3(Integer id1) {
+        String sql="select * from easybuy_product where categorygoryLevel3=?";
+        ResultSet query = Basedao.query(sql, id1);
+
+        return ResultSetUtil.eachResult(query,EasybuyProduct.class);
+    }
+
+    /**
+     * 联想功能,查询热门搜索前五名
+     * @param words
+     * @return
+     */
+    @Override
+    public List findByLike(String words) {
+        String sql="select name from easybuy_product where name like concat('%',?,'%') order by hotNum desc ";
+        ResultSet query = Basedao.query(sql, words);
+        List list=new ArrayList();
+        try {
+            while (query.next()){
+
+                list.add(query.getString(1));
+                if(list.size()>=5){
+                    break;
+                }
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+
+        return list;
+    }
+
+    /**
+     * 商品的模糊查询
+     * @param words
+     * @return
+     */
+    @Override
+    public List<EasybuyProduct> searchPro(String words) {
+        String sql="select * from easybuy_product where name like concat('%',?,'%')";
+        ResultSet query = Basedao.query(sql, words);
+
+        return  ResultSetUtil.eachResult(query,EasybuyProduct.class);
+    }
+
+    /**
+     * 搜索人气+1
+     * @param words
+     */
+    @Override
+    public void addHotNum(String words){
+        String sql="update easybuy_product set hotNum=hotNum+1 where name like concat('%',?,'%')";
+        try {
+            PreparedStatement ps = Basedao.getConnection().prepareStatement(sql);
+            ps.setObject(1,words);
+            ps.execute();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+
+    }
+
+    @Override
+    public EasybuyProduct getProductByName(String words) {
+        String sql="select * from easybuy_product where name=?";
+        ResultSet query = Basedao.query(sql, words);
+        return ResultSetUtil.findOne(query,EasybuyProduct.class);
     }
 
 
