@@ -108,7 +108,7 @@ SmartPhone Compatible web template, free WebDesigns for Nokia, Samsung, LG, Sony
                 <div class="col-md-4 widget states-last">
                     <div class="stats-left">
                         <h5>Today</h5>
-                        <h4>返回首页</h4>
+                        <h4><a href="${pageContext.request.contextPath}/index">返回首页</a></h4>
                     </div>
                     <div class="stats-right">
                         <label>51</label>

@@ -97,76 +97,14 @@ SmartPhone Compatible web template, free WebDesigns for Nokia, Samsung, LG, Sony
                         </tr>
                         </thead>
                         <tbody id="tbody">
-                      <%--  <c:if test="${not empty products}">
-                            <c:forEach varStatus="item" var="product" items="${products.list}">
-                                <tr>
-                                    <th scope="row">${item.index}</th>
-                                    <td>${product.id}</td>
-                                    <td>${product.name}</td>
-                                    <td>${product.price}</td>
-                                    <td>${product.stock}</td>
-                                    <c:if test="${product.isDelete==0}">
-                                        <td>出售中</td>
-                                    </c:if>
-                                    <c:if test="${product.isDelete !=0}">
-                                        <td>已删除</td>
-                                    </c:if>
 
-                                    <td>
-                                        <a href="${pageContext.request.contextPath}/news?action=getNewsBuyId&id=${newsPage.id}"
-                                           role="button" data-toggle="modal"><i
-                                                class=" glyphicon glyphicon-eye-open"></i></a>
-                                        <a href="#myModal1" role="button" data-toggle="modal"><i
-                                                class="glyphicon glyphicon-pencil"></i></a>
-                                    </td>
-                                </tr>
-                            </c:forEach>
-                        </c:if>--%>
-
+<%--商品--%>
 
                         </tbody>
                     </table>
                     <nav class="col-md-offset-4">
                         <ul class="pagination pagination-lg" id="nav">
-                           <%-- <c:if test="${products.currPage==1}">
-                                <li class="disabled" id='pre'>
-                                    <input type="hidden" value="${products.currPage} ">
-                                    <a href="javascript:void(0);" aria-label="Previous"><span
-                                            aria-hidden="true">«</span></a>
-                                </li>
-                            </c:if>
-                            <c:if test="${products.currPage !=1}">
-                                <li id='pre'>
-                                    <input type="hidden" value="${products.currPage} ">
-                                    <a href="javascript:void(0);"
-                                       aria-label="Previous"><span aria-hidden="true">«</span></a></li>
-                            </c:if>
-                            <c:forEach begin="1" end="${products.pages}" var="page" varStatus="item">
-                                <c:if test="${products.currPage==page}">
-                                    <li class="active" value="${products.currPage}">
-                                        <input type="hidden" name="currPage" value="${products.currPage}">
-                                        <a href="javascript:void(0);">${page}</a>
-                                    </li>
-                                </c:if>
-                                <c:if test="${products.currPage !=page}">
-                                    <li>
-                                        <input type="hidden" name="currPage" value="${item.index}">
-                                        <a href="javascript:void(0);">${page}</a>
-                                    </li>
-                                </c:if>
-                            </c:forEach>
-                            <c:if test="${products.currPage== products.pages}">
-                                <li class="disabled" id='next'>
-                                    <input type="hidden" value="${products.currPage}">
-                                    <a href="javascript:void(0)" aria-label="Previous"><span
-                                            aria-hidden="true">»</span></a></li>
-                            </c:if>
-                            <c:if test="${products.currPage != products.pages}">
-                                <li id='next'>
-                                    <input type="hidden" value="${products.currPage}">
-                                    <a href="javascript:void(0);"
-                                       aria-label="Previous"><span aria-hidden="true">»</span></a></li>
-                            </c:if>--%>
+                          <%--导航--%>
                         </ul>
                     </nav>
                 </div>
@@ -330,9 +268,15 @@ function hideURLbar() {
                     var $tbody = $("tbody").empty();
                     var $ul = $("#nav").empty();
                     $(data.list).each(function (index, item) {
-                        var isDelete = "出售中";
-                        if (item.isDelete != 0) {
-                            isDelete = "已删除"
+                        var isDelete = "已删除";
+                        if (item.isDelete ==1) {
+                            isDelete = "已删除";
+                        }else if(item.isDelete ==2){
+                            isDelete = "热卖商品";
+                        } else  if(item.isDelete ==3){
+                            isDelete = "限时抢购";
+                        }else{
+                            isDelete = "出售中";
                         }
                         $tbody.append("<tr>\n" +
                             "                    <th scope='row'>" + index + "</th>\n" +
@@ -342,9 +286,9 @@ function hideURLbar() {
                             "                        <td>" + item.stock + "</td>\n" +
                             "                        <td>" + isDelete + "</td>\n" +
                             "                        <td>\n" +
-                            "                        <a href='${pageContext.request.contextPath}/product?action=getProductBy&id=${newsPage.id}' role='button'\n" +
+                            "                        <a href='${pageContext.request.contextPath}/product?action=getProductByidView&id="+item.id+"' role='button'\n" +
                             "                    data-toggle='modal'><i class='glyphicon glyphicon-eye-open'></i></a>\n" +
-                            "                    <a href='#myModal1' role='button' data-toggle='modal'><i class='glyphicon glyphicon-pencil'></i></a>\n" +
+                            "                    <a href='${pageContext.request.contextPath}/product?action=getProductByid&id="+item.id+"' role='button' data-toggle='modal'><i class='glyphicon glyphicon-pencil'></i></a>\n" +
                             "                    </td>\n" +
                             "                    </tr>")
 

@@ -26,51 +26,9 @@
     // 导航左侧栏js效果  end
 
 })*/
-$(function(){
-    $(".pullDownList").delegate("li","mouseenter",function(){
-      $(".yMenuListCon").fadeIn();
-        var index=$(this).index(".pullDownList li");
-        if (!($(this).hasClass("menulihover")||$(this).hasClass("menuliselected"))) {
-            $($(".yBannerList")[index]).css("display", "block").siblings().css("display", "none");
-            $($(".yBannerList")[index]).removeClass("ybannerExposure");
-            setTimeout(function () {
-                $($(".yBannerList")[index]).addClass("ybannerExposure");
-            }, 60);
-        }
-            $(this).addClass("menulihover").siblings().removeClass("menulihover");
-            $(this).addClass("menuliselected").siblings().removeClass("menuliselected");
-            $($(".yMenuListConin")[index]).fadeIn().siblings().fadeOut();
-                 var $parentId=$(this).attr("name")
 
 
-            $.ajax({
-                url:"/category",
-                data:{
-                    "action":'findAllCategory',
-                        "parentId":$parentId
-                },
-                type:"get",
-                success:function(data){
-                    $($(".yMenuListConin")[index]).empty();
-
-                    $(data).each(function(){
-                      /*   if(this.parentId==1){*/
-                            $($(".yMenuListConin")[index]).prepend($("<dl><dt><a href='' name="+this.parentId+">"+this.name+"&nbsp;&nbsp;></a></dt></dl><br/>"))
-                      /*  }else{
-                            $($(".yMenuListConin")[index]).find("dl").append($("<dd><a href='' name="+this.parentId+">"+this.name+"&nbsp;&nbsp;></a></dd>"))
-
-
-                        }*/
-
-                    })
-                },
-                dataType:"json"
-            })
-        return false;
-
-
-    })
-    $(".pullDownList li dl").delegate("dt","mouseenter",function () {
+    /*$(".pullDownList li dl").delegate("dt","mouseenter",function () {
         $($(".yMenuListConin")[index]).find("dl").removeChild("dd");
         var $parentId=$(this).attr("name")
         $.ajax({
@@ -84,10 +42,10 @@ $(function(){
                 $($(".yMenuListConin")[index]).empty();
 
                 $(data).each(function(){
-                    /*if(this.parentId==1){
+                    /!*if(this.parentId==1){
                         $($(".yMenuListConin")[index]).prepend($("<dl><dt><a href='' >"+this.name+"&nbsp;&nbsp;></a></dt></dl><br/>"))
-                    }else{*/
-                        $($(".yMenuListConin")[index]).find("dl").append($("<dd><a href=''>"+this.name+"&nbsp;&nbsp;></a></dd>"))
+                    }else{*!/
+                       /!* $($(".yMenuListConin")[index]).find("dl").append($("<dd><a href=''>"+this.name+"&nbsp;&nbsp;></a></dd>"))*!/
 
 
 
@@ -97,7 +55,7 @@ $(function(){
             dataType:"json"
         })
         return false;
-    })
+    })*/
 
 
 
@@ -107,15 +65,8 @@ $(function(){
 
 
 
-   $(".pullDown").mouseleave(function(){
-        $(".yMenuListCon").fadeOut();
-        $(".yMenuListConin").fadeOut();
-        // $(".pullDownList").fadeOut();
-        $(".pullDownList li").removeClass("menulihover")
 
 
-    })
-})
 var intDiff = parseInt(90000);//倒计时总秒数量
 
 function timer(intDiff) {

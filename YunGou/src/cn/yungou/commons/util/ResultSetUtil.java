@@ -59,4 +59,17 @@ public class ResultSetUtil {
         }
         return object;
     }
+    public static Integer getInt(ResultSet query){
+
+        try {
+            if(query.next()) {
+                return query.getInt(1);
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        return 0;
+
+
+    }
 }

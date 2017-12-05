@@ -28,30 +28,20 @@
 		<div class="center clearfix">
 			<div class="fl"></div>
 			<div class="fr pc-login-box">
-				<div class="pc-login-title"><h2>用户注册</h2></div>
-				<form action="user?action=regist" id="myForm" method="post">
-					<div class="pc-sign">
-						<input name="loginName" placeholder="用户名" style="display: block">
+				<div class="pc-login-title"><h2>修改密码</h2></div>
+				<form action="${pageContext.request.contextPath}/user?action=modifyPwd&code=${param.code}" id="myForm" method="post">
 
-					</div>
-					<div class="pc-sign">
-						<input name="email" placeholder="邮箱"style="display: block">
-					</div>
-					<div class="pc-sign">
-						<input name="mobile" placeholder="手机号" style="display: block">
-					</div>
+
 					<div class="pc-sign">
 						<input name="password" type="password" id="pwd" placeholder="请输入您的密码" style="display: block">
 					</div>
 					<div class="pc-sign">
 						<input name="reppassword" type="password" placeholder="请确认您的密码" style="display: block">
 					</div>
-					<div>
-						<input type="checkbox" name="context">点击表示您同意商城《服务协议》
-					</div>
+
 					<div class="pc-submit-ss">
                         <input type="text" value="1" name="type" style="display: none">
-						<input type="submit" value="立即注册">
+						<input type="submit" value="立即修改">
 					</div>
 					<div class="pc-item-san clearfix">
 						<a href="#"><img src="${pageContext.request.contextPath}/static/img/icon/weixin.png" alt="">微信登录</a>

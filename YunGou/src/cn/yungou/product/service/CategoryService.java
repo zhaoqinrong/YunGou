@@ -1,5 +1,6 @@
 package cn.yungou.product.service;
 
+import cn.yungou.commons.entity.Classify;
 import cn.yungou.commons.entity.EasybuyProductCategory;
 
 import java.io.Serializable;
@@ -11,5 +12,11 @@ public interface CategoryService {
 
     List<EasybuyProductCategory> getlevel1();
 
+
+    List<EasybuyProductCategory> getAllClass();
     List<EasybuyProductCategory> getlevelParentId(Integer parentId);
+
+    List<EasybuyProductCategory> getAllByType(Integer i);
+
+    List<Classify<EasybuyProductCategory>> getClassify(Integer parentId);
 }

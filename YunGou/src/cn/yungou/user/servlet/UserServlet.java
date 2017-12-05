@@ -5,6 +5,7 @@ import cn.yungou.commons.constant.Constant;
 import cn.yungou.commons.entity.EasybuyUser;
 import cn.yungou.commons.myconvert.Myconvet;
 import cn.yungou.commons.util.BeanFactory;
+import cn.yungou.commons.util.EmailUtils;
 import cn.yungou.commons.util.MD5Utils;
 import cn.yungou.commons.util.UUIDUtils;
 import cn.yungou.user.Service.EasybuyUserService;
@@ -155,4 +156,72 @@ public class UserServlet extends BaseServlet {
         return null;
 
     }
+
+    /**
+     * 用户忘记密码,验证是否有这个用户
+     * @param request
+     * @param response
+     * @return
+     * @throws Exception
+     */
+    public String fowPwd(HttpServletRequest request, HttpServletResponse response) throws Exception{
+        String loginName = request.getParameter("loginName");
+
+        EasybuyUser user = USERSERVICE.findByLoginName(loginName);
+        if(user!=null&&user.getId()!=null){
+            if(Constant.USER_IS_ACTIVE!=user.getStatus()){
+                request.setAttribute("msg","用户未激活");
+                return "/jsp/msg.jsp";
+            }
+            String word="尊敬的"+loginName+",欢迎您注册易买网,<a href='http://localhost/user?action=returnPwd&code="+user.getCode()+"' target='_blank'>点此找回密码</a>";
+            EmailUtils.sendEmail(user.getEmail(),"找回密码",word);
+        }else{
+            request.setAttribute("msg", "用户名不存在");
+            return "/jsp/msg.jsp";
+        }
+
+
+        return null;
+    }
+
+    /**
+     * 用户修改密码,从邮箱过来
+     * @param request
+     * @param response
+     * @return
+     * @throws Exception
+     */
+    public String returnPwd(HttpServletRequest request, HttpServletResponse response) throws Exception{
+
+        return "/jsp/modifyPwd.jsp";
+    }
+
+    /**
+     * 实际的修改密码
+     * @param request
+     * @param response
+     * @return
+     * @throws Exception
+     */
+    public String modifyPwd(HttpServletRequest request, HttpServletResponse response) throws Exception{
+        String code = request.getParameter("code");
+        String password = request.getParameter("password");
+
+        Constant.LOGGER.debug("code"+code);
+        Constant.LOGGER.debug("password"+password);
+        password = MD5Utils.md5(password);
+        EasybuyUser user =  USERSERVICE.findByCode(code);
+        user.setPassword(password);
+        int update = USERSERVICE.update(user);
+        if (update>0){
+            request.setAttribute("msg", "恭喜您修改密码成功");
+            return "/jsp/msg.jsp";
+        }else{
+            request.setAttribute("msg", "修改密码失败");
+            return "/jsp/msg.jsp";
+        }
+
+//        return "/jsp/modifyPwd.jsp";
+    }
+
 }

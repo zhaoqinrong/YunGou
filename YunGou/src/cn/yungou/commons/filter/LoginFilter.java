@@ -1,4 +1,4 @@
-package cn.yungou.user.filter;
+package cn.yungou.commons.filter;
 
 import cn.yungou.commons.entity.EasybuyUser;
 

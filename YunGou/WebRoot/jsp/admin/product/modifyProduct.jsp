@@ -49,10 +49,10 @@ SmartPhone Compatible web template, free WebDesigns for Nokia, Samsung, LG, Sony
     <jsp:include page="../header.jsp"/>
     <div id="page-wrapper">
         <div class="main-page signup-page">
-            <h3 class="title1">添加商品 </h3>
+            <h3 class="title1">修改商品 </h3>
             <div class="sign-up-row widget-shadow">
                 <form class="form-horizontal" id="tab" method="post" enctype="multipart/form-data"
-                      action="${pageContext.request.contextPath}/product?action=addProduct">
+                      action="${pageContext.request.contextPath}/product?action=modify&id=${product.id}">
 
                     <div class="sign-u">
                         <div class="sign-up1">
@@ -62,22 +62,42 @@ SmartPhone Compatible web template, free WebDesigns for Nokia, Samsung, LG, Sony
 
                             <div class="form-group"><label for="one" style="margin: 1.6em 0.2em 1em 0.5em">一级</label>
                                 <select name="categorygoryLevel1" id="one">
-                                    <option selected>请选择</option>
-                                    <c:forEach items="${category}" var="item">
-                                        <option value="${item.id}">${item.name}</option>
+                                    <option value="0" selected>请选择</option>
+                                    <c:forEach items="${allClass1}" var="item">
+                                        <c:if test="${item.id==product.categorygoryLevel1}">
+                                            <option value="${item.id}" selected>${item.name}</option>
+                                        </c:if>
+                                        <c:if test="${item.id!=product.categorygoryLevel3}">
+                                            <option value="${item.id}">${item.name}</option>
+                                        </c:if>
                                     </c:forEach>
                                 </select>
 
                                 <label for="two" style="margin: 1.6em 0.2em 1em 0.5em">二级</label>
                                 <select name="categorygoryLevel2" id="two">
-                                    <option selected>请选择</option>
-
+                                    <option value="0" selected>请选择</option>
+                                    <c:forEach items="${allClass2}" var="item">
+                                        <c:if test="${item.id==product.categorygoryLevel2}">
+                                            <option value="${item.id}" selected>${item.name}</option>
+                                        </c:if>
+                                        <c:if test="${item.id!=product.categorygoryLevel3}">
+                                            <option value="${item.id}">${item.name}</option>
+                                        </c:if>
+                                    </c:forEach>
                                 </select>
 
                                 <label for="three" style="margin: 1.6em 0.2em 1em 0.5em">三级</label>
                                 <select name="categorygoryLevel3" id="three">
-                                    <option selected>请选择</option>
+                                    <option value="0" selected>请选择</option>
+                                    <c:forEach items="${allClass3}" var="item">
+                                        <c:if test="${item.id==product.categorygoryLevel3}">
+                                            <option value="${item.id}" selected>${item.name}</option>
+                                        </c:if>
+                                        <c:if test="${item.id!=product.categorygoryLevel3}">
+                                            <option value="${item.id}">${item.name}</option>
+                                        </c:if>
 
+                                    </c:forEach>
                                 </select>
 
 
@@ -90,7 +110,7 @@ SmartPhone Compatible web template, free WebDesigns for Nokia, Samsung, LG, Sony
                         <div class="sign-up2">
 
                             <input type="text" name="name"
-                                   placeholder="请输入商品名称15字以内" required>
+                                   placeholder="请输入商品名称15字以内" value="${product.name}" required>
 
                         </div>
                         <div class="clearfix"></div>
@@ -100,7 +120,7 @@ SmartPhone Compatible web template, free WebDesigns for Nokia, Samsung, LG, Sony
                         </div>
                         <div class="sign-up2">
                             <input type="text" name="description"
-                                   placeholder="请输入商品描述15字以内" required>
+                                   placeholder="请输入商品描述15字以内" value="${product.description}" required>
                         </div>
                         <div class="clearfix"></div>
                     </div>
@@ -110,7 +130,7 @@ SmartPhone Compatible web template, free WebDesigns for Nokia, Samsung, LG, Sony
                         </div>
                         <div class="sign-up2">
 
-                            <input type="text" name="price"
+                            <input type="text" name="price" value="${product.price}"
                                    required>
 
                         </div>
@@ -122,10 +142,14 @@ SmartPhone Compatible web template, free WebDesigns for Nokia, Samsung, LG, Sony
                         </div>
                         <div class="sign-up2">
 
-                            <input type="number" name="stock" required>
+                            <input type="number" name="stock" value="${product.stock}" required>
 
                         </div>
                         <div class="clearfix"></div>
+                    </div>
+                    <div class="container" style="width: 200px;height:200px">
+                        <img src="${pageContext.request.contextPath}/productImg/${product.fileName}"
+                             alt="商品图片" class="img-responsive" id="view">
                     </div>
                     <div class="sign-u">
                         <div class="sign-up1">
@@ -133,7 +157,36 @@ SmartPhone Compatible web template, free WebDesigns for Nokia, Samsung, LG, Sony
                         </div>
                         <div class="sign-up2">
 
-                            <input type="file" name="fileName" required>
+                            <input type="file" name="fileName" id="img">
+
+                        </div>
+                        <div class="clearfix"></div>
+                    </div>
+                    <div class="sign-u">
+                        <div class="sign-up1">
+                            <h4>产品状态 :</h4>
+                        </div>
+                        <div class="sign-up2">
+                            <label>
+                                <input type="radio"  name="isDelete"
+                                       value="1" id="del"   required>
+                                删除
+                            </label>
+                            <label>
+                                <input type="radio"  value="0"
+                                       name="isDelete" id="up"  required>
+                                上架销售
+                            </label>
+                            <label>
+                                <input type="radio"  value="2"
+                                       name="isDelete" id="hot"  required>
+                                热卖
+                            </label>
+                            <label>
+                                <input type="radio"  value="3"
+                                       name="isDelete" id="date"  required>
+                                限时
+                            </label>
 
                         </div>
                         <div class="clearfix"></div>
@@ -158,7 +211,91 @@ SmartPhone Compatible web template, free WebDesigns for Nokia, Samsung, LG, Sony
     <!--footer-->
     <!--//footer-->
 </div>
+
 <script src="${pageContext.request.contextPath}/jsp/admin/js/jquery-1.11.1.min.js"></script>
+<script type="text/javascript">
+    <%--alert(${param.item.categorygoryLevel1})--%>
+$(function () {
+   if("${product.isDelete==0}"){
+       $("#up").attr("checked","checked")
+   }else if("${product.isDelete==1}"){
+       $("#del").attr("checked","checked")
+   }else if("${product.isDelete==2}") {
+       $("#hot").attr("checked","checked")
+   }else{
+       $("#date").attr("checked","checked")
+   }
+
+})
+    //实现图片上传前的预览
+    $(function () {
+        $("#img").change(function () {
+
+            var reader = new FileReader();
+
+            reader.readAsDataURL(this.files[0]);
+            reader.onloadend = function () {
+
+                $("#view").attr("src", this.result);//修改img的src
+
+            }
+        })
+
+        $(function () {
+            /*  var $two=$("#two").val();
+            var $three=$("$three").val();*/
+            //获取二级分类
+            $("#one").change(function () {
+                var $two = $("#two").empty().append("<option >请选择</option>");
+                var $three = $("#three").empty().append("<option >请选择</option>");
+                var $one = $("#one").val();
+                if ($one == null) {
+                    return;
+                }
+
+                $.ajax({
+                    url: "${pageContext.request.contextPath}/category?action=getlevelParentId&parentId=" + $one,
+                    type: "POST",
+                    success: function (data) {
+
+                        $(data).each(function (index, item) {
+                            $two.append($("<option value='" + item.id + "'>" + item.name + "</option>"))
+                        })
+
+
+                    },
+                    dataType: "json"
+                })
+            })
+        })
+        //获取三级
+        $(function () {
+            $("#two").change(function () {
+                var $three = $("#three").empty().append("<option >请选择</option>");
+                var $two = $("#two").val();
+                if ($two == null) {
+                    return;
+                }
+
+                $.ajax({
+                    url: "${pageContext.request.contextPath}/category?action=getlevelParentId&parentId=" + $two,
+                    type: "POST",
+                    success: function (data) {
+
+                        $(data).each(function (index, item) {
+                            $three.append($("<option value='" + item.id + "'>" + item.name + "</option>"))
+                        })
+
+
+                    },
+                    dataType: "json"
+                })
+            })
+
+
+        })
+    })
+</script>
 <script type="application/x-javascript"> addEventListener("load", function () {
     setTimeout(hideURLbar, 0);
 }, false);
@@ -205,167 +342,6 @@ function hideURLbar() {
 <!-- Bootstrap Core JavaScript -->
 <script src="${pageContext.request.contextPath}/jsp/admin/js/bootstrap.js"></script>
 <script src="${pageContext.request.contextPath}/static/js/jquery.validate.min.js"></script>
-<script type="text/javascript">
-    $(function () {
-        /*  var $two=$("#two").val();
-        var $three=$("$three").val();*/
 
-        var $one=$("#one").empty().append("<option >请选择</option>");
-            $.ajax({
-                url:"${pageContext.request.contextPath}/category?action=getlevelParentId&parentId=0",
-                type:"POST",
-                success:function (data) {
-
-                    $(data).each(function (index,item) {
-                        $one.append($("<option value='"+item.id+"'>"+item.name+"</option>"))
-                    })
-
-
-                },
-                dataType:"json"
-            })
-        })
-
-    $(function () {
-            /*  var $two=$("#two").val();
-            var $three=$("$three").val();*/
-            //获取二级分类
-            $("#one").change(function () {
-                var $two=$("#two").empty().append("<option >请选择</option>");
-                var $three=$("#three").empty().append("<option >请选择</option>");
-                var $one=$("#one").val();
-                if($one==null){
-                    return;
-                }
-
-                $.ajax({
-                    url:"${pageContext.request.contextPath}/category?action=getlevelParentId&parentId="+$one,
-                    type:"POST",
-                    success:function (data) {
-
-                        $(data).each(function (index,item) {
-                            $two.append($("<option value='"+item.id+"'>"+item.name+"</option>"))
-                        })
-
-
-                    },
-                    dataType:"json"
-                })
-            })
-    })
-    $(function () {
-        $("#two").change(function () {
-            var $three=$("#three").empty().append("<option >请选择</option>");
-            var $two=$("#two").val();
-            if($two==null){
-                return;
-            }
-
-            $.ajax({
-                url:"${pageContext.request.contextPath}/category?action=getlevelParentId&parentId="+$two,
-                type:"POST",
-                success:function (data) {
-
-                    $(data).each(function (index,item) {
-                        $three.append($("<option value='"+item.id+"'>"+item.name+"</option>"))
-                    })
-
-
-                },
-                dataType:"json"
-            })
-        })
-    })
-
-
-    $(function(){
-        $.validator.addMethod(
-            "Fclass", function (value, element, param) {
-                return value!="请选择";
-            });
-        $.validator.addMethod(
-            "Fprice", function (value, element, param) {
-                var reg=new RegExp(/^\d+\.?\d{0,2}$/)
-                return reg.test(value);
-            });
-        $("#tab").validate({
-
-            //验证规则
-            rules: {
-                categorygoryLevel1 : {
-                    required: true,
-                    Fclass:true
-                },
-                categorygoryLevel2 : {
-                    required: true,
-                    Fclass:true
-                },
-                categorygoryLevel3 : {
-                    required: true,
-                    Fclass:true
-                },
-                name: {
-                    required: true,
-                    minlength: 3,
-                    maxlength:15
-                },
-                description:{
-                    required: true,
-                    minlength: 3,
-                    maxlength:15
-                },
-                price: {
-                    required: true,
-                    Fprice:true
-                },
-                stock: {
-                    required: true
-                },
-                fileName:{
-                    required:true
-                }
-            },//rules end
-            //不符合验证规则的提示信息
-            messages: {
-                categorygoryLevel1: {
-                    required : "请选择二级分类",
-                    Fclass: "请选择二级分类"
-                },
-                categorygoryLevel2: {
-                    required : "请选择二级分类",
-                    Fclass: "请选择二级分类"
-                },
-                categorygoryLevel3: {
-                    required : "请选择三级分类",
-                    Fclass: "请选择三级分类"
-                },
-                name: {
-                    required: "请输入宝贝标题",
-                    minlength: "长度不能小于3位",
-                    maxlength: "长度不能大于15位"
-                },
-                description: {
-                    required: "请输入宝贝描述",
-                    minlength: "长度不能小于3位",
-                    maxlength: "长度不能大于15位"
-                },
-                price: {
-                    required: "请输入宝贝售价",
-                    Fprice: "价格不合法"
-                },
-                stock: {
-                    required: "请输入宝贝库存"
-                },
-                fileName:{
-                    required: "请上传宝贝主图"
-                }
-            },//messages end
-            onfocusout: function (element) {
-                $(element).valid();
-            }
-
-        });
-    });
-</script>
 </body>
 </html>

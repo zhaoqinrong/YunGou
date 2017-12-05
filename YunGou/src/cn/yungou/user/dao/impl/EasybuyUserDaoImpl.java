@@ -116,5 +116,13 @@ public class EasybuyUserDaoImpl extends Basedao implements EasybuyUserDao {
         return easybuyUsers;
     }
 
+    @Override
+    public EasybuyUser findByCode(String code) {
+        String sql="select * from easybuy_user where code=?";
+        ResultSet query = Basedao.query(sql, code);
+
+        return ResultSetUtil.findOne(query,EasybuyUser.class);
+    }
+
 
 }

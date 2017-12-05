@@ -22,4 +22,5 @@ public interface EasybuyUserService extends CommonService<EasybuyUser>{
 
     EasybuyUser active(String code);
 
+    EasybuyUser findByCode(String code);
 }

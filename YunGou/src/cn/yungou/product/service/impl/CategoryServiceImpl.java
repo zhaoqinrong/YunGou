@@ -1,6 +1,7 @@
 package cn.yungou.product.service.impl;
 
 import cn.yungou.commons.constant.Constant;
+import cn.yungou.commons.entity.Classify;
 import cn.yungou.commons.entity.EasybuyProductCategory;
 import cn.yungou.commons.util.BeanFactory;
 import cn.yungou.commons.util.JsonUtils;
@@ -47,10 +48,28 @@ public class CategoryServiceImpl implements CategoryService {
     }
 
     @Override
+    public List<EasybuyProductCategory> getAllClass() {
+
+        return CGD.getAll();
+    }
+
+    @Override
     public List<EasybuyProductCategory> getlevelParentId(Integer parentId) {
 
         return   CGD.getlevelParentId(parentId);
 
+    }
+
+    @Override
+    public List<EasybuyProductCategory> getAllByType(Integer i) {
+
+        return CGD.getAllByType(i);
+    }
+
+    @Override
+    public List<Classify<EasybuyProductCategory>> getClassify(Integer parentId) {
+
+        return CGD.getClassify(parentId);
     }
 
 

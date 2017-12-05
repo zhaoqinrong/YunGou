@@ -27,8 +27,9 @@
 	<link rel="stylesheet" type="text/css"  href="${pageContext.request.contextPath}/static/css/base.css">
 	<link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/static/css/home.css">
     <link type="text/css" href="${pageContext.request.contextPath}/static/css/bootstrap.min.css">
+    <script type="text/javascript" src="${pageContext.request.contextPath}/static/js/jquery-1.10.2.min.js"></script>
     <style type="text/css">
-        .yMenuListConin dl dt,dd{
+     /*   .yMenuListConin dl dt,dd{
               display: inline-block;
               float: left;
               margin-left: 10px;
@@ -45,7 +46,25 @@
         
         .yMenuListConin dl dt{
             font-weight:bold;
+        }*/
+        .yMenuListConin{
+
         }
+        .yMenuLCinList{
+            padding-top: 0px;
+            height: 80px;
+        }
+        .yListName{
+            padding-top: 5px ;
+
+        }
+     .yMenuLCinList>h3{
+         margin-top:5px;
+     }
+     .yMenuLCinList>p{
+         margin-top:5px;
+         margin-bottom: 6px;
+     }
     </style>
 </head>
 <body>
@@ -144,346 +163,68 @@
                 <h2 class="pullDownTitle"><i class="icon-class"></i>所有商品分类</h2>
          <%--       一级目录--%>
                 <ul class="pullDownList" id="level1">
-                </ul>
-                <script type="text/javascript">
 
-                </script>
+                </ul>
+
                 <!-- 下拉详细列表具体分类 -->
                 <div class="yMenuListCon">
                     <div class="yMenuListConin">
-                        <div class="yMenuLCinList">
-                            <dl>
-
-                            </dl>
-
-                        </div>
                     </div>
 
                     <div class="yMenuListConin">
-                        <div class="yMenuLCinList">
-                            <h3><a href="" class="yListName">精品男装</a><a href="" class="yListMore">更多 </a></h3>
-                            <p>
-                                <a href="" class="ecolor610">大牌上新</a>
-                                <a href="">商场同款</a>
-                                <a href="">男装集结</a>
-                                <a href="">羽绒服</a>
-                                <a href="">加厚羽绒 </a>
-                                <a href="">高帮鞋</a>
-                                <a href="">商场同款</a>
-                                <a href="">男装集结</a>
-                                <a href="">羽绒服</a>
-                                <a href="">加厚羽绒 </a>
-                                <a href="">高帮鞋</a>
-                                <a href="">商场同款</a>
-                                <a href="">男装集结</a>
-                                <a href="">羽绒服</a>
-                                <a href="">加厚羽绒 </a>
-                                <a href="">高帮鞋</a>
-                            </p>
-                        </div>
+
                     </div>
 
                     <div class="yMenuListConin">
-                        <div class="yMenuLCinList">
 
-                        <dl>
-                            <dt><a href="">手机&nbsp;&nbsp;></a></dt>
-                            <dd><a href="">苹果</a></dd>
-                            <dd><a href="">meiz</a></dd>
-                            <dd><a href="">小米</a></dd>
-                            <dd><a href="">三星</a></dd>
-                            <dd><a href="">zhongtai </a></dd>
-                        </dl>
-
-                    </div>
                     </div>
 
                     <div class="yMenuListConin">
-                        <div class="yMenuLCinList">
-                            <h3><a href="" class="yListName">精品男装</a><a href="" class="yListMore">更多 </a></h3>
-                            <p>
-                                <a href="" class="ecolor610">大牌上新</a>
-                                <a href="">商场同款</a>
-                                <a href="">男装集结</a>
-                                <a href="">羽绒服</a>
-                                <a href="">加厚羽绒 </a>
-                                <a href="">高帮鞋</a>
-                                <a href="">商场同款</a>
-                                <a href="">男装集结</a>
-                                <a href="">羽绒服</a>
-                                <a href="">加厚羽绒 </a>
-                                <a href="">高帮鞋</a>
-                                <a href="">商场同款</a>
-                                <a href="">男装集结</a>
-                                <a href="">羽绒服</a>
-                                <a href="">加厚羽绒 </a>
-                                <a href="">高帮鞋</a>
-                            </p>
-                        </div>
+
                     </div>
 
                     <div class="yMenuListConin">
-                        <div class="yMenuLCinList">
-                            <h3><a href="" class="yListName">精品男装</a><a href="" class="yListMore">更多 </a></h3>
-                            <p>
-                                <a href="" class="ecolor610">大牌上新</a>
-                                <a href="">商场同款</a>
-                                <a href="">男装集结</a>
-                                <a href="">羽绒服</a>
-                                <a href="">加厚羽绒 </a>
-                                <a href="">高帮鞋</a>
-                                <a href="">商场同款</a>
-                                <a href="">男装集结</a>
-                                <a href="">羽绒服</a>
-                                <a href="">加厚羽绒 </a>
-                                <a href="">高帮鞋</a>
-                                <a href="">商场同款</a>
-                                <a href="">男装集结</a>
-                                <a href="">羽绒服</a>
-                                <a href="">加厚羽绒 </a>
-                                <a href="">高帮鞋</a>
-                            </p>
-                        </div>
+
                     </div>
 
                     <div class="yMenuListConin">
-                        <div class="yMenuLCinList">
-                            <h3><a href="" class="yListName">精品男装</a><a href="" class="yListMore">更多 </a></h3>
-                            <p>
-                                <a href="" class="ecolor610">大牌上新</a>
-                                <a href="">商场同款</a>
-                                <a href="">男装集结</a>
-                                <a href="">羽绒服</a>
-                                <a href="">加厚羽绒 </a>
-                                <a href="">高帮鞋</a>
-                                <a href="">商场同款</a>
-                                <a href="">男装集结</a>
-                                <a href="">羽绒服</a>
-                                <a href="">加厚羽绒 </a>
-                                <a href="">高帮鞋</a>
-                                <a href="">商场同款</a>
-                                <a href="">男装集结</a>
-                                <a href="">羽绒服</a>
-                                <a href="">加厚羽绒 </a>
-                                <a href="">高帮鞋</a>
-                            </p>
-                        </div>
+
                     </div>
 
                     <div class="yMenuListConin">
-                        <div class="yMenuLCinList">
-                            <h3><a href="" class="yListName">精品男装</a><a href="" class="yListMore">更多 </a></h3>
-                            <p>
-                                <a href="" class="ecolor610">大牌上新</a>
-                                <a href="">商场同款</a>
-                                <a href="">男装集结</a>
-                                <a href="">羽绒服</a>
-                                <a href="">加厚羽绒 </a>
-                                <a href="">高帮鞋</a>
-                                <a href="">商场同款</a>
-                                <a href="">男装集结</a>
-                                <a href="">羽绒服</a>
-                                <a href="">加厚羽绒 </a>
-                                <a href="">高帮鞋</a>
-                                <a href="">商场同款</a>
-                                <a href="">男装集结</a>
-                                <a href="">羽绒服</a>
-                                <a href="">加厚羽绒 </a>
-                                <a href="">高帮鞋</a>
-                            </p>
-                        </div>
+
                     </div>
 
                     <div class="yMenuListConin">
-                        <div class="yMenuLCinList">
-                            <h3><a href="" class="yListName">精品男装</a><a href="" class="yListMore">更多 </a></h3>
-                            <p>
-                                <a href="" class="ecolor610">大牌上新</a>
-                                <a href="">商场同款</a>
-                                <a href="">男装集结</a>
-                                <a href="">羽绒服</a>
-                                <a href="">加厚羽绒 </a>
-                                <a href="">高帮鞋</a>
-                                <a href="">商场同款</a>
-                                <a href="">男装集结</a>
-                                <a href="">羽绒服</a>
-                                <a href="">加厚羽绒 </a>
-                                <a href="">高帮鞋</a>
-                                <a href="">商场同款</a>
-                                <a href="">男装集结</a>
-                                <a href="">羽绒服</a>
-                                <a href="">加厚羽绒 </a>
-                                <a href="">高帮鞋</a>
-                            </p>
-                        </div>
+
                     </div>
 
                     <div class="yMenuListConin">
-                        <div class="yMenuLCinList">
-                            <h3><a href="" class="yListName">精品男装</a><a href="" class="yListMore">更多 ></a></h3>
-                            <p>
-                                <a href="" class="ecolor610">大牌上新</a>
-                                <a href="">商场同款</a>
-                                <a href="">男装集结</a>
-                                <a href="">羽绒服</a>
-                                <a href="">加厚羽绒 </a>
-                                <a href="">高帮鞋</a>
-                                <a href="">商场同款</a>
-                                <a href="">男装集结</a>
-                                <a href="">羽绒服</a>
-                                <a href="">加厚羽绒 </a>
-                                <a href="">高帮鞋</a>
-                                <a href="">商场同款</a>
-                                <a href="">男装集结</a>
-                                <a href="">羽绒服</a>
-                                <a href="">加厚羽绒 </a>
-                                <a href="">高帮鞋</a>
-                            </p>
-                        </div>
+
                     </div>
 
                     <div class="yMenuListConin">
-                        <div class="yMenuLCinList">
-                            <h3><a href="" class="yListName">精品男装</a><a href="" class="yListMore">更多 ></a></h3>
-                            <p>
-                                <a href="" class="ecolor610">大牌上新</a>
-                                <a href="">商场同款</a>
-                                <a href="">男装集结</a>
-                                <a href="">羽绒服</a>
-                                <a href="">加厚羽绒 </a>
-                                <a href="">高帮鞋</a>
-                                <a href="">商场同款</a>
-                                <a href="">男装集结</a>
-                                <a href="">羽绒服</a>
-                                <a href="">加厚羽绒 </a>
-                                <a href="">高帮鞋</a>
-                                <a href="">商场同款</a>
-                                <a href="">男装集结</a>
-                                <a href="">羽绒服</a>
-                                <a href="">加厚羽绒 </a>
-                                <a href="">高帮鞋</a>
-                            </p>
-                        </div>
+
                     </div>
 
                     <div class="yMenuListConin">
-                        <div class="yMenuLCinList">
-                            <h3><a href="" class="yListName">精品男装</a><a href="" class="yListMore">更多 ></a></h3>
-                            <p>
-                                <a href="" class="ecolor610">大牌上新</a>
-                                <a href="">商场同款</a>
-                                <a href="">男装集结</a>
-                                <a href="">羽绒服</a>
-                                <a href="">加厚羽绒 </a>
-                                <a href="">高帮鞋</a>
-                                <a href="">商场同款</a>
-                                <a href="">男装集结</a>
-                                <a href="">羽绒服</a>
-                                <a href="">加厚羽绒 </a>
-                                <a href="">高帮鞋</a>
-                                <a href="">商场同款</a>
-                                <a href="">男装集结</a>
-                                <a href="">羽绒服</a>
-                                <a href="">加厚羽绒 </a>
-                                <a href="">高帮鞋</a>
-                            </p>
-                        </div>
+
                     </div>
 
                     <div class="yMenuListConin">
-                        <div class="yMenuLCinList">
-                            <h3><a href="" class="yListName">精品男装</a><a href="" class="yListMore">更多 ></a></h3>
-                            <p>
-                                <a href="" class="ecolor610">大牌上新</a>
-                                <a href="">商场同款</a>
-                                <a href="">男装集结</a>
-                                <a href="">羽绒服</a>
-                                <a href="">加厚羽绒 </a>
-                                <a href="">高帮鞋</a>
-                                <a href="">商场同款</a>
-                                <a href="">男装集结</a>
-                                <a href="">羽绒服</a>
-                                <a href="">加厚羽绒 </a>
-                                <a href="">高帮鞋</a>
-                                <a href="">商场同款</a>
-                                <a href="">男装集结</a>
-                                <a href="">羽绒服</a>
-                                <a href="">加厚羽绒 </a>
-                                <a href="">高帮鞋</a>
-                            </p>
-                        </div>
+
                     </div>
 
                     <div class="yMenuListConin">
-                        <div class="yMenuLCinList">
-                            <h3><a href="" class="yListName">精品男装</a><a href="" class="yListMore">更多 ></a></h3>
-                            <p>
-                                <a href="" class="ecolor610">大牌上新</a>
-                                <a href="">商场同款</a>
-                                <a href="">男装集结</a>
-                                <a href="">羽绒服</a>
-                                <a href="">加厚羽绒 </a>
-                                <a href="">高帮鞋</a>
-                                <a href="">商场同款</a>
-                                <a href="">男装集结</a>
-                                <a href="">羽绒服</a>
-                                <a href="">加厚羽绒 </a>
-                                <a href="">高帮鞋</a>
-                                <a href="">商场同款</a>
-                                <a href="">男装集结</a>
-                                <a href="">羽绒服</a>
-                                <a href="">加厚羽绒 </a>
-                                <a href="">高帮鞋</a>
-                            </p>
-                        </div>
+
                     </div>
 
                     <div class="yMenuListConin">
-                        <div class="yMenuLCinList">
-                            <h3><a href="" class="yListName">精品男装</a><a href="" class="yListMore">更多 ></a></h3>
-                            <p>
-                                <a href="" class="ecolor610">大牌上新</a>
-                                <a href="">商场同款</a>
-                                <a href="">男装集结</a>
-                                <a href="">羽绒服</a>
-                                <a href="">加厚羽绒 </a>
-                                <a href="">高帮鞋</a>
-                                <a href="">商场同款</a>
-                                <a href="">男装集结</a>
-                                <a href="">羽绒服</a>
-                                <a href="">加厚羽绒 </a>
-                                <a href="">高帮鞋</a>
-                                <a href="">商场同款</a>
-                                <a href="">男装集结</a>
-                                <a href="">羽绒服</a>
-                                <a href="">加厚羽绒 </a>
-                                <a href="">高帮鞋</a>
-                            </p>
-                        </div>
+
                     </div>
 
                     <div class="yMenuListConin">
-                        <div class="yMenuLCinList">
-                            <h3><a href="" class="yListName">精品男装</a><a href="" class="yListMore">更多 ></a></h3>
-                            <p>
-                                <a href="" class="ecolor610">大牌上新</a>
-                                <a href="">商场同款</a>
-                                <a href="">男装集结</a>
-                                <a href="">羽绒服</a>
-                                <a href="">加厚羽绒 </a>
-                                <a href="">高帮鞋</a>
-                                <a href="">商场同款</a>
-                                <a href="">男装集结</a>
-                                <a href="">羽绒服</a>
-                                <a href="">加厚羽绒 </a>
-                                <a href="">高帮鞋</a>
-                                <a href="">商场同款</a>
-                                <a href="">男装集结</a>
-                                <a href="">羽绒服</a>
-                                <a href="">加厚羽绒 </a>
-                                <a href="">高帮鞋</a>
-                            </p>
-                        </div>
+
                     </div>
 
                 </div>
@@ -529,15 +270,7 @@
         </div>
     </div>
 </header>
-<section id="">
-	<div class="center pc-ad-img clearfix">
-		<div class="pc-center-img"><img src="${pageContext.request.contextPath}/static/img/ad/ad1.jpg"></div>
-		<div class="pc-center-img"><img src="${pageContext.request.contextPath}/static/img/ad/ad2.jpg"></div>
-		<div class="pc-center-img"><img src="${pageContext.request.contextPath}/static/img/ad/ad3.jpg"></div>
-		<div class="pc-center-img"><img src="${pageContext.request.contextPath}/static/img/ad/ad4.jpg"></div>
-		<div class="pc-center-img"><img src="${pageContext.request.contextPath}/static/img/ad/ad5.jpg"></div>
-	</div>
-</section>
+
 <section id="s">
 	<div class="center">
 		<div class="pc-center-he">
@@ -1139,26 +872,78 @@
 <div style="height:100px"></div>
 
 <%@include file="util/footer.jsp"%>
-<script type="text/javascript" src="${pageContext.request.contextPath}/static/js/jquery-1.10.2.min.js"></script>
+
 <script type="text/javascript" src="${pageContext.request.contextPath}/static/js/bootstrap.min.js"></script>
 <script type="text/javascript" src="${pageContext.request.contextPath}/static/js/index.js"></script>
 <script type="text/javascript">
   $(function () {
-        $.ajax({
+        $.ajax({//获取分类
             url:"${pageContext.request.contextPath}/category?action=findAllCategory&parentId=0",
             type:"GET",
             success:function (data) {
 
                 $(data).each(function (index) {
-                        
-                            $("#level1").append($(" <li name="+this.id+"> <i class='list-icon-"+2+"'></i> <a href=''target='_blank'>"+this.name+"</a> <span></span> </li>"));
+                    $("#level1").append($(" <li name="+this.id+"> <i class='list-icon-"+2+"'></i> <a href=''target='_blank'>"+this.name+"</a> <span></span> </li>"));
                        
                 })
             },
             dataType:"json"
         })
-    }) 
+    })
+  $(function() {
+      $(".pullDownList").delegate("li", "mouseenter", function () {
+          $(".yMenuListCon").fadeIn();
 
+          var index = $(this).index(".pullDownList li");
+          if (!($(this).hasClass("menulihover") || $(this).hasClass("menuliselected"))) {
+              $($(".yBannerList")[index]).css("display", "block").siblings().css("display", "none");
+              $($(".yBannerList")[index]).removeClass("ybannerExposure");
+              setTimeout(function () {
+                  $($(".yBannerList")[index]).addClass("ybannerExposure");
+              }, 60);
+          }
+          $(this).addClass("menulihover").siblings().removeClass("menulihover");
+          $(this).addClass("menuliselected").siblings().removeClass("menuliselected");
+          $($(".yMenuListConin")[index]).fadeIn().siblings().fadeOut();
+          var $parentId = $(this).attr("name")
+
+          $.ajax({
+              url: "/category",
+              data: {
+                  "action": 'getClassify',
+                  "parentId": $parentId
+              },
+              type: "get",
+              success: function (data) {
+
+                  $($(".yMenuListConin")[index]).empty();
+
+                  $(data).each(function () {
+                    var id=this.id
+                     $($(".yMenuListConin")[index]).append("<div class='yMenuLCinList' ><h3 ><a href='' class='yListName'>"+this.name+"</a></h3><p id='"+id+"'></p></div>");
+                    $(this.childs).each(function(index,item){
+                        $("#"+id).append("<a href=''>"+item.name+"</a>")
+
+
+                    })
+                  })
+              },
+              dataType: "json"
+          })
+          return false;
+
+
+      })
+
+      $(".pullDown").mouseleave(function () {
+          $(".yMenuListCon").fadeOut();
+          $(".yMenuListConin").fadeOut();
+          // $(".pullDownList").fadeOut();
+          $(".pullDownList li").removeClass("menulihover")
+
+
+      })
+  })
 
 
 </script>

@@ -36,7 +36,14 @@ public class ProductDaoImpl implements ProductDao {
 
     @Override
     public int update(Object o) {
-        return 0;
+        EasybuyProduct product = (EasybuyProduct) o;
+        Constant.LOGGER.debug("商品"+product);
+        String sql="update easybuy_product set `name`=?,`description`=?,`price`=?,stock=?,categorygoryLevel1=?," +
+                "categorygoryLevel2=?,categorygoryLevel3=?,fileName=?,isDelete=? where id=?";
+        Object[] param={product.getName(),product.getDescription(),product.getPrice(),product.getStock(),product.getCategorygoryLevel1()
+        ,product.getCategorygoryLevel2(),product.getCategorygoryLevel3(),product.getFileName(),product.getIsDelete(),product.getId()};
+        int query = Basedao.update(sql, param);
+        return query;
     }
 
     @Override
@@ -48,14 +55,8 @@ public class ProductDaoImpl implements ProductDao {
     public Integer getCount() {
         String sql="select count(*) from easybuy_product";
         ResultSet query = Basedao.query(sql);
-        try {
-            if(query.next()){
-                return query.getInt(1);
-            }
-        } catch (SQLException e) {
-            e.printStackTrace();
-        }
-        return null;
+
+        return ResultSetUtil.getInt(query);
     }
 
     @Override
@@ -127,15 +128,15 @@ public class ProductDaoImpl implements ProductDao {
         }
         Constant.LOGGER.debug("sql查询总条数的语句"+sb);
         ResultSet query = Basedao.query(sb.toString(), list.toArray());
-        try {
-            if(query.next()){
-                return query.getInt(1);
-            }
-        } catch (SQLException e) {
-            e.printStackTrace();
-        }
+      return ResultSetUtil.getInt(query);
+    }
 
-        return null;
+    @Override
+    public EasybuyProduct getProductByid(Integer id) {
+        String  sql="select * from easybuy_product where id=?";
+        ResultSet query = Basedao.query(sql, id);
+        EasybuyProduct product = ResultSetUtil.findOne(query, EasybuyProduct.class);
+        return product;
     }
 
 

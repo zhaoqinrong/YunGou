@@ -10,9 +10,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=9; IE=8; IE=7; IE=EDGE">
     <meta name="renderer" content="webkit">
     <title>云购物商城-巴黎欧莱雅官方旗舰店</title>
-    <link rel="shortcut icon" type="image/x-icon" href="img/icon/favicon.ico">
-    <link rel="stylesheet" type="text/css" href="css/base.css">
-    <link rel="stylesheet" type="text/css" href="css/home.css">
+    <link rel="shortcut icon" type="${pageContext.request.contextPath}/static/image/x-icon" href="img/icon/favicon.ico">
+    <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/static/css/base.css">
+    <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/static/css/home.css">
 
     <style>
         .li-ul-ss l {
@@ -119,43 +119,58 @@
 <div class="Xcontent">
     <ul class="Xcontent01">
 
-        <div class="Xcontent06"><img src="images/shangpinxiangqing/X1.png"></div>
-        <ol class="Xcontent08">
+        <div class="Xcontent06"><img src="${pageContext.request.contextPath}/productImg/${product.fileName}"></div>
+        <%--<ol class="Xcontent08">
             <div class="Xcontent07"><img src="images/shangpinxiangqing/X1.png"></div>
             <div class="Xcontent09"><img src="images/shangpinxiangqing/X7.png"></div>
             <div class="Xcontent10"><img src="images/shangpinxiangqing/X8.png"></div>
             <div class="Xcontent11"><img src="images/shangpinxiangqing/X9.png"></div>
             <div class="Xcontent12"><img src="images/shangpinxiangqing/X10.png"></div>
-        </ol>
+        </ol>--%>
         <ol class="Xcontent13 clearfix">
-            <div class="Xcontent14 clearfix"><a href="#"><p>赛亿（shinee)取暖器家用/取暖电器/电暖器/电暖气台式摇头暖风机HN2118PT </p></a></div>
-            <div class="Xcontent15 clearfix red fl" style="margin-top:2px">新品上架</div>
-            <div class="Xcontent16 clearfix"><p style="margin:0">美妆护肤放肆购，你值得拥有！更多惊喜</p></div>
+            <div class="Xcontent14 clearfix"><a href="#"><p>${product.name} </p></a></div>
+            <div class="Xcontent15 clearfix red fl" style="margin-top:2px">
+                <c:choose>
+                    <c:when test="${product.isDelete==3}">
+                        限时抢购
+                    </c:when>
+                    <c:when test="${product.isDelete==2}">
+                        热卖产品
+                    </c:when>
+                    <c:when test="${product.isDelete==1}">
+                        商品已下架
+                    </c:when>
+                    <c:otherwise>
+                        商品销售中
+                    </c:otherwise>
+                </c:choose>
+            </div>
             <div class="Xcontent17">
                 <p class="Xcontent18">售价</p>
-                <p class="Xcontent19">￥<span>69.00</span></p>
-                <div class="Xcontent20">
+                <p class="Xcontent19">￥<span>${product.price}</span></p>
+            <%--    <div class="Xcontent20">
                     <p class="Xcontent21">促销</p>
                     <img src="images/shangpinxiangqing/X12.png">
                     <p class="Xcontent22">领610元新年礼券，满再赠好礼</p>
-                </div>
+                </div>--%>
+                <div></div>
                 <div class="Xcontent23">
                     <p class="Xcontent24">服务</p>
                     <p class="Xcontent25">30天无忧退货&nbsp;&nbsp;&nbsp;&nbsp; 48小时快速退款 &nbsp;&nbsp;&nbsp;&nbsp; 满88元免邮</p>
                 </div>
 
             </div>
-            <div class="Xcontent26">
+           <%-- <div class="Xcontent26">
                 <p class="Xcontent27">颜色</p>
                 <div class="Xcontent28"><img src="images/shangpinxiangqing/X14.png"></div>
                 <div class="Xcontent29"><img src="images/shangpinxiangqing/X1.png"></div>
-            </div>
+            </div>--%>
             <div class="Xcontent30">
                 <p class="Xcontent31">数量</p>
-                <div class="Xcontent32"><img src="images/shangpinxiangqing/X15.png"></div>
+                <div class="Xcontent32"><img src="${pageContext.request.contextPath}/static/images/shangpinxiangqing/X15.png"></div>
                 <form>
-                    <input class="input" value="1"></form>
-                <div class="Xcontent33"><img src="images/shangpinxiangqing/16.png"></div>
+                    <input class="input" value="${product.stock}"></form>
+                <div class="Xcontent33"><img src="${pageContext.request.contextPath}/static/images/shangpinxiangqing/16.png"></div>
 
             </div>
             <div class="Xcontent34"><a href="#">立即购买</a></div>
@@ -497,7 +512,7 @@
                 <a href="#">耳机耳麦</a>
             </div>
         </div>
-    </div syu>
+    </div >
     <div class="pc-info fr" style="padding-left:10px; padding-top:20px">
         <div class="pc-overall">
             <ul id="H-table1" class="brand-tab H-table1 H-table-shop clearfix ">
@@ -544,11 +559,15 @@
                             <p>机身颜色：白色</p>
                         </li>
                     </ul>
-                    <div>
+                   <%-- <div>
                         <div style="text-align:center"><img src="images/shangpinxiangqing/X1.png" width="50%"></div>
                         <div style="text-align:center"><img src="images/shangpinxiangqing/X2.png" width="50%"></div>
                         <div style="text-align:center"><img src="images/shangpinxiangqing/X3.png" width="50%"></div>
                         <div style="text-align:center"><img src="images/shangpinxiangqing/X1.png" width="50%"></div>
+                    </div>--%>
+                    <div>
+                        <div style="text-align:center"><p>${product.description}</p></div>
+                        <div style="text-align:center"><img src="${pageContext.request.contextPath}/productImg/${product.fileName}" width="50%"></div>
                     </div>
                 </div>
                 <div class="H-over1" style="display:none">
@@ -881,11 +900,11 @@
 <div style="height:100px"></div>
 
 <jsp:include page="util/footer.jsp"/>
-<script type="text/javascript" src="js/jquery.js"></script>
-<script type="text/javascript" src="js/index.js"></script>
-<script type="text/javascript" src="js/modernizr-custom-v2.7.1.min.js"></script>
-<script type="text/javascript" src="js/jquery.SuperSlide.js"></script>
-<script type="text/javascript" src="js/page.js">
+<script type="text/javascript" src="${pageContext.request.contextPath}/static/js/jquery.js"></script>
+<script type="text/javascript" src="${pageContext.request.contextPath}/static/js/index.js"></script>
+<script type="text/javascript" src="${pageContext.request.contextPath}/static/js/modernizr-custom-v2.7.1.min.js"></script>
+<script type="text/javascript" src="${pageContext.request.contextPath}/static/js/jquery.SuperSlide.js"></script>
+<script type="text/javascript" src="${pageContext.request.contextPath}/static/js/page.js">
 
 
 </script>

@@ -28,7 +28,7 @@ public class ProductServlet extends BaseServlet {
     private static final CategoryService CATEGORY_SERVICE= (CategoryService) BeanFactory.getBean("categoryservice");
 
     /**
-     * 查询所有商品,并分页显示
+     * 查询所有的一级分类
      * @param req
      * @param resp
      * @return
@@ -39,10 +39,10 @@ public class ProductServlet extends BaseServlet {
         if(parameter!=null&&!"".equals(parameter.trim())){
             page = Integer.parseInt(parameter);
         }
-        Page products = PRODUCT_SERVICE.getAllByPage(page);
+//        Page products = PRODUCT_SERVICE.getAllByPage(page);
         List<EasybuyProductCategory> list=CATEGORY_SERVICE.getlevel1();
 
-        req.setAttribute("products",products);
+//        req.setAttribute("products",products);
         req.setAttribute("category",list);
 //        Constant.LOGGER.debug("list的值为"+list);
 
@@ -78,4 +78,73 @@ public class ProductServlet extends BaseServlet {
 
         return null;
     }
+
+    /**
+     * 通过商品id查询商品
+     * @param request
+     * @param response
+     * @return
+     * @throws Exception
+     */
+      public  String getProductByid(HttpServletRequest request, HttpServletResponse response) throws Exception {
+        String id = request.getParameter("id");
+        if(id==null){
+            return null;
+        }
+        EasybuyProduct product=PRODUCT_SERVICE.getProductByid(Integer.parseInt(id));
+        //获取所有的分类信息
+          List<EasybuyProductCategory> list1=CATEGORY_SERVICE.getAllByType(1);
+          List<EasybuyProductCategory> list2=CATEGORY_SERVICE.getAllByType(2);
+          List<EasybuyProductCategory> list3=CATEGORY_SERVICE.getAllByType(3);
+//        List<EasybuyProductCategory> list=CATEGORY_SERVICE.getlevel1();
+        request.setAttribute("product",product);
+        request.setAttribute("allClass1",list1);
+          request.setAttribute("allClass2",list2);
+          request.setAttribute("allClass3",list3);
+        return request.getContextPath()+"/jsp/admin/product/modifyProduct.jsp";
+    }
+    public  String modify(HttpServletRequest request, HttpServletResponse response) throws Exception {
+        String id = request.getParameter("id");
+        Integer id1=null;
+        if(id!=null){
+            id1=Integer.parseInt(id);
+        }else{
+            Constant.LOGGER.debug("修改失败");
+            return request.getRequestURL().toString();
+        }
+        EasybuyProduct productupload = FileUploadUtils.productupload(this.getServletConfig(), request, response);
+        productupload.setId(id1);
+        int add = PRODUCT_SERVICE.modify(productupload);
+        if(add>0){
+            Constant.LOGGER.debug("修改成功");
+            response.sendRedirect("/product?action=getAllByPage");
+            return null;
+        }
+
+        Constant.LOGGER.debug("修改失败");
+
+
+
+         return request.getRequestURL().toString();
+      }
+
+    /**
+     * 商品详情页面
+     * @param request
+     * @param response
+     * @return
+     * @throws Exception
+     */
+    public  String getProductByidView(HttpServletRequest request, HttpServletResponse response) throws Exception {
+        String id = request.getParameter("id");
+        if(id==null){
+            return null;
+        }
+        EasybuyProduct product=PRODUCT_SERVICE.getProductByid(Integer.parseInt(id));
+        //获取所有的分类信息
+//        List<EasybuyProductCategory> list=CATEGORY_SERVICE.getlevel1();
+        request.setAttribute("product",product);
+        return request.getContextPath()+"/jsp/page.jsp";
+    }
+
 }

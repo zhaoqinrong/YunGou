@@ -56,7 +56,7 @@
 					<div class="pc-item-san clearfix">
 						<a href="#"><img src="${pageContext.request.contextPath}/static/img/icon/weixin.png" alt="">微信登录</a>
 						<a href="#"><img src="${pageContext.request.contextPath}/static/img/icon/weibo.png" alt="">微博登录</a>
-						<a href="#" style="margin-right:0"><${pageContext.request.contextPath}/static/img src="img/icon/tengxun.png" alt="">QQ登录</a>
+						<a href="#" style="margin-right:0"><img src="${pageContext.request.contextPath}/static/img/icon/tengxun.png" alt="">QQ登录</a>
 					</div>
 					<div class="pc-reg">
 						<a href="user?action=loginUI" class="red">已有账号 请登录</a>

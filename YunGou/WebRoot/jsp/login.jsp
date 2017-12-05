@@ -88,7 +88,7 @@
 								src="${pageContext.request.contextPath}/static/img/icon/tengxun.png" alt="">QQ登录</a>
 						</div>
 						<div class="pc-reg">
-							<a href="#">忘记密码</a> <a href="user?action=registerUI" class="red">免费注册</a>
+							<a href="${pageContext.request.contextPath}/jsp/forPwd.jsp">忘记密码</a> <a href="user?action=registerUI" class="red">免费注册</a>
 						</div>
 					</form>
 				</div>

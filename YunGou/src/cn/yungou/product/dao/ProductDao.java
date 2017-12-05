@@ -14,4 +14,6 @@ public interface ProductDao extends CommonDao {
     Page<EasybuyProduct> getProductBycondition(ProductCondition productCondition, Page<EasybuyProduct> page);
 
     Integer getCountByContion(ProductCondition productCondition);
+
+    EasybuyProduct getProductByid(Integer id);
 }

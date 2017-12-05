@@ -1,5 +1,5 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
-<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ page contentType="text/html;charset=UTF-8"  pageEncoding="UTF-8" language="java" %>
 <!DOCTYPE HTML>
 <html>
 <head>
@@ -127,13 +127,17 @@ SmartPhone Compatible web template, free WebDesigns for Nokia, Samsung, LG, Sony
                         </div>
                         <div class="clearfix"></div>
                     </div>
+                    <div class="container" style="width: 200px;height:200px">
+                        <img src="${pageContext.request.contextPath}/productImg/${product.fileName}"
+                             alt="商品图片" class="img-responsive" id="view">
+                    </div>
                     <div class="sign-u">
                         <div class="sign-up1">
                             <h4>商品主图 :</h4>
                         </div>
                         <div class="sign-up2">
 
-                            <input type="file" name="fileName" required>
+                            <input type="file" name="fileName" id="img" required>
 
                         </div>
                         <div class="clearfix"></div>
@@ -159,6 +163,25 @@ SmartPhone Compatible web template, free WebDesigns for Nokia, Samsung, LG, Sony
     <!--//footer-->
 </div>
 <script src="${pageContext.request.contextPath}/jsp/admin/js/jquery-1.11.1.min.js"></script>
+<script type="text/javascript">
+    <%--alert(${param.item.categorygoryLevel1})--%>
+    //实现图片上传前的预览
+    $(function () {
+        $("#img").change(function () {
+
+            var reader = new FileReader();
+
+            reader.readAsDataURL(this.files[0]);
+            reader.onloadend = function () {
+
+                $("#view").attr("src", this.result);
+
+            }
+        })
+
+
+    })
+</script>
 <script type="application/x-javascript"> addEventListener("load", function () {
     setTimeout(hideURLbar, 0);
 }, false);
@@ -253,6 +276,7 @@ function hideURLbar() {
                 })
             })
     })
+    //获取三级
     $(function () {
         $("#two").change(function () {
             var $three=$("#three").empty().append("<option >请选择</option>");

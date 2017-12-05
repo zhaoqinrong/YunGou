@@ -15,14 +15,15 @@
         <nav class="cbp-spmenu cbp-spmenu-vertical cbp-spmenu-left" id="cbp-spmenu-s1">
             <ul class="nav" id="side-menu">
                 <li>
-                    <a href="adminUser?action=indexUI" class="active"><i class="fa fa-home nav_icon"></i>平台管理中心</a>
+                    <a href="${pageContext.request.contextPath}/jsp/admin/index.jsp" class="active"><i class="fa fa-home nav_icon"></i>平台管理中心</a>
                 </li>
                 <li>
                     <a href="#"><i class="fa fa-cogs nav_icon"></i>商品管理
                         <span class="fa arrow"></span></a>
                     <ul class="nav nav-second-level collapse">
                         <li>
-                            <a href="${pageContext.request.contextPath}/product?action=getAllByPage&currPage=1" target="_self">商品列表</a>
+                            <%--<a href="${pageContext.request.contextPath}/product?action=getAllByPage&currPage=1" target="_self">商品列表</a>--%>
+                                <a href="${pageContext.request.contextPath}/product?action=getAllByPage&currPage=1" target="_self">商品列表</a>
                         </li>
                         <li>
                             <a href="${pageContext.request.contextPath}/jsp/admin/product/addProduct.jsp">添加商品</a>

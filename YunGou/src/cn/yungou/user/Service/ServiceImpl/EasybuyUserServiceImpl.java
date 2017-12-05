@@ -28,7 +28,7 @@ public class EasybuyUserServiceImpl implements EasybuyUserService {
            Constant.LOGGER.info("增加成功");
     	   String content="尊敬的"+easybuyUser.getLoginName()+",欢迎您注册易买网,<a href='http://192.168.50.47:80/user?action=active&code="+easybuyUser.getCode()+"' target='_blank'>点此激活</a>";
          /*  String content="尊敬的"+easybuyUser.getLoginName()+",欢迎您注册易买网,http://127.0.0.1:80/YunGou/user?action=active&code="+easybuyUser.getCode();*/
-           EmailUtils.sendEmail(easybuyUser.getEmail(),content);
+           EmailUtils.sendEmail(easybuyUser.getEmail(),"用户激活",content);
         }else {
            Constant.LOGGER.info("新增失败");
        }
@@ -98,6 +98,11 @@ public class EasybuyUserServiceImpl implements EasybuyUserService {
         user.setStatus(1);
         EASYBUYUSERDAO.update(user);
         return user;
+    }
+
+    @Override
+    public EasybuyUser findByCode(String code) {
+        return EASYBUYUSERDAO.findByCode(code);
     }
 
     @Override

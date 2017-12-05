@@ -30,7 +30,7 @@ public class EmailUtils {
      * @param content   发送邮件的内容
      *
      */
-    public static void sendEmail(String email,String content){
+    public static void sendEmail(String email,String subject,String content){
 
 // 1. 创建参数配置, 用于连接邮件服务器的参数配置
         Properties props = new Properties();                    // 参数配置
@@ -76,7 +76,7 @@ public class EmailUtils {
             message.setRecipient(MimeMessage.RecipientType.TO, new InternetAddress(email));
 
             //设置邮件主题
-            message.setSubject("用户激活");
+            message.setSubject(subject);
             // message.setText("这是一封激活邮件，请<a href='#'>点击</a>");
 
             //设置邮件内容

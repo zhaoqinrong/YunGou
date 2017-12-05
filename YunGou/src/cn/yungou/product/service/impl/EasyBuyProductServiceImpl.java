@@ -2,6 +2,7 @@ package cn.yungou.product.service.impl;
 
 import cn.yungou.commons.constant.Constant;
 import cn.yungou.commons.entity.EasybuyProduct;
+import cn.yungou.commons.entity.EasybuyProductCategory;
 import cn.yungou.commons.entity.Page;
 import cn.yungou.commons.entity.ProductCondition;
 import cn.yungou.commons.util.BeanFactory;
@@ -13,6 +14,7 @@ import java.util.List;
 
 public class EasyBuyProductServiceImpl implements EasyBuyProductService {
     private static final ProductDao PRODUCT_DAO= (ProductDao) BeanFactory.getBean("productdao");
+
 
 
 
@@ -54,4 +56,18 @@ public class EasyBuyProductServiceImpl implements EasyBuyProductService {
         page.setTotal(PRODUCT_DAO.getCountByContion(productCondition));
         return  PRODUCT_DAO.getProductBycondition(productCondition,page);
     }
+
+    @Override
+    public EasybuyProduct getProductByid(Integer id) {
+
+        return PRODUCT_DAO.getProductByid(id);
+    }
+
+    @Override
+    public Integer modify(EasybuyProduct productupload) {
+
+        return PRODUCT_DAO.update(productupload);
+    }
+
+
 }

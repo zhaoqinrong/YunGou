@@ -1,4 +1,4 @@
-package cn.yungou.user.filter;
+package cn.yungou.commons.filter;
 
 
 import javax.servlet.*;
@@ -18,9 +18,10 @@ public class EncondingFilter implements Filter {
 
         HttpServletRequest httpServletRequest= (HttpServletRequest) servletRequest;
         HttpServletResponse httpServletResponse=(HttpServletResponse) servletResponse;
-        httpServletRequest.setCharacterEncoding("UTF-8");
+        httpServletResponse.setContentType("text/html;charset=UTF-8");
         if(this.encoding==null||"".equals(this.encoding)){
             httpServletRequest.setCharacterEncoding("UTF-8");
+
             httpServletResponse.setCharacterEncoding("UTF-8");
         }else{
             httpServletRequest.setCharacterEncoding(this.encoding);

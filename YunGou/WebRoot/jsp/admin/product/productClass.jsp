@@ -48,6 +48,16 @@ SmartPhone Compatible web template, free WebDesigns for Nokia, Samsung, LG, Sony
     <!-- //header-ends -->
     <jsp:include page="../header.jsp"/>
 
+    <div id="page-wrapper">
+        <div class="main-page">
+            <div class="tree well">
+
+                <ul id="rootUL">
+
+                </ul>
+            </div>
+        </div>
+    </div>
     <div class="modal fade" id="myModal" tabindex="-1" role="dialog"
          aria-labelledby="gridSystemModalLabel">
         <div class="modal-dialog" role="document">
@@ -198,6 +208,7 @@ function hideURLbar() {
 <!-- Bootstrap Core JavaScript -->
 <script src="../js/bootstrap.js"></script>
 <script src="../js/jquery.validate.min.js"></script>
+<script type="text/javascript" src="${pageContext.request.contextPath}/static/js/test.js"></script>
 <script type="text/javascript">
 
     /* $(window).beforeunload(function () {
@@ -205,6 +216,21 @@ function hideURLbar() {
 
        })*/
     /*修改用户信息*/
+        $(function () {
+            $('.tree li:has(ul)').addClass('parent_li').find(' > span').attr('title', '关闭');
+            $('.tree li.parent_li > span').on('click', function (e) {
+                var children = $(this).parent('li.parent_li').find(' > ul > li');
+                if (children.is(":visible")) {
+                    children.hide('fast');
+                    $(this).attr('title', '展开').find(' > i').addClass('icon-plus-sign').removeClass('icon-minus-sign');
+                } else {
+                    children.show('fast');
+                    $(this).attr('title', '关闭').find(' > i').addClass('icon-minus-sign').removeClass('icon-plus-sign');
+                }
+                e.stopPropagation();
+            });
+        });
+
 
 
     function modify() {

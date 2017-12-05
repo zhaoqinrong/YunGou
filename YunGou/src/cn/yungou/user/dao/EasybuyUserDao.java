@@ -20,4 +20,6 @@ public interface EasybuyUserDao extends CommonDao<EasybuyUser> {
 
 
     List<EasybuyUser> getAllByPage(Page<EasybuyUser> page);
+
+    EasybuyUser findByCode(String code);
 }

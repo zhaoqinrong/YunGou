@@ -11,6 +11,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.File;
 import java.io.UnsupportedEncodingException;
+import java.net.URLDecoder;
 import java.util.Date;
 
 
@@ -34,10 +35,10 @@ public class FileUploadUtils {
         //获取文件的后缀名
         String fileExt = smart.getFiles().getFile(0).getFileExt();
         //拼接文件名:
-        fileName = "E:\\MyEclipse 2017 CI\\Workspaces\\YunGou\\WebRoot\\upload"+File.separator+fileName + "." + fileExt;
+        fileName = fileName + "." + fileExt;
         //文件保存
         System.out.println(request.getServletContext().getRealPath("/") + "upload" + File.separator + fileName);
-        smart.getFiles().getFile(0).saveAs( fileName);
+        smart.getFiles().getFile(0).saveAs("E:\\MyEclipse 2017 CI\\Workspaces\\YunGou\\WebRoot\\upload" + File.separator + fileName);
         EasybuyNews news = new EasybuyNews();
         //获取数据
         Request request1 = smart.getRequest();
@@ -64,26 +65,40 @@ public class FileUploadUtils {
      * @throws Exception
      */
     public static EasybuyProduct productupload(ServletConfig config, HttpServletRequest request, HttpServletResponse response) throws Exception {
+        EasybuyProduct product = new EasybuyProduct();
         //1.实例化SmartUpload对象
         SmartUpload smart = new SmartUpload();
+
         //2.初始化上传操作
         smart.initialize(config, request, response);
         //3.文件上传
+        Constant.LOGGER.debug("上传文件名"+request.getParameter("fileName"));
         smart.upload();
         //为了避免重复上传后文件覆盖,可以加上一个随机的时间戳
         //1.获取客户端的ip地址
         String ipaddr = request.getRemoteAddr();
         String fileName = fileName(ipaddr);
         //获取文件的后缀名
-        String fileExt = smart.getFiles().getFile(0).getFileExt();
-        //拼接文件名:
-        fileName = "E:\\MyEclipse 2017 CI\\Workspaces\\YunGou\\WebRoot\\productImg" + File.separator +fileName + "." + fileExt;
-        //文件保存
+
+
+        String fileName1 = smart.getFiles().getFile(0).getFileName();
+        if(fileName1!=null&&!"".equals(fileName1.trim())&&!"null".equals(fileName1.trim())){
+            String fileExt = smart.getFiles().getFile(0).getFileExt();
+            //拼接文件名:
+            fileName = fileName + "." + fileExt;
+            Constant.LOGGER.debug("上传文件名"+fileName);
+            //文件保存
 //        System.out.println(request.getServletContext().getRealPath("/")+"productImg"+ File.separator+fileName);
-        smart.getFiles().getFile(0).saveAs( fileName);
-        EasybuyProduct product = new EasybuyProduct();
+            smart.getFiles().getFile(0).saveAs("E:\\MyEclipse 2017 CI\\Workspaces\\YunGou\\WebRoot\\productImg" + File.separator + fileName);
+            product.setFileName(fileName);
+        }
+
+
         //获取数据
+        String id = request.getParameter("id");
+
         Request request1 = smart.getRequest();
+
         String categorygoryLevel1 = request1.getParameter("categorygoryLevel1");
         String categorygoryLevel2 = request1.getParameter("categorygoryLevel2");
         String categorygoryLevel3 = request1.getParameter("categorygoryLevel3");
@@ -92,12 +107,17 @@ public class FileUploadUtils {
         String price = request1.getParameter("price");
         String stock = request1.getParameter("stock");
         //封装数据
+
         product.setCategorygoryLevel1(Integer.parseInt(categorygoryLevel1));
         product.setCategorygoryLevel2(Integer.parseInt(categorygoryLevel2));
         product.setCategorygoryLevel3(Integer.parseInt(categorygoryLevel3));
-        product.setName(charset(name));
-        product.setDescription(charset(description));
-        product.setFileName(fileName);
+        //解决中文乱码
+        Constant.LOGGER.debug("name"+name);
+        Constant.LOGGER.debug("description"+description);
+        Constant.LOGGER.debug("name转换后"+charset(name));
+        Constant.LOGGER.debug("description转换后"+charset(description));
+        product.setName( charset(name));
+        product.setDescription( charset(description));
         product.setPrice(Float.parseFloat(price));
         product.setStock(Integer.parseInt(stock));
         product.setIsDelete(0);
@@ -118,7 +138,7 @@ public class FileUploadUtils {
     }
 
     public static String charset(String str) throws UnsupportedEncodingException {
-        return new String(str.getBytes(), "UTF-8");
+        return new String(str.trim().getBytes(), "UTF-8");
     }
 
 }
