@@ -28,7 +28,7 @@ public class EasybuyUserDaoImpl extends Basedao implements EasybuyUserDao {
 
     @Override
     public int add(EasybuyUser easyBuyUser) {
-        String sql="insert into easybuy_user values(?,?,?,?,?,?,?,?,?,?,?)";
+        String sql="insert into easybuy_user values(?,?,?,?,?,?,?,?,?,?,?,)";
         Object[] params={easyBuyUser.getId(),easyBuyUser.getLoginName(),easyBuyUser.getUserName(),easyBuyUser.getPassword(),easyBuyUser.getSex(),easyBuyUser.getIdentityCode(),easyBuyUser.getEmail(),easyBuyUser.getMobile(),easyBuyUser.getType(),easyBuyUser.getCode(),easyBuyUser.getStatus()};
         int rownums=update(sql,params);
         return rownums;

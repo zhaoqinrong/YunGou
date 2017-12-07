@@ -149,7 +149,7 @@
                         </c:forEach>
                     </c:if>
 
-                    <c:if test="${fn:length(products) =0}">
+                    <c:if test="${fn:length(products)==0}">
                         亲你查询的关键字暂无商品
                     </c:if>
                 </c:if>
@@ -356,7 +356,7 @@
         })
 
     })
-   
+
 </script>
 </body>
 </html>
