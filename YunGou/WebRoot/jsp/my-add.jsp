@@ -73,21 +73,15 @@
             </h1>
         </div>
         <div class="head-form fl">
-            <form class="clearfix">
-                <input class="search-text" accesskey="" id="key" autocomplete="off" placeholder="洗衣机" style="height: 37px;" type="text">
-                <button class="button" onclick="search('key');return false;">搜索</button>
+            <form class="clearfix" action="${pageContext.request.contextPath}/product?action=searchPro">
+                <input class="search-text" accesskey="" name="words" id="key" autocomplete="off" placeholder="洗衣机" type="text" style="height: 36px">
+                <button class="button" type="submit" id="search">搜索</button>
+
             </form>
             <div class="words-text clearfix">
-                <a href="#" class="red">1元秒爆</a>
                 <a href="#">低至五折</a>
-                <a href="#">农用物资</a>
-                <a href="#">佳能相机</a>
-                <a href="#">服装城</a>
-                <a href="#">买4免1</a>
-                <a href="#">家电秒杀</a>
-                <a href="#">农耕机械</a>
-                <a href="#">手机新品季</a>
             </div>
+            <div id="viewWords" hidden></div>
         </div>
         <div class="fr pc-head-car">
             <i class="icon-car"></i>

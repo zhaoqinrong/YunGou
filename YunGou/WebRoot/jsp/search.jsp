@@ -1,4 +1,5 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions" %>
 <%@ page language="java" import="java.util.*" pageEncoding="UTF-8" %>
 <html lang="en">
 <head>
@@ -10,6 +11,24 @@
     <meta http-equiv="X-UA-Compatible" content="IE=9; IE=8; IE=7; IE=EDGE">
     <meta name="renderer" content="webkit">
     <title>云购物商城</title>
+    <style>
+        #viewWords {
+            width: 70%;
+            height: 150%;
+            background-color: white;
+            border: 1px solid red;
+
+            position: absolute;
+
+            padding: 6px;
+            z-index: 999;
+        }
+
+        #viewWords > p > a {
+            line-height: 20px;
+            color: black;
+        }
+    </style>
     <link rel="shortcut icon" type="image/x-icon" href="${pageContext.request.contextPath}/static/img/icon/favicon.ico">
     <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/static/css/base.css">
     <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/static/css/home.css">
@@ -74,22 +93,16 @@
             </h1>
         </div>
         <div class="head-form fl">
-            <form class="clearfix">
-                <input class="search-text" accesskey="" id="key" autocomplete="off" placeholder="洗衣机"
-                       style="height: 37px;" type="text">
-                <button class="button" onclick="search('key');return false;">搜索</button>
+            <form class="clearfix" action="${pageContext.request.contextPath}/product?action=searchPro">
+                <input class="search-text" accesskey="" name="words" id="key" autocomplete="off" placeholder="洗衣机"
+                       type="text" style="height: 36px">
+                <button class="button" type="submit" id="search">搜索</button>
+
             </form>
             <div class="words-text clearfix">
-                <a href="#" class="red">1元秒爆</a>
                 <a href="#">低至五折</a>
-                <a href="#">农用物资</a>
-                <a href="#">佳能相机</a>
-                <a href="#">服装城</a>
-                <a href="#">买4免1</a>
-                <a href="#">家电秒杀</a>
-                <a href="#">农耕机械</a>
-                <a href="#">手机新品季</a>
             </div>
+            <div id="viewWords" hidden style="top: 70px;"></div>
         </div>
         <div class="fr pc-head-car">
             <i class="icon-car"></i>
@@ -118,17 +131,31 @@
     <div class="pc-center-he " style="margin-top: 20px">
         <div class="pc-list-goods" style="height:auto;margin-top:40px">
             <div class="xsq_deal_wrapper pc-deal-list clearfix" style="height: auto">
+                <c:if test="${!empty products}">
 
-                    <c:forEach items="${products}"   var="pro">
 
-                        <a class="saleDeal" style="height: 320px; margin-top: 40px;" href="${pageContext.request.contextPath}/product?action=getProductByidView&id=${pro.id}" target="_blank">
-                            <div class="dealCon"><img class="dealImg"
-                                                      src="${pageContext.request.contextPath}/productImg/${pro.fileName}"
-                                                      alt="${pro.name}"></div>
-                            <div class="title_new"><p class="word" title="${pro.name}">${pro.name}</p></div>
-                            <div class="dealInfo"><span class="price">¥<em>${pro.price}</em></span></div>
-                        </a>
-                    </c:forEach>
+                    <c:if test="${fn:length(products) >0}">
+                        <c:forEach items="${products}" var="pro">
+
+                            <a class="saleDeal" style="height: 320px; margin-top: 40px;"
+                               href="${pageContext.request.contextPath}/product?action=getProductByidView&id=${pro.id}"
+                               target="_blank">
+                                <div class="dealCon"><img class="dealImg"
+                                                          src="${pageContext.request.contextPath}/productImg/${pro.fileName}"
+                                                          alt="${pro.name}"></div>
+                                <div class="title_new"><p class="word" title="${pro.name}">${pro.name}</p></div>
+                                <div class="dealInfo"><span class="price">¥<em>${pro.price}</em></span></div>
+                            </a>
+                        </c:forEach>
+                    </c:if>
+
+                    <c:if test="${fn:length(products) =0}">
+                        亲你查询的关键字暂无商品
+                    </c:if>
+                </c:if>
+                <c:if test="${empty  products}">
+                    亲你查询的关键字暂无商品
+                </c:if>
 
 
             </div>
@@ -329,6 +356,7 @@
         })
 
     })
+   
 </script>
 </body>
 </html>

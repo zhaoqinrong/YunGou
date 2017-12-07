@@ -9,12 +9,12 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=9; IE=8; IE=7; IE=EDGE">
 	<meta name="renderer" content="webkit">
 	<title>我的购物车-云购物商城</title>
-	<link rel="shortcut icon" type="image/x-icon" href="img/icon/favicon.ico">
-	<link rel="stylesheet" type="text/css" href="css/base.css">
-	<link rel="stylesheet" type="text/css" href="css/home.css">
-	<script type="text/javascript" src="js/jquery.js"></script>
-	<script type="text/javascript" src="js/index.js"></script>
-	<script type="text/javascript" src="js/modernizr-custom-v2.7.1.min.js"></script>
+	<link rel="shortcut icon" type="image/x-icon" href="${pageContext.request.contextPath}/static/img/icon/favicon.ico">
+	<link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/static/css/base.css">
+	<link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/static/css/home.css">
+	<script type="text/javascript" src="${pageContext.request.contextPath}/static/js/jquery.js"></script>
+	<script type="text/javascript" src="${pageContext.request.contextPath}/static/js/index.js"></script>
+	<script type="text/javascript" src="${pageContext.request.contextPath}/static/js/modernizr-custom-v2.7.1.min.js"></script>
 
 </head>
 <body>
@@ -75,21 +75,15 @@
             </h1>
         </div>
         <div class="head-form fl">
-            <form class="clearfix">
-                <input class="search-text" accesskey="" id="key" autocomplete="off" placeholder="洗衣机" style="height: 37px;" type="text">
-                <button class="button" onclick="search('key');return false;">搜索</button>
+            <form class="clearfix" action="${pageContext.request.contextPath}/product?action=searchPro">
+                <input class="search-text" accesskey="" name="words" id="key" autocomplete="off" placeholder="洗衣机" type="text" style="height: 36px">
+                <button class="button" type="submit" id="search">搜索</button>
+
             </form>
             <div class="words-text clearfix">
-                <a href="#" class="red">1元秒爆</a>
                 <a href="#">低至五折</a>
-                <a href="#">农用物资</a>
-                <a href="#">佳能相机</a>
-                <a href="#">服装城</a>
-                <a href="#">买4免1</a>
-                <a href="#">家电秒杀</a>
-                <a href="#">农耕机械</a>
-                <a href="#">手机新品季</a>
             </div>
+            <div id="viewWords" hidden></div>
         </div>
         <div class="fr pc-head-car">
             <i class="icon-car"></i>
@@ -133,11 +127,12 @@
 								<li><i class="pc-shop-car-yun"></i>领取3种优惠券, 最高省30元</li>
 							</ul>
 						</td>
+
 					</tr>
 					<tr class="on">
 						<th><input type="checkbox" class="option" name="cartCheckBox" value=""></th>
 						<th class="tab-th-1">
-							<a href="#"><img src="images/shangpinxiangqing/X1.png" width="100%" alt=""></a>
+							<a href="#"><img src="${pageContext.request.contextPath}/static/images/shangpinxiangqing/X1.png" width="100%" alt=""></a>
 							<a href="#" class="tab-title">赛亿（shinee)取暖器家用/取暖电器/电暖器/电暖气台式摇头暖风机HN2118PT </a>
 						</th>
 						<th>
@@ -149,9 +144,9 @@
 							<p class="goods_price">299.99</p>
 						</th>
 						<th class="tab-th-2">
-							<img src="images/taobao_minus.jpg" alt="minus" class="minus"/>
+							<img src="${pageContext.request.contextPath}/static/images/taobao_minus.jpg" alt="minus" class="minus"/>
 							<span>0</span>
-							<img src="images/taobao_adding.jpg" alt="add" class="plus"/>
+							<img src="${pageContext.request.contextPath}/static/images/taobao_adding.jpg" alt="add" class="plus"/>
 						</th>
 						<th class="goods_price">299.99</th>
 						<th class="tab-th-3"><a href="javascript:void(0);">删除</a></th>
@@ -159,7 +154,7 @@
 					<tr class="on">
 						<th><input type="checkbox" class="option" name="cartCheckBox" value=""></th>
 						<th class="tab-th-1">
-							<a href="#"><img src="images/shangpinxiangqing/X-1.png" width="100%" alt=""></a>
+							<a href="#"><img src="${pageContext.request.contextPath}/static/images/shangpinxiangqing/X-1.png" width="100%" alt=""></a>
 							<a href="#" class="tab-title">赛亿（shinee)取暖器家用/取暖电器/电暖器/电暖气台式摇头暖风机HN2118PT </a>
 						</th>
 						<th>
@@ -171,9 +166,9 @@
 							<p class="goods_price">299.99</p>
 						</th>
 						<th class="tab-th-2">
-							<img src="images/taobao_minus.jpg" alt="minus" class="minus"/>
+							<img src="${pageContext.request.contextPath}/static/images/taobao_minus.jpg" alt="minus" class="minus"/>
 							<span>0</span>
-							<img src="images/taobao_adding.jpg" alt="add" class="plus"/>
+							<img src="${pageContext.request.contextPath}/static/images/taobao_adding.jpg" alt="add" class="plus"/>
 						</th>
 						<th class="goods_price">299.99</th>
 						<th class="tab-th-3"><a href="javascript:void(0);">删除</a></th>
@@ -199,7 +194,7 @@
 </section>
 <div style="height:100px"></div>
 <jsp:include page="util/footer.jsp"/>
-<script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+<script type="text/javascript" src="${pageContext.request.contextPath}/static/js/jquery-1.10.2.min.js"></script>
 <script type="text/javascript">
     //hover 触发两个事件，鼠标移上去和移走
     //mousehover 只触发移上去事件
@@ -228,6 +223,12 @@
 		//删除
 		$("table").on("click","a",function(){
 			$(this).parents("tr").remove();
+            var totalNum = parseInt($(".totalNum").text());
+            totalNum++;
+            $(".totalNum").text(totalNum);
+//计算总价
+            var goods_price = parseInt($(this).parent().parent().children(".goods_price").text());
+            $(".totalPrice").text(parseInt($(".totalPrice").text())+goods_price);
 		})
        //删除全选
 			$("#checkboxx").click(function() {
@@ -235,6 +236,12 @@
 					n = $(this).parents("tr").index();  // 获取checkbox所在行的顺序
 					$("table").find("tr:eq("+n+")").remove();
 				});
+                var totalNum = parseInt($(".totalNum").text());
+                totalNum++;
+                $(".totalNum").text(totalNum);
+//计算总价
+                var goods_price = parseInt($(this).parent().parent().children(".goods_price").text());
+                $(".totalPrice").text(parseInt($(".totalPrice").text())+goods_price);
 			});
 		//点击增加按钮触发事件
 		$(".plus").click(function(){
@@ -262,6 +269,12 @@
 			} else{
 				num.text("0");
 			}
+            var totalNum = parseInt($(".totalNum").text());
+            totalNum++;
+            $(".totalNum").text(totalNum);
+//计算总价
+            var goods_price = parseInt($(this).parent().parent().children(".goods_price").text());
+            $(".totalPrice").text(parseInt($(".totalPrice").text())+goods_price);
 		});
 	})
 </script>

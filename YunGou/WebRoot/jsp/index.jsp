@@ -149,7 +149,7 @@
             </h1>
         </div>
         <div class="head-form fl" style="position: relative">
-            <form class="clearfix" action="${pageContext.request.contextPath}/product?action=searchPro">
+            <form class="clearfix" action="${pageContext.request.contextPath}/product?action=searchPro" method="post">
                 <input class="search-text" accesskey="" name="words" id="key" autocomplete="off" placeholder="洗衣机" type="text" style="height: 36px">
                 <button class="button" type="submit" id="search">搜索</button>
 

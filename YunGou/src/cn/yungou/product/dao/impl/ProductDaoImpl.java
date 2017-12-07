@@ -203,17 +203,17 @@ public class ProductDaoImpl implements ProductDao {
      */
     @Override
     public List findByLike(String words) {
-        String sql="select name from easybuy_product where name like concat('%',?,'%') order by hotNum desc ";
+        String sql="select name from easybuy_product where name like concat('%',?,'%') order by hotNum desc limit 0,5 ";
         ResultSet query = Basedao.query(sql, words);
         List list=new ArrayList();
+        if(query==null){
+            return null;
+        }
         try {
-            while (query.next()){
+           while (query.next()){
+             list.add( query.getString(1));
+           }
 
-                list.add(query.getString(1));
-                if(list.size()>=5){
-                    break;
-                }
-            }
         } catch (SQLException e) {
             e.printStackTrace();
         }
