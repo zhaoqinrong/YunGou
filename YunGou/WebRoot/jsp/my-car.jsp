@@ -93,7 +93,7 @@
         </div>
         <div class="fr pc-head-car">
             <i class="icon-car"></i>
-            <a href="my-car.jsp" target="_blank">我的购物车</a>
+            <a href="${pageContext.request.contextPath}/jsp/my-car.jsp" target="_blank">我的购物车</a>
             <em>0</em>
         </div>
     </div>
@@ -299,6 +299,14 @@
 <div style="height:100px"></div>
 <jsp:include page="util/footer.jsp"/>
 <script type="text/javascript" src="${pageContext.request.contextPath}/static/js/jquery-1.10.2.min.js"></script>
+<script>
+    $(function () {
+        $.ajax({
+
+        })
+    })
+</script>
+<%--计算--%>
 <script type="text/javascript">
     //hover 触发两个事件，鼠标移上去和移走
     //mousehover 只触发移上去事件

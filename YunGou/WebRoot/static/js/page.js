@@ -86,8 +86,14 @@ $(function () {
         }
 
         $(".Xcontent33").click(function () {
-            var value = parseInt($('.input').val()) + 1;
-            $('.input').val(value);
+            var stock=parseInt($("#stock").html());
+
+         var num=   parseInt($('.input').val())
+            if(stock>num){
+                var value=num+1;
+                $('.input').val(value);
+         }
+
         })
 
         $(".Xcontent32").click(function () {

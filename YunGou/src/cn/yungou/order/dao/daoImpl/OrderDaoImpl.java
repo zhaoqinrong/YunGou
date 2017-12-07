@@ -34,7 +34,7 @@ public class OrderDaoImpl extends Basedao implements OrderDao {
     public int add(Object o) {
         String sql="insert into easybuy_car values(?,?,?,?,?)";
         EasybuyCar car= (EasybuyCar)o;
-        Object[] param={car.getId(),car.getUid(),car.getPid(),car.getCreateTime(),car.getPnum()};
+        Object[] param={car.getId(),car.getUser().getId(),car.getPid(),car.getCreateTime(),car.getPnum()};
         int update = Basedao.update(sql, param);
         return update;
     }

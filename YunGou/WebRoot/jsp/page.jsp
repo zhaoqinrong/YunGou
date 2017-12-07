@@ -10,9 +10,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=9; IE=8; IE=7; IE=EDGE">
     <meta name="renderer" content="webkit">
     <title>云购物商城-巴黎欧莱雅官方旗舰店</title>
+
     <link rel="shortcut icon" type="${pageContext.request.contextPath}/static/image/x-icon" href="img/icon/favicon.ico">
+    <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/static/css/bootstrap-popover-x.min.css">
     <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/static/css/base.css">
     <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/static/css/home.css">
+
+
 
     <style>
         .li-ul-ss l {
@@ -25,20 +29,28 @@
     <div class="pc-header-nav">
         <div class="pc-header-con">
 
-            <div class="fl pc-header-link">您好！，${username}欢迎来云购物
+            <div class="fl pc-header-link">您好！，${user.loginName}欢迎来云购物
 
-                <%
-                    if (session.getAttribute("username") == null) {
-                %>
-                <a href="login.jsp" target="_self"> 请登录 </a>
-                <a href="register.jsp" target="_self"> 用户注册 </a>
+                <c:choose>
+                    <c:when test="${empty user}">
+                        <a href="user?action=loginUI" target="_self"> 请登录 </a>
+                        <a href="user?action=registerUI" target="_self"> 用户注册 </a>
+                    </c:when>
+                    <c:otherwise>
+                        <a href="user?action=logout" target="_self"> 退出系统 </a>
+                    </c:otherwise>
+                </c:choose>
 
-                <%
-                    }
-                %>
+
+
             </div>
             <div class="fr pc-header-list top-nav">
                 <ul>
+
+                    <c:if test="${user.type==2}">
+                        <li><a href="adminUser?action=indexUI">平台管理</a></li>
+                    </c:if>
+
                     <li>
                         <div class="nav"><i class="pc-top-icon"></i><a href="my-dingdan.jsp">我的订单</a></div>
                         <div class="con">
@@ -61,8 +73,9 @@
                             </dl>
                         </div>
                     </li>
+
                     <li><a href="#">我的云购</a></li>
-                    <li><a href="my-shoucang.jsp">我的收藏</a></li>
+                    <li><a href="my-shoucang.jsp" >我的收藏</a></li>
                     <li><a href="my-user.jsp">会员中心</a></li>
                     <li><a href="#">客户服务</a></li>
                     <li><a href="#">帮助中心</a></li>
@@ -79,7 +92,7 @@
         <div class="head-form fl">
             <form class="clearfix" action="${pageContext.request.contextPath}/product?action=searchPro">
                 <input class="search-text" accesskey="" name="words" id="key" autocomplete="off" placeholder="洗衣机" type="text" style="height: 36px">
-                <button class="button" type="submit" id="search">搜索</button>
+                <button class="button" type="submit" id="search" style="top: 70px">搜索</button>
 
             </form>
             <div class="words-text clearfix">
@@ -89,7 +102,7 @@
         </div>
         <div class="fr pc-head-car">
             <i class="icon-car"></i>
-            <a href="my-car.jsp" target="_blank">我的购物车</a>
+            <a href="${pageContext.request.contextPath}/jsp/my-car.jsp" target="_blank">我的购物车</a>
             <em>0</em>
         </div>
     </div>
@@ -149,7 +162,7 @@
             <div class="Xcontent12"><img src="images/shangpinxiangqing/X10.png"></div>
         </ol>--%>
         <ol class="Xcontent13 clearfix">
-            <div class="Xcontent14 clearfix"><a href="#"><p>${product.name} </p></a></div>
+            <div class="Xcontent14 clearfix"><a href="#"><p><input type="hidden" id="pid" value="${product.id}">${product.name} </p></a></div>
             <div class="Xcontent15 clearfix red fl" style="margin-top:2px">
                 <c:choose>
                     <c:when test="${product.isDelete==3}">
@@ -190,12 +203,13 @@
                 <p class="Xcontent31">数量</p>
                 <div class="Xcontent32"><img src="${pageContext.request.contextPath}/static/images/shangpinxiangqing/X15.png"></div>
                 <form>
-                    <input class="input" value="${product.stock}"></form>
-                <div class="Xcontent33"><img src="${pageContext.request.contextPath}/static/images/shangpinxiangqing/16.png"></div>
-
+                    <input class="input" value="1"><label></label></form>
+                <div class="Xcontent33"><img src="${pageContext.request.contextPath}/static/images/shangpinxiangqing/16.png"> </div>
+                <p class="Xcontent31" >件(库存 <span id="stock">${product.stock}</span>件)</p>
             </div>
             <div class="Xcontent34"><a href="#">立即购买</a></div>
-            <div class="Xcontent35"><a href="#">加入购物车</a></div>
+            <div class="Xcontent35"><a href="javascript:void(0);">加入购物车</a></div>
+
 
         </ol>
 
@@ -920,12 +934,42 @@
 </div>
 <div style="height:100px"></div>
 
+
 <jsp:include page="util/footer.jsp"/>
-<script type="text/javascript" src="${pageContext.request.contextPath}/static/js/jquery.js"></script>
+<script src="${pageContext.request.contextPath}/jsp/admin/js/jquery-1.11.1.min.js"></script>
+<script src="${pageContext.request.contextPath}/static/js/bootstrap-popover-x.min.js"></script>
 <script type="text/javascript" src="${pageContext.request.contextPath}/static/js/index.js"></script>
+<script src="${pageContext.request.contextPath}/jsp/admin/js/bootstrap.js"></script>
 <script type="text/javascript" src="${pageContext.request.contextPath}/static/js/modernizr-custom-v2.7.1.min.js"></script>
 <script type="text/javascript" src="${pageContext.request.contextPath}/static/js/jquery.SuperSlide.js"></script>
-<script type="text/javascript" src="${pageContext.request.contextPath}/static/js/page.js">
+<script type="text/javascript" src="${pageContext.request.contextPath}/static/js/page.js"></script>
+<script>
+    $(".Xcontent35").click(function(){
+        $.ajax({
+            url:"${pageContext.request.contextPath}/order",
+            type:"post",
+            data:{
+                "action":"addCar",
+                "pid":$("#pid").val(),
+                "pnum":$(".input").val()
+            },
+            dataType:"text",
+            success:function (data) {
+                if (data == "true") {
+                    alert("添加购物车成功")
+                } else if (data == "login") {//用户未登录提示用户登录
+                    window.location.href="${pageContext.request.contextPath}/jsp/login.jsp"
+//                    alert(1)
+
+                }else{
+                    alert("添加购物车失败")
+                }
+
+            }
+        })
+    })
+
+
 
 
 </script>
