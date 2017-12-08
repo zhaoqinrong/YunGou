@@ -300,9 +300,14 @@
 <jsp:include page="util/footer.jsp"/>
 <script type="text/javascript" src="${pageContext.request.contextPath}/static/js/jquery-1.10.2.min.js"></script>
 <script>
+    /*获取购物车的数据*/
     $(function () {
         $.ajax({
+        url:"order/action=getMyCar",
+            type:"post",
+            success:function (data) {
 
+            }
         })
     })
 </script>
