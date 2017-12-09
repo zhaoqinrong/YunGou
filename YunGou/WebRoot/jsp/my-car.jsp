@@ -1,4 +1,5 @@
 <%@ page language="java" pageEncoding="UTF-8" %>
+<%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -17,87 +18,21 @@
     <script type="text/javascript"
             src="${pageContext.request.contextPath}/static/js/modernizr-custom-v2.7.1.min.js"></script>
     <style>
-        .goods_prices{
+        .goods_prices {
             width: 148px;
+        }
+
+        .on th {
+            text-align: center;
+        }
+
+        .tab-th-1 * {
+            line-height: 100px;
         }
     </style>
 </head>
 <body>
-
-<header id="pc-header">
-    <div class="pc-header-nav">
-        <div class="pc-header-con">
-
-            <div class="fl pc-header-link">您好！，${username}欢迎来云购物
-
-                <%
-                    if (session.getAttribute("username") == null) {
-                %>
-                <a href="login.jsp" target="_self"> 请登录 </a>
-                <a href="register.jsp" target="_self"> 用户注册 </a>
-
-                <%
-                    }
-                %>
-            </div>
-            <div class="fr pc-header-list top-nav">
-                <ul>
-                    <li>
-                        <div class="nav"><i class="pc-top-icon"></i><a href="my-dingdan.jsp">我的订单</a></div>
-                        <div class="con">
-                            <dl>
-                                <dt><a href="">批发进货</a></dt>
-                                <dd><a href="">已买到货品</a></dd>
-                                <dd><a href="">优惠券</a></dd>
-                                <dd><a href="">店铺动态</a></dd>
-                            </dl>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="nav"><i class="pc-top-icon"></i><a href="#">我的商城</a></div>
-                        <div class="con">
-                            <dl>
-                                <dt><a href="">批发进货</a></dt>
-                                <dd><a href="">已买到货品</a></dd>
-                                <dd><a href="">优惠券</a></dd>
-                                <dd><a href="">店铺动态</a></dd>
-                            </dl>
-                        </div>
-                    </li>
-                    <li><a href="#">我的云购</a></li>
-                    <li><a href="my-shoucang.jsp">我的收藏</a></li>
-                    <li><a href="my-user.jsp">会员中心</a></li>
-                    <li><a href="#">客户服务</a></li>
-                    <li><a href="#">帮助中心</a></li>
-                </ul>
-            </div>
-        </div>
-    </div>
-    <div class="pc-header-logo clearfix">
-        <div class="pc-fl-logo fl">
-            <h1>
-                <a href="index.jsp"></a>
-            </h1>
-        </div>
-        <div class="head-form fl">
-            <form class="clearfix" action="${pageContext.request.contextPath}/product?action=searchPro">
-                <input class="search-text" accesskey="" name="words" id="key" autocomplete="off" placeholder="洗衣机"
-                       type="text" style="height: 36px">
-                <button class="button" type="submit" id="search">搜索</button>
-
-            </form>
-            <div class="words-text clearfix">
-                <a href="#">低至五折</a>
-            </div>
-            <div id="viewWords" hidden></div>
-        </div>
-        <div class="fr pc-head-car">
-            <i class="icon-car"></i>
-            <a href="${pageContext.request.contextPath}/jsp/my-car.jsp" target="_blank">我的购物车</a>
-            <em>0</em>
-        </div>
-    </div>
-</header>
+<jsp:include page="${pageContext.request.contextPath}/jsp/util/header.jsp"></jsp:include>
 <section id="pc-jie">
     <div class="center ">
         <ul class="pc-shopping-title clearfix">
@@ -111,171 +46,19 @@
             <table>
                 <thead>
                 <tr class="tab-0">
-                    <th class="tab-1">
+                    <th class="tab-1" style="width: 70px">
                         <input type="checkbox" id="allCheckBox">
                         全选
                     </th>
-                    <th class="tab-2" style="width: 330px">商品</th>
-                    <th class="tab-3" style="margin-left: 20px">商品信息</th>
+                    <th class="tab-2" style="width: 330px;text-align: center">商品</th>
                     <th class="tab-4">单价</th>
                     <th class="tab-5">数量</th>
                     <th class="tab-6">小计</th>
                     <th class="tab-7">操作</th>
+                    <th class="tab-7">状态</th>
                 </tr>
                 </thead>
-                <tbody>
-                <tr>
-                    <td colspan="7">
-                        <table>
-                            <tr class="tab-0" style="padding-left:10px; background:#eee;">
-                                <td colspan="7">
-                                    <input type="checkbox" class="option all" name="cartCheckBox" value=""
-                                           style="margin-left: 10px">
-                                    <label>云购物自营</label>
-                                    <a href="#" style="position:relative;padding-left:50px"><i
-                                            class="icon-kefu"></i>联系客服</a>
-                                    <ul class="clearfix fr" style="padding-right:20px">
-                                        <li><i class="pc-shop-car-yun"></i>满109元减10</li>
-                                        <li><i class="pc-shop-car-yun"></i>领取3种优惠券, 最高省30元</li>
-                                    </ul>
-                                </td>
-                            </tr>
-
-
-                            <tr class="on">
-                                <th><input type="checkbox" class="option pro" name="cartCheckBox" value=""></th>
-                                <th class="tab-th-1">
-                                    <a href="#"><img
-                                            src="${pageContext.request.contextPath}/static/images/shangpinxiangqing/X1.png"
-                                            width="100%" alt=""></a>
-                                    <a href="#" class="tab-title">赛亿（shinee)取暖器家用/取暖电器/电暖器/电暖气台式摇头暖风机HN2118PT </a>
-                                </th>
-                                <th>
-                                    <p>颜色：黑色</p>
-                                    <p>规格：落地款</p>
-                                </th>
-                                <th>
-                                    <p class="aaa">399.99</p>
-                                    <p class="goods_price">299.99</p>
-                                </th>
-                                <th class="tab-th-2">
-                                    <img src="${pageContext.request.contextPath}/static/images/taobao_minus.jpg"
-                                         alt="minus" class="minus"/>
-                                    <span>0</span>
-                                    <img src="${pageContext.request.contextPath}/static/images/taobao_adding.jpg"
-                                         alt="add" class="plus"/>
-                                </th>
-                                <th class="goods_prices">299.99</th>
-                                <th class="tab-th-3"><a href="javascript:void(0);">删除</a></th>
-
-
-                            </tr>
-                            <tr class="on">
-                                <th><input type="checkbox" class="option pro" name="cartCheckBox" value=""></th>
-                                <th class="tab-th-1">
-                                    <a href="#"><img
-                                            src="${pageContext.request.contextPath}/static/images/shangpinxiangqing/X1.png"
-                                            width="100%" alt=""></a>
-                                    <a href="#" class="tab-title">赛亿（shinee)取暖器家用/取暖电器/电暖器/电暖气台式摇头暖风机HN2118PT </a>
-                                </th>
-                                <th>
-                                    <p>颜色：黑色</p>
-                                    <p>规格：落地款</p>
-                                </th>
-                                <th>
-                                    <p class="aaa">399.99</p>
-                                    <p class="goods_price">299.99</p>
-                                </th>
-                                <th class="tab-th-2">
-                                    <img src="${pageContext.request.contextPath}/static/images/taobao_minus.jpg"
-                                         alt="minus" class="minus"/>
-                                    <span>0</span>
-                                    <img src="${pageContext.request.contextPath}/static/images/taobao_adding.jpg"
-                                         alt="add" class="plus"/>
-                                </th>
-                                <th class="goods_prices">299.99</th>
-                                <th class="tab-th-3"><a href="javascript:void(0);">删除</a></th>
-
-                            </tr>
-                        </table>
-                    </td>
-                </tr>
-                <tr>
-                    <td colspan="7">
-                        <table>
-
-                            <tr class="tab-0" style="padding-left:10px; background:#eee;">
-                                <td colspan="7">
-                                    <input type="checkbox" class="option all" name="cartCheckBox" value="">
-                                    <label>云购物自营</label>
-                                    <a href="#" style="position:relative;padding-left:50px"><i
-                                            class="icon-kefu"></i>联系客服</a>
-                                    <ul class="clearfix fr" style="padding-right:20px">
-                                        <li><i class="pc-shop-car-yun"></i>满109元减10</li>
-                                        <li><i class="pc-shop-car-yun"></i>领取3种优惠券, 最高省30元</li>
-                                    </ul>
-                                </td>
-                            </tr>
-
-
-                            <tr class="on">
-                                <th><input type="checkbox" class="option pro" name="cartCheckBox" value="" checked></th>
-                                <th class="tab-th-1">
-                                    <a href="#"><img
-                                            src="${pageContext.request.contextPath}/static/images/shangpinxiangqing/X1.png"
-                                            width="100%" alt=""></a>
-                                    <a href="#" class="tab-title">赛亿（shinee)取暖器家用/取暖电器/电暖器/电暖气台式摇头暖风机HN2118PT </a>
-                                </th>
-                                <th>
-                                    <p>颜色：黑色</p>
-                                    <p>规格：落地款</p>
-                                </th>
-                                <th>
-                                    <p class="aaa">399.99</p>
-                                    <p class="goods_price">299.99</p>
-                                </th>
-                                <th class="tab-th-2">
-                                    <img src="${pageContext.request.contextPath}/static/images/taobao_minus.jpg"
-                                         alt="minus" class="minus"/>
-                                    <span>1</span>
-                                    <img src="${pageContext.request.contextPath}/static/images/taobao_adding.jpg"
-                                         alt="add" class="plus"/>
-                                </th>
-                                <th class="goods_prices">299.99</th>
-                                <th class="tab-th-3"><a href="javascript:void(0);">删除</a></th>
-
-
-                            </tr>
-                            <tr class="on">
-                                <th><input type="checkbox" class="option pro" name="cartCheckBox" value=""></th>
-                                <th class="tab-th-1">
-                                    <a href="#"><img
-                                            src="${pageContext.request.contextPath}/static/images/shangpinxiangqing/X1.png"
-                                            width="100%" alt=""></a>
-                                    <a href="#" class="tab-title">赛亿（shinee)取暖器家用/取暖电器/电暖器/电暖气台式摇头暖风机HN2118PT </a>
-                                </th>
-                                <th>
-                                    <p>颜色：黑色</p>
-                                    <p>规格：落地款</p>
-                                </th>
-                                <th>
-                                    <p class="aaa">399.99</p>
-                                    <p class="goods_price">299.99</p>
-                                </th>
-                                <th class="tab-th-2">
-                                    <img src="${pageContext.request.contextPath}/static/images/taobao_minus.jpg"
-                                         alt="minus" class="minus"/>
-                                    <span>0</span>
-                                    <img src="${pageContext.request.contextPath}/static/images/taobao_adding.jpg"
-                                         alt="add" class="plus"/>
-                                </th>
-                                <th class="goods_price goods_prices">299.99</th>
-                                <th class="tab-th-3"><a href="javascript:void(0);">删除</a></th>
-
-                            </tr>
-                        </table>
-                    </td>
-                </tr>
+                <tbody id="cart">
 
                 </tbody>
             </table>
@@ -299,19 +82,10 @@
 <div style="height:100px"></div>
 <jsp:include page="util/footer.jsp"/>
 <script type="text/javascript" src="${pageContext.request.contextPath}/static/js/jquery-1.10.2.min.js"></script>
-<script>
-    /*获取购物车的数据*/
-    $(function () {
-        $.ajax({
-        url:"order/action=getMyCar",
-            type:"post",
-            success:function (data) {
+</body>
+</html>
 
-            }
-        })
-    })
-</script>
-<%--计算--%>
+
 <script type="text/javascript">
     //hover 触发两个事件，鼠标移上去和移走
     //mousehover 只触发移上去事件
@@ -327,155 +101,197 @@
         $(this).find(".nav a").removeClass("hover");
     })
     $(function () {
-        //初始化单品小计
-        singlePrice("span");
-//        初始化总价
+        getAllCar();
+    })
+
+    /*//检查用户的产品哪些失效,并将失效的产品的id进行返回
+    function valide() {
+        $.ajax({
+            url: "${pageContext.request.contextPath}/cart?action=valide",
+            type: "get",
+            success: function (data) {
+                $(data).each(function () {
+                 var id=   this.id;
+                    $("[name=cartDetailId]").each(function () {
+                        if($(this).val()==id){
+                                $(this).parents("tr").find("#status").html("已失效");
+                        }
+                    })
+
+                })
+            },
+            dataType: "json"
+        })
+    }*/
+
+    function getAllCar() {
+
+        $.ajax({
+            url: "${pageContext.request.contextPath}/cart?action=getMyAllCar",
+            type: "post",
+            success: function (data) {
+                $(data.carDetailList).each(function () {
+                    var status = "正常";
+                    if (this.status != 0) {
+                        status = "已失效"
+                    }
+                    $("#cart").append("  <tr class='on'>" +
+                        "                                <th><input type='hidden'  name='cartDetailId' value='" + this.id + "' >" +
+                        "<input type='checkbox' class='option pro' name='cartCheckBox' value='' ></th>" +
+                        "                                <th class='tab-th-1'>\n" +
+                        "                                    <a href='${pageContext.request.contextPath}/product?action=getProductByidView&id=" + this.pid + "'><img\n" +
+                        "                                            src='${pageContext.request.contextPath}/productImg/" + this.product.fileName + "'" +
+                        "                                            width='100%' alt=''></a>\n" +
+                        "                                    <a href='${pageContext.request.contextPath}/product?action=getProductByidView&id=" + this.pid + "' class='tab-title'>" + this.product.name + "</a>\n" +
+                        "                                </th>\n" +
+                        "                                <th>\n" +
+                        "                                    <p class='goods_price'>" + this.product.price + "</p>\n" +
+                        "                                </th>\n" +
+                        "                                <th class='tab-th-2'>\n" +
+                        "                                    <img src='${pageContext.request.contextPath}/static/images/taobao_minus.jpg'\n" +
+                        "                                         alt='minus' class='minus'/>\n" +
+                        "                                    <span class='pnum'>" + this.pnum + "</span>\n" +
+                        "                                    <img src='${pageContext.request.contextPath}/static/images/taobao_adding.jpg'\n" +
+                        "                                         alt='add' class='plus'/>\n" +
+                        "                                </th>\n" +
+                        "                                <th class='goods_price goods_prices'>" + this.product.price * this.pnum + "</th>\n" +
+                        "                                <th class='tab-th-3'><a href='javascript:void(0);'class='del'>删除</a></th>\n" +
+                        "                                <th class='tab-th-3'><a href='javascript:void(0);' id='status'>" + status + "</a></th>\n" +
+                        "\n" +
+                        "                            </tr>")
+                })
+
+            },
+            dataType: "json"
+        })
+    }
+
+    //选择
+    $("table").on("click", ".pro", function () {
+
+        singlePrice(this)
         total()
 
-        //计算单品价格
-        function singlePrice(elemt) {
-            $(elemt).each(function () {
-                var num = $(this).parent().children("span");
-                var goods_price = (parseFloat($(this).parents(".on").find(".goods_price").text()).toFixed(2));
-                $(this).parents(".on").find(".goods_prices").html((goods_price * parseInt(num.text())).toFixed(2));
-            })
+    })
+
+    //计算单品价格
+    function singlePrice(elemnt) {
+        $(".goods_prices").each(function () {
+            var pnum = parseInt($(elemnt).parents("tr").find(".pnum").html());
+            var price = parseFloat($(elemnt).parents("tr").find(".goods_price").html())
+            $(elemnt).parents("tr").find(".goods_prices").empty().html((pnum * price).toFixed(2))
+
+        })
+    }
+
+    //计算总价和总数
+
+    function total() {
+        var totalprice = 0;
+        var totalnum = 0;
+        $(".on").each(function () {
+
+            var $checkbox = $(this).find(".pro");
+            if ($checkbox.is(":checked")) {
+                totalnum = totalnum + parseInt($(this).find(".pnum").html());
+
+                totalprice = (totalprice + parseFloat($(this).find(".goods_prices").html()));
+
+            }
 
 
+        })
+        $(".totalPrice").empty().html(totalprice.toFixed(2));
+        $(".totalNum").empty().html(totalnum);
+    }
 
 
+    isChecked = false;
+    $("#allCheckBox").click(function () {
+        isChecked = !isChecked;
+        if (isChecked) {
+            $(".option").prop("checked", true);
+        } else {
+            $(".option").removeProp("checked");
         }
-
-        //计算总价和总数
-
-        function total() {
-            var totalprice=0;
-            var totalnum=0;
-            $(".on").each(function () {
-
-                var $checkbox = $(this).find(".pro");
-                if($checkbox.is(":checked")){
-
-                    totalnum =totalnum+parseInt($(this).find("span").html());
-
-                    totalprice = (totalprice + parseFloat($(this).find(".goods_prices").html()));
-
+        total()
+    });
+    //删除
+    $("table").on("click", ".del", function () {
+        var $a = $(this);
+        var id = $a.parents("tr").find("[name='cartDetailId']").val();
+        $.ajax({
+            url: "${pageContext.request.contextPath}/cart",
+            type: "post",
+            data: {
+                "action": "delCartDetailById",
+                "id": id
+            },
+            success: function (data) {
+                if (data == "true") {
+                    $a.parents("tr").remove();
+                    singlePrice(this)
+                    total()
+                } else {
+                    alert("删除失败")
                 }
-
-
-
-            })
-            $(".totalPrice").html(totalprice.toFixed(2));
-            $(".totalNum").html(totalnum);
-        }
-
-
-        //选择某个店铺的所有
-        $(".all").change(function () {
-
-            if($(this).is(":checked")){
-                $(this).parents("table").eq(0).find(".pro").each(function () {
-                        $(this).prop("checked",true)
-                })
-            }else{
-                $(this).parents("table").eq(0).find(".pro").each(function () {
-                    $(this).removeAttr("checked");
-                })
             }
-
-            total()
         })
-
-        //取消或者选择单个商品
-            $(".pro").click(function () {
-                singlePrice(".on");
-                total()
-
-            })
-
-        //全选
-        isChecked = false;
-        $("#allCheckBox").click(function () {
-            isChecked = !isChecked;
-            if (isChecked) {
-                $(".option").prop("checked", true);
-            } else {
-                $(".option").removeProp("checked");
-            }
-            total()
-
-        });
-
-        //删除
-        $("table").on("click", "a", function () {
-
-           $(this).parents("tr").remove();
-            total()
-            /*  var totalNum = parseInt($(".totalNum").text());
-             totalNum++;
-             $(".totalNum").text(totalNum);
- //计算总价
-             var goods_price = parseFloat($(this).parent().parent().children(".goods_price").text());
-             $(".totalPrice").text((parseFloat($(".totalPrice").text()) + goods_price).toFixed(2));*/
-        })
-        //删除全选
-        $("#checkboxx").click(function () {
-            $("input[name='cartCheckBox']:checked").each(function () { // 遍历选中的checkbox
-
-              n = $(this).parents("tr").index();  // 获取checkbox所在行的顺序
-                $("table").find("tr:eq(" + n + ")").remove();
-            });
-            total()
-            /*
-                        var totalNum = parseInt($(".totalNum").text());
-                        totalNum++;
-                        $(".totalNum").text(totalNum);
-            //计算总价
-                        var goods_price = parseFloat($(this).parent().parent().children(".goods_price").eq(0).text());
-                        $(".totalPrice").text((parseFloat($(".totalPrice").text()) + goods_price).toFixed(2));*/
-        });
-
-
-        $(".plus").click(function () {
-            //数量加1
-            var num = $(this).parent().children("span");
-            num.text(parseInt(num.text()) + 1);
-            singlePrice(this);
-//商品总数增加
-            /*var totalNum = parseInt($(".totalNum").text());
-            totalNum++;
-            $(".totalNum").text(totalNum);
-            singlePrice(this)*/
-//计算总价
-           total()
-        });
-//点击减少按钮触发事件
-        $(".minus").click(function () {
-            var num = $(this).parent().children("span");
-            if (parseInt(num.text()) >= 1) {
-                num.text(parseInt(num.text()) - 1);
-
-           /*     var totalNum = parseInt($(".totalNum").text());
-                totalNum--;
-                $(".totalNum").text(totalNum);
-                var goods_price = parseFloat($(this).parent().parent().children(".goods_price").text());
-                $(".totalPrice").text((parseFloat($(".totalPrice").text()) - goods_price).toFixed(2));*/
-            } else {
-                return;
-            }
-            singlePrice(this);
-            total();
-            /* var totalNum = parseInt($(".totalNum").text());
-//                totalNum++;
-             $(".totalNum").text(totalNum);
-//计算总价
-             var goods_price = parseInt($(this).parent().parent().children(".goods_price").text());
-             $(".totalPrice").text(parseInt($(".totalPrice").text()) + goods_price);*/
-
-
-        });
 
 
     })
+
+
+    //删除全选
+    $("#checkboxx").click(function () {
+        var arr = new Array();
+        $(".pro:checked").each(function () {
+            id = $(this).parents("tr").find("[name='cartDetailId']").val();
+            arr.push(id);
+        })
+        var s = arr.join("-");
+        $.ajax({
+            url: "${pageContext.request.contextPath}/cart",
+            data: {
+                "action": "delAllCarDetail",
+                "ids": s
+            },
+            success: function (data) {
+                if (data == "true") {
+                    $(".pro:checked").each(function () { // 遍历选中的checkbox
+                        n = $(this).parents("tr").index();  // 获取checkbox所在行的顺序
+                        $("tbody").find("tr:eq(" + n + ")").remove();
+                    });
+                    singlePrice(this)
+                    total()
+                } else {
+                    alert("删除失败")
+                }
+            }
+        })
+
+
+    });
+
+    $("table").on("click", ".plus", function () {
+        //数量加1
+        var num = $(this).prev();
+        num.text(parseInt(num.text()) + 1);
+        singlePrice(this)
+        total()
+    });
+    //点击减少按钮触发事件
+    $("table").on("click", ".minus", function () {
+        var num = $(this).next();
+        if (parseInt(num.text()) > 1) {
+            num.text(parseInt(num.text()) - 1);
+        } else {
+            return;
+        }
+        singlePrice(this)
+        total()
+
+
+    });
+
 </script>
-</body>
-</html>

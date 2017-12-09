@@ -92,11 +92,11 @@
 
                <c:choose>
                    <c:when test="${empty user}">
-                       <a href="user?action=loginUI" target="_self"> 请登录 </a>
-                       <a href="user?action=registerUI" target="_self"> 用户注册 </a>
+                       <a href="${pageContext.request.contextPath}/user?action=loginUI" target="_self"> 请登录 </a>
+                       <a href="${pageContext.request.contextPath}/user?action=registerUI" target="_self"> 用户注册 </a>
                    </c:when>
                    <c:otherwise>
-                       <a href="user?action=logout" target="_self"> 退出系统 </a>
+                       <a href="${pageContext.request.contextPath}/user?action=logout" target="_self"> 退出系统 </a>
                    </c:otherwise>
                </c:choose>
 

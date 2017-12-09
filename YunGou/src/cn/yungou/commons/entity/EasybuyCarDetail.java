@@ -1,13 +1,20 @@
 package cn.yungou.commons.entity;
 
+import java.sql.Timestamp;
+
+/**
+ * 购物车中的每一项
+ */
 public class EasybuyCarDetail {
-    private int id;
-    private int cid;
-    private Integer pid;
-    private double price;
-    private Integer pnum;
-    private EasybuyCar car;
+    private Integer id; //主键自动生成
+    private Integer cid;//购物车id
+    private Integer pid;//商品id
+    private Integer pnum;//商品数量
+    private float toprice;//商品小计
+    private Timestamp createTime;//创建时间
+    private Integer status;//商品状态
     private EasybuyProduct product;
+    private EasybuyCar car;
 
     @Override
     public String toString() {
@@ -15,11 +22,69 @@ public class EasybuyCarDetail {
                 "id=" + id +
                 ", cid=" + cid +
                 ", pid=" + pid +
-                ", price=" + price +
                 ", pnum=" + pnum +
-                ", car=" + car +
+                ", toprice=" + toprice +
+                ", createTime=" + createTime +
+                ", status=" + status +
                 ", product=" + product +
+                ", car=" + car +
                 '}';
+    }
+
+    public Integer getId() {
+        return id;
+    }
+
+    public void setId(Integer id) {
+        this.id = id;
+    }
+
+    public Integer getCid() {
+        return cid;
+    }
+
+    public void setCid(Integer cid) {
+        this.cid = cid;
+    }
+
+    public Integer getPid() {
+        return pid;
+    }
+
+    public void setPid(Integer pid) {
+        this.pid = pid;
+    }
+
+    public Integer getPnum() {
+        return pnum;
+    }
+
+    public void setPnum(Integer pnum) {
+        this.pnum = pnum;
+    }
+
+    public float getToprice() {
+        return toprice;
+    }
+
+    public void setToprice(float toprice) {
+        this.toprice = toprice;
+    }
+
+    public Timestamp getCreateTime() {
+        return createTime;
+    }
+
+    public void setCreateTime(Timestamp createTime) {
+        this.createTime = createTime;
+    }
+
+    public Integer getStatus() {
+        return status;
+    }
+
+    public void setStatus(Integer status) {
+        this.status = status;
     }
 
     public EasybuyProduct getProduct() {
@@ -36,74 +101,5 @@ public class EasybuyCarDetail {
 
     public void setCar(EasybuyCar car) {
         this.car = car;
-    }
-
-    public int getId() {
-        return id;
-    }
-
-    public void setId(int id) {
-        this.id = id;
-    }
-
-    public int getCid() {
-        return cid;
-    }
-
-    public void setCid(int cid) {
-        this.cid = cid;
-    }
-
-    public Integer getPid() {
-        return pid;
-    }
-
-    public void setPid(Integer pid) {
-        this.pid = pid;
-    }
-
-    public double getPrice() {
-        return price;
-    }
-
-    public void setPrice(double price) {
-        this.price = price;
-    }
-
-    public Integer getPnum() {
-        return pnum;
-    }
-
-    public void setPnum(Integer pnum) {
-        this.pnum = pnum;
-    }
-
-    @Override
-    public boolean equals(Object o) {
-        if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
-
-        EasybuyCarDetail carDetail = (EasybuyCarDetail) o;
-
-        if (id != carDetail.id) return false;
-        if (cid != carDetail.cid) return false;
-        if (Double.compare(carDetail.price, price) != 0) return false;
-        if (pid != null ? !pid.equals(carDetail.pid) : carDetail.pid != null) return false;
-        if (pnum != null ? !pnum.equals(carDetail.pnum) : carDetail.pnum != null) return false;
-
-        return true;
-    }
-
-    @Override
-    public int hashCode() {
-        int result;
-        long temp;
-        result = id;
-        result = 31 * result + cid;
-        result = 31 * result + (pid != null ? pid.hashCode() : 0);
-        temp = Double.doubleToLongBits(price);
-        result = 31 * result + (int) (temp ^ (temp >>> 32));
-        result = 31 * result + (pnum != null ? pnum.hashCode() : 0);
-        return result;
     }
 }

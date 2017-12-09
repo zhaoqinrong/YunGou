@@ -1,35 +1,16 @@
 package cn.yungou.commons.entity;
 
-import java.sql.Timestamp;
+
 import java.util.List;
 
+/**
+ * 购物车 一个用户对应一个购物车
+ */
 public class EasybuyCar {
-    private int id;
-    private Timestamp createTime;
-    private Integer uid;
-    private Integer status;
-    private List<EasybuyCarDetail> carDetailList;
-    private List<EasybuyProduct> products;
-
-    @Override
-    public String toString() {
-        return "EasybuyCar{" +
-                "id=" + id +
-                ", createTime=" + createTime +
-                ", uid=" + uid +
-                ", status=" + status +
-                ", carDetailList=" + carDetailList +
-                ", products=" + products +
-                '}';
-    }
-
-    public List<EasybuyProduct> getProducts() {
-        return products;
-    }
-
-    public void setProducts(List<EasybuyProduct> products) {
-        this.products = products;
-    }
+    private Integer id;//购物车id
+    private Integer uid;//用户id
+    private Integer count=0;//购物车中的总数量
+    private float toprice=0;//购物车中的总金额
 
     public List<EasybuyCarDetail> getCarDetailList() {
         return carDetailList;
@@ -39,23 +20,25 @@ public class EasybuyCar {
         this.carDetailList = carDetailList;
     }
 
+    List<EasybuyCarDetail> carDetailList;
 
+    @Override
+    public String toString() {
+        return "EasybuyCar{" +
+                "id=" + id +
+                ", uid=" + uid +
+                ", count=" + count +
+                ", toprice=" + toprice +
+                ", carDetailList=" + carDetailList +
+                '}';
+    }
 
-
-    public int getId() {
+    public Integer getId() {
         return id;
     }
 
-    public void setId(int id) {
+    public void setId(Integer id) {
         this.id = id;
-    }
-
-    public Timestamp getCreateTime() {
-        return createTime;
-    }
-
-    public void setCreateTime(Timestamp createTime) {
-        this.createTime = createTime;
     }
 
     public Integer getUid() {
@@ -66,35 +49,20 @@ public class EasybuyCar {
         this.uid = uid;
     }
 
-    public Integer getStatus() {
-        return status;
+    public Integer getCount() {
+        return count;
     }
 
-    public void setStatus(Integer status) {
-        this.status = status;
+    public void setCount(Integer count) {
+        this.count = count;
     }
 
-    @Override
-    public boolean equals(Object o) {
-        if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
 
-        EasybuyCar car = (EasybuyCar) o;
-
-        if (id != car.id) return false;
-        if (createTime != null ? !createTime.equals(car.createTime) : car.createTime != null) return false;
-        if (uid != null ? !uid.equals(car.uid) : car.uid != null) return false;
-        if (status != null ? !status.equals(car.status) : car.status != null) return false;
-
-        return true;
+    public float getToprice() {
+        return toprice;
     }
 
-    @Override
-    public int hashCode() {
-        int result = id;
-        result = 31 * result + (createTime != null ? createTime.hashCode() : 0);
-        result = 31 * result + (uid != null ? uid.hashCode() : 0);
-        result = 31 * result + (status != null ? status.hashCode() : 0);
-        return result;
+    public void setToprice(float toprice) {
+        this.toprice = toprice;
     }
 }

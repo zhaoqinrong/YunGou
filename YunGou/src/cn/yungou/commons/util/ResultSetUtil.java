@@ -46,6 +46,7 @@ public class ResultSetUtil {
                 Field[] fields = clazz.getDeclaredFields();
                 for (Field field : fields) {
                     field.setAccessible(true);
+
                     field.set(object, rs.getObject(field.getName()));
                 }
             }

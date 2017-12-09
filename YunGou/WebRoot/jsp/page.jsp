@@ -946,7 +946,7 @@
 <script>
     $(".Xcontent35").click(function(){
         $.ajax({
-            url:"${pageContext.request.contextPath}/order",
+            url:"${pageContext.request.contextPath}/cart",
             type:"post",
             data:{
                 "action":"addCar",

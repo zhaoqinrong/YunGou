@@ -48,7 +48,7 @@
                 <li class="lss">
                     <span>下载手机版</span>
                     <div class="clearfix lss-pa">
-                        <div class="fl lss-img"><img src="img/icon/code.png" alt=""></div>
+                        <div class="fl lss-img"><img src="${pageContext.request.contextPath}/static/img/icon/code.png" alt=""></div>
                         <div class="fl" style="padding-left:20px">
                             <h4>扫描下载云购APP</h4>
                             <p>把优惠握在手心</p>

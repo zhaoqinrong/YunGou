@@ -89,7 +89,7 @@
         </div>
         <div class="fr pc-head-car">
             <i class="icon-car"></i>
-            <a href="my-car.jsp" target="_blank">我的购物车</a>
+            <a href="${pageContext.request.contextPath}/jsp/my-car.jsp" target="_blank">我的购物车</a>
             <em>0</em>
         </div>
     </div>

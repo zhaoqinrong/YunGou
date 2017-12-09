@@ -14,4 +14,6 @@
     <bean id="productdao" class="cn.yungou.product.dao.impl.ProductDaoImpl"></bean>
     <bean id="orderService" class="cn.yungou.order.service.serviceImpl.OrderServiceImpl"></bean>
     <bean id="orderdao" class="cn.yungou.order.dao.daoImpl.OrderDaoImpl"></bean>
+    <bean id="cartdao" class="cn.yungou.cart.dao.impl.CartDaoImpl"></bean>
+    <bean id="cartservice" class="cn.yungou.cart.service.ServiceImpl.CartServiceImpl"></bean>
 </beans>
